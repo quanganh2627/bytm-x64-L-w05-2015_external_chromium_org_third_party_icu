@@ -1,0 +1,52 @@
+Index: common/unicode/pmac.h
+===================================================================
+--- common/unicode/pmac.h	(revision 69841)
++++ common/unicode/pmac.h	(working copy)
+@@ -49,14 +49,20 @@
+ #define U_DARWIN
+ #endif
+ 
++#include <AvailabilityMacros.h>
++
+ /**
+  * \def U_HAVE_DIRENT_H
+  * Define whether dirent.h is available 
+  * @internal
+  */
+ #ifndef U_HAVE_DIRENT_H
++#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
++#define U_HAVE_DIRENT_H 0
++#else
+ #define U_HAVE_DIRENT_H 1
+ #endif
++#endif
+ 
+ /** Define whether inttypes.h is available */
+ #ifndef U_HAVE_INTTYPES_H
+@@ -282,8 +288,10 @@
+ #if 1
+ #define U_TZSET         tzset
+ #endif
+-#if 1
+-#define U_TIMEZONE      timezone
++#if MAC_OS_X_VERSION_MIN_REQUIRED < MAC_OS_X_VERSION_10_5
++#define U_TIMEZONE 0
++#else
++#define U_TIMEZONE timezone
+ #endif
+ #if 1
+ #define U_TZNAME        tzname
+@@ -299,6 +307,13 @@
+ /*===========================================================================*/
+ 
+ #if 1
++/* Chrome-local change: on the Mac, ICU is exclusively used as a static
++ * library, and nothing should ever be marked with default visibility.
++ * Defining U_STATIC_IMPLEMENTATION handles most of this, but unfortunately
++ * C functions declared with U_CAPI (defined in umachine.h) will still use
++ * the definition of U_EXPORT. */
++#define U_EXPORT
++#elif 0
+ #define U_EXPORT __attribute__((visibility("default")))
+ #elif (defined(__SUNPRO_CC) && __SUNPRO_CC >= 0x550) \
+    || (defined(__SUNPRO_C) && __SUNPRO_C >= 0x550) 
