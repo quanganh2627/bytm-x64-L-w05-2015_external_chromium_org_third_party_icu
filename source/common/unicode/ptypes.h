@@ -22,7 +22,13 @@
 
 #include <sys/types.h>
 
-#include "unicode/platform.h"
+#if defined(__APPLE__)
+#   include "unicode/pmac.h"
+#elif defined(__linux__)
+#   include "unicode/plinux.h"
+#else
+#   include "unicode/platform.h"
+#endif
 
 /*===========================================================================*/
 /* Generic data types                                                        */
@@ -89,4 +95,3 @@ typedef unsigned int uint32_t;
 #endif /* U_HAVE_INTTYPES_H */
 
 #endif /* _PTYPES_H */
-
