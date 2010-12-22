@@ -360,7 +360,7 @@ US-ASCII { MIME* IANA JAVA WINDOWS }
     ibm-367 { IBM* } IBM367 { IANA WINDOWS } # This is not truely ibm-367 because it's missing the fallbacks.
 
 # GB 18030 is partly algorithmic, using the MBCS converter
-gb18030 { IANA* }       ibm-1392 { IBM* } windows-54936 { WINDOWS* } GB18030 { MIME* }
+gb18030 { IANA* }       ibm-1392 { IBM* } windows-54936 { WINDOWS* } gb18030 { MIME* }
 
 # Table-based interchange codepages
 
@@ -505,15 +505,16 @@ ibm-916_P100-1995 { UTR22* }
                         916 { JAVA }
 
 # Turkish
+# CHROME: ISO-8859-9 and its aliases are moved to windows-1254 per
+# HTML5. 
 ibm-920_P100-1995 { UTR22* }
-                        ibm-920 { IBM* JAVA }
-                        ISO-8859-9 { MIME* IANA WINDOWS JAVA* }
-                        latin5 { IANA WINDOWS JAVA }
-                        csISOLatin5 { IANA JAVA }
-                        iso-ir-148 { IANA WINDOWS JAVA }
-                        ISO_8859-9:1989 { IANA* WINDOWS }
-                        l5 { IANA WINDOWS JAVA }
-                        8859_9 { JAVA }
+                        ibm-920 { IBM* JAVA* }
+                        ISO-8859-9
+                        latin5
+                        csISOLatin5
+                        iso-ir-148 
+                        ISO_8859-9:1989
+                        l5
                         cp920 { JAVA }
                         920 { JAVA }
                         windows-28599 { WINDOWS* }
@@ -618,10 +619,6 @@ ibm-943_P130-1999 { UTR22* }
 ibm-33722_P12A_P12A-2004_U2 { UTR22* }
                         ibm-33722   # Leave untagged because this isn't the default
                         ibm-5050    # Leave untagged because this isn't the default, and yes this alias is correct
-                        EUC-JP { IANA MIME* WINDOWS }
-                        Extended_UNIX_Code_Packed_Format_for_Japanese { IANA* WINDOWS }
-                        csEUCPkdFmtJapanese { IANA WINDOWS }
-                        X-EUC-JP { WINDOWS }   # Japan EUC. x-euc-jp is a MIME name
                         windows-51932 { WINDOWS* }
                         ibm-33722_VPUA
                         IBM-eucJP
@@ -637,14 +634,20 @@ ibm-33722_P120-1999 { UTR22* }  # Japan EUC with \ <-> Yen mapping
 # ibm-954 seems to be almost a superset of ibm-33722 and ibm-1350
 # ibm-1350 seems to be almost a superset of ibm-33722
 # ibm-954 contains more PUA characters than the others.
+# CHROME : Instead of ibm-33722_P*, we use our own EUC-JP converter
+# to match IE7 and Mozilla more closely.
+# google_euc_jp_mod is a modified version of EUC-JP that prefers 2-byte code
+# points when converting from Unicode while recognizing both 2-byte and
+# 3-byte code points when converting to Unicode.
+google-euc_jp_mod { UTR22* }
+                        EUC-JP { MIME* IANA JAVA* WINDOWS* }
+                        Extended_UNIX_Code_Packed_Format_for_Japanese { IANA* JAVA WINDOWS }
+                        csEUCPkdFmtJapanese { IANA JAVA WINDOWS }
+                        X-EUC-JP { MIME JAVA WINDOWS }   # Japan EUC. x-euc-jp is a MIME name
+                        eucjis {JAVA}
+                        ujis # Linux sometimes uses this name. This is an unfortunate generic and rarely used name. Its use is discouraged.
 ibm-954_P101-2007 { UTR22* }
                         ibm-954 { IBM* }
-                        EUC-JP { JAVA* } # Matches more closely with ibm-1350
-                        Extended_UNIX_Code_Packed_Format_for_Japanese { JAVA }
-                        csEUCPkdFmtJapanese { JAVA }
-                        X-EUC-JP { JAVA }   # Japan EUC. x-euc-jp is a MIME name
-                        eucjis { JAVA }
-                        ujis # Linux sometimes uses this name. This is an unfortunate generic and rarely used name. Its use is discouraged.
                         x-IBM954 { JAVA }
                         x-IBM954C { JAVA }
                         # eucJP # This is closest to Solaris EUC-JP.
@@ -695,33 +698,40 @@ solaris-zh_TW_big5-2.7 { UTR22* }
 ibm-1386_P100-2001  { UTR22* }
                         ibm-1386 { IBM* }
                         cp1386
-                        windows-936 # Alternate mapping. Leave untagged. This is the IBM interpretation of a Windows codepage.
+                        #windows-936 # Alternate mapping. Leave untagged. This is the IBM interpretation of a Windows codepage.
                         ibm-1386_VSUB_VPUA
+# CHROME: Added 4 GB2312 aliases and EUC-CN to Windows-936 to reflect the
+#         reality of the web (GB2312 is treated synonymously with its
+#         superset, Windows-936/GBK)
+#         All the aliases listed for this converter (windows-936-2000)
+#         are removed from the list of aliases for other simplified Chinese
+#         converters above.
 windows-936-2000 { UTR22* }
-                        GBK { IANA* WINDOWS JAVA* }
+                        GB2312 { IANA* MIME* }
+                        windows-936 { IANA WINDOWS* JAVA }
+                        GBK { WINDOWS JAVA* }
                         CP936 { IANA JAVA }
                         MS936 { IANA }  # In JDK 1.5, this goes to x-mswin-936. This is an IANA name split.
-                        windows-936 { IANA WINDOWS* JAVA }
+                        chinese { IANA }
+                        iso-ir-58 { IANA }
+                        gb2312-1980
+                        EUC-CN
+                        csGB2312 { IANA }
+                        GB_2312-80 { IANA }
 
-# Java has two different tables for ibm-1383 and gb2312. We pick closest set for tagging.
+# Java has two different tables for ibm-1383 and gb2312. We pick closest set for tagging. 
 ibm-1383_P110-1999 { UTR22* }       # China EUC.
                         ibm-1383 { IBM* JAVA }
-                        GB2312 { IANA* MIME* }
-                        csGB2312 { IANA }
                         cp1383 { JAVA* }
                         1383 { JAVA }
-                        EUC-CN  # According to other platforms, windows-20936 looks more like euc-cn. x-euc-cn is also a MIME name
+                        #EUC-CN  # According to other platforms, windows-20936 looks more like euc-cn. x-euc-cn is also a MIME name
                         ibm-eucCN
                         hp15CN  # From HP-UX?
                         ibm-1383_VPUA
                         # gb          # This is not an IANA name. gb in IANA means Great Britain.
 
 ibm-5478_P100-1995 { UTR22* } ibm-5478 { IBM* } # This gb_2312_80 DBCS mapping is needed by iso-2022.
-                        GB_2312-80 { IANA* }    # Windows maps this alias incorrectly
-                        chinese { IANA }
-                        iso-ir-58 { IANA }
-                        csISO58GB231280 { IANA }
-                        gb2312-1980
+                        csISO58GB231280 { IANA* }
                         GB2312.1980-0   # From X11R6
 
 ibm-964_P110-1999 { UTR22* }                # Taiwan EUC. x-euc-tw is a MIME name
@@ -774,13 +784,8 @@ ibm-949_P11A-1999 { UTR22* }
 # Java has both ibm-970 and EUC-KR as separate converters.
 ibm-970_P110_P110-2006_U2 { UTR22* }
                         ibm-970 { IBM* JAVA }
-                        EUC-KR { IANA* MIME* WINDOWS JAVA }
-                        KS_C_5601-1987 { JAVA }
                         windows-51949 { WINDOWS* }
-                        csEUCKR { IANA WINDOWS }  # x-euc-kr is also a MIME name
                         ibm-eucKR { JAVA }
-                        KSC_5601 { JAVA } # Needed by iso-2022
-                        5601 { JAVA }
                         cp970 { JAVA* }
                         970 { JAVA }
                         ibm-970_VPUA
@@ -793,16 +798,16 @@ ibm-971_P100-1995       ibm-971 { IBM* } ibm-971_VPUA x-IBM971 { JAVA }
 # ibm-1363 is almost a superset of ibm-970.
 ibm-1363_P11B-1998 { UTR22* }
                         ibm-1363 # Leave untagged because this isn't the default
-                        KS_C_5601-1987 { IANA* }
-                        KS_C_5601-1989 { IANA }
-                        KSC_5601 { IANA }
-                        csKSC56011987 { IANA }
-                        korean { IANA }
-                        iso-ir-149 { IANA }
+                        #KS_C_5601-1987 { IANA* }
+                        #KS_C_5601-1989 { IANA }
+                        #KSC_5601 { IANA }
+                        #csKSC56011987 { IANA }
+                        #korean { IANA }
+                        #iso-ir-149 { IANA }
                         cp1363 { MIME* }
-                        5601
-                        ksc
-                        windows-949 # Alternate mapping. Leave untagged. This is the IBM interpretation of a Windows codepage.
+                        #5601
+                        #ksc
+                        #windows-949 # Alternate mapping. Leave untagged. This is the IBM interpretation of a Windows codepage.
                         ibm-1363_VSUB_VPUA
                         x-IBM1363C { JAVA }
                         # ks_x_1001:1992
@@ -813,15 +818,30 @@ ibm-1363_P110-1997 { UTR22* } # Korean KSC MBCS with \ <-> Won mapping
                         ibm-1363_VASCII_VSUB_VPUA
                         x-IBM1363 { JAVA }
 
+#CHROME: Windows-949 is NOT EUC-KR, but a superset of EUC-KR with 8,822
+#        additional Hangul syllables. However, the reality of the web
+#        dictates that we make a compromise and make EUC-KR a synonym of
+#        windows-949.
+#        All the aliases listed for this converter (windows-949-2000)
+#        are removed from the list of aliases for other Korean converters
+#        above.
 windows-949-2000 { UTR22* }
                         windows-949 { JAVA* WINDOWS* }
                         KS_C_5601-1987 { WINDOWS }
                         KS_C_5601-1989 { WINDOWS }
                         KSC_5601 { MIME WINDOWS } # Needed by iso-2022
+                        EUC-KR { IANA* MIME* WINDOWS }
+                        KS_C_5601-1987 { WINDOWS IANA }
+                        KS_C_5601-1989 { WINDOWS IANA }
+                        KSC_5601 { IANA WINDOWS } # Needed by iso-2022
                         csKSC56011987 { WINDOWS }
-                        korean { WINDOWS }
-                        iso-ir-149 { WINDOWS }
+                        korean { IANA WINDOWS }
+                        iso-ir-149 { IANA WINDOWS }
                         ms949 { JAVA }
+                        csEUCKR { IANA WINDOWS }
+                        5601
+                        x-windows-949 # Mozilla
+                        x-UHC   # Mozilla (Unified Hangul Code)
                         x-KSC5601 { JAVA }
 
 windows-1361-2000 { UTR22* }
@@ -830,18 +850,20 @@ windows-1361-2000 { UTR22* }
                         johab
                         x-Johab { JAVA }
 
+#CHROME: TIS-620, ISO-8859-11 and Windows-874 are slightly different from
+# each other, but they're used as if they're identical on the web.
 windows-874-2000 { UTR22* }   # Thai (w/ euro update)
-                        TIS-620 { WINDOWS }
-                        windows-874 { JAVA* WINDOWS* }
+                        TIS-620 { IANA* WINDOWS MIME* }
+                        windows-874 { JAVA* WINDOWS* MIME }
                         MS874 { JAVA }
                         x-windows-874 { JAVA }
-                        # iso-8859-11 { WINDOWS } # iso-8859-11 is similar to TIS-620. ibm-13162 is a closer match.
+                        iso-8859-11 { IANA WINDOWS MIME } # iso-8859-11 is similar to TIS-620. ibm-13162 is a closer match.
 
 ibm-874_P100-1995 { UTR22* }    # Thai PC (w/o euro update).
                         ibm-874 { IBM* JAVA }
                         ibm-9066 { IBM }    # Yes ibm-874 == ibm-9066. ibm-1161 has the euro update.
                         cp874 { JAVA* }
-                        TIS-620 { IANA* JAVA }  # This is actually separate from ibm-874, which is similar to this table
+                        #TIS-620 { IANA* JAVA }  # This is actually separate from ibm-874, which is similar to this table
                         tis620.2533 { JAVA }    # This is actually separate from ibm-874, which is similar to this table
                         eucTH               # eucTH is an unusual alias from Solaris.  eucTH has fewer mappings than TIS620
                         x-IBM874 { JAVA }
@@ -891,7 +913,16 @@ ibm-5346_P100-1998 { UTR22* }   ibm-5346 { IBM* } windows-1250 { IANA* JAVA* WIN
 ibm-5347_P100-1998 { UTR22* }   ibm-5347 { IBM* } windows-1251 { IANA* JAVA* WINDOWS* } cp1251 { WINDOWS JAVA } ANSI1251 # Windows Cyrillic (w/ euro update). ANSI1251 is from Solaris
 ibm-5348_P100-1997 { UTR22* }   ibm-5348 { IBM* } windows-1252 { IANA* JAVA* WINDOWS* } cp1252 { JAVA }         # Windows Latin1 (w/ euro update)
 ibm-5349_P100-1998 { UTR22* }   ibm-5349 { IBM* } windows-1253 { IANA* JAVA* WINDOWS* } cp1253 { JAVA }         # Windows Greek (w/ euro update)
-ibm-5350_P100-1998 { UTR22* }   ibm-5350 { IBM* } windows-1254 { IANA* JAVA* WINDOWS* } cp1254 { JAVA }         # Windows Turkish (w/ euro update)
+#CHROME : Make ISO-8859-9 an alias to windows-1254 per HTML5. Move
+#other IANA aliases for ISO-8859-9 as well.
+ibm-5350_P100-1998 { UTR22* }   ibm-5350 { IBM* } windows-1254 { MIME* IANA* JAVA* WINDOWS* } cp1254 { JAVA }         # Windows Turkish (w/ euro update)
+                        ISO-8859-9 { MIME }
+                        latin5 { IANA }
+                        csISOLatin5 { IANA }
+                        iso-ir-148 { IANA }
+                        ISO_8859-9:1989 { IANA }
+                        l5 { IANA }
+                        8859_9 { JAVA }
 ibm-9447_P100-2002 { UTR22* }   ibm-9447 { IBM* } windows-1255 { IANA* JAVA* WINDOWS* } cp1255 { JAVA }         # Windows Hebrew (w/ euro update)
 ibm-9448_X100-2005 { UTR22* }   ibm-9448 { IBM* } windows-1256 { IANA* JAVA* WINDOWS* } cp1256 { WINDOWS JAVA } x-windows-1256S { JAVA } # Windows Arabic (w/ euro update)
 ibm-9449_P100-2002 { UTR22* }   ibm-9449 { IBM* } windows-1257 { IANA* JAVA* WINDOWS* } cp1257 { JAVA }         # Windows Baltic (w/ euro update)
