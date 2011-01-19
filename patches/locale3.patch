@@ -92,8 +92,8 @@
 + bn.txt gu.txt kn.txt ml.txt mr.txt ta.txt te.txt\
 + fa.txt
 --- source/data/curr/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/curr/reslocal.mk	2011-01-19 14:49:11.741626000 -0800
-@@ -0,0 +1,105 @@
++++ source/data/curr/reslocal.mk	2011-01-19 15:20:52.431540000 -0800
+@@ -0,0 +1,104 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +CURR_CLDR_VERSION = 1.9
@@ -179,11 +179,10 @@
 + lv.txt\
 + ml.txt\
 + mr.txt\
-+ nb.txt\
++ nb.txt no.txt\
 + nl.txt\
 + pl.txt\
-+ pt.txt pt_BR.txt\
-+ pt_PT.txt\
++ pt.txt pt_BR.txt pt_PT.txt\
 + ro.txt\
 + ru.txt\
 + sk.txt\
@@ -200,8 +199,8 @@
 + zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
 + zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt
 --- source/data/lang/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/lang/reslocal.mk	2011-01-19 14:49:11.802629000 -0800
-@@ -0,0 +1,153 @@
++++ source/data/lang/reslocal.mk	2011-01-19 15:20:52.452538000 -0800
+@@ -0,0 +1,152 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +LANG_CLDR_VERSION = 1.9
@@ -287,11 +286,10 @@
 + lv.txt\
 + ml.txt\
 + mr.txt\
-+ nb.txt\
++ nb.txt no.txt\
 + nl.txt\
 + pl.txt\
-+ pt.txt pt_BR.txt\
-+ pt_PT.txt\
++ pt.txt pt_BR.txt pt_PT.txt\
 + ro.txt\
 + ru.txt\
 + sk.txt\
@@ -336,12 +334,12 @@
 + mt.txt\
 + ne.txt\
 + nn.txt\
-+ no.txt\
 + nyn.txt\
 + om.txt\
 + or.txt\
 + pa.txt\
 + ps.txt\
++ reslocal.mk\
 + rm.txt\
 + rw.txt\
 + si.txt\
@@ -356,8 +354,8 @@
 + yo.txt\
 + zu.txt
 --- source/data/locales/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/locales/reslocal.mk	2011-01-19 14:49:11.765625000 -0800
-@@ -0,0 +1,153 @@
++++ source/data/locales/reslocal.mk	2011-01-19 15:20:52.439535000 -0800
+@@ -0,0 +1,152 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +GENRB_CLDR_VERSION = 1.9
@@ -443,11 +441,10 @@
 + lv.txt\
 + ml.txt\
 + mr.txt\
-+ nb.txt\
++ nb.txt no.txt\
 + nl.txt\
 + pl.txt\
-+ pt.txt pt_BR.txt\
-+ pt_PT.txt\
++ pt.txt pt_BR.txt pt_PT.txt\
 + ro.txt\
 + ru.txt\
 + sk.txt\
@@ -492,12 +489,12 @@
 + mt.txt\
 + ne.txt\
 + nn.txt\
-+ no.txt\
 + nyn.txt\
 + om.txt\
 + or.txt\
 + pa.txt\
 + ps.txt\
++ reslocal.mk\
 + rm.txt\
 + rw.txt\
 + si.txt\
@@ -512,8 +509,8 @@
 + yo.txt\
 + zu.txt
 --- source/data/region/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/region/reslocal.mk	2011-01-19 14:49:11.822632000 -0800
-@@ -0,0 +1,105 @@
++++ source/data/region/reslocal.mk	2011-01-19 15:20:52.458538000 -0800
+@@ -0,0 +1,104 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +REGION_CLDR_VERSION = 1.9
@@ -599,11 +596,10 @@
 + lv.txt\
 + ml.txt\
 + mr.txt\
-+ nb.txt\
++ nb.txt no.txt\
 + nl.txt\
 + pl.txt\
-+ pt.txt pt_BR.txt\
-+ pt_PT.txt\
++ pt.txt pt_BR.txt pt_PT.txt\
 + ro.txt\
 + ru.txt\
 + sk.txt\
@@ -624,8 +620,8 @@
 @@ -0,0 +1 @@
 +TRANSLIT_SOURCE=
 --- source/data/zone/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/zone/reslocal.mk	2011-01-19 14:49:11.781620000 -0800
-@@ -0,0 +1,105 @@
++++ source/data/zone/reslocal.mk	2011-01-19 15:20:52.445540000 -0800
+@@ -0,0 +1,104 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +ZONE_CLDR_VERSION = 1.9
@@ -711,11 +707,10 @@
 + lv.txt\
 + ml.txt\
 + mr.txt\
-+ nb.txt\
++ nb.txt no.txt\
 + nl.txt\
 + pl.txt\
-+ pt.txt pt_BR.txt\
-+ pt_PT.txt\
++ pt.txt pt_BR.txt pt_PT.txt\
 + ro.txt\
 + ru.txt\
 + sk.txt\

@@ -83,11 +83,10 @@ GENRB_SOURCE =\
  lv.txt\
  ml.txt\
  mr.txt\
- nb.txt\
+ nb.txt no.txt\
  nl.txt\
  pl.txt\
- pt.txt pt_BR.txt\
- pt_PT.txt\
+ pt.txt pt_BR.txt pt_PT.txt\
  ro.txt\
  ru.txt\
  sk.txt\
@@ -132,12 +131,12 @@ GENRB_SOURCE =\
  mt.txt\
  ne.txt\
  nn.txt\
- no.txt\
  nyn.txt\
  om.txt\
  or.txt\
  pa.txt\
  ps.txt\
+ reslocal.mk\
  rm.txt\
  rw.txt\
  si.txt\
