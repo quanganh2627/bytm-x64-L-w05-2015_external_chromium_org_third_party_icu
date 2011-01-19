@@ -104,8 +104,11 @@ GENRB_SOURCE =\
  zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
  zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt\
  af.txt\
+ ak.txt\
  az.txt\
+ bem.txt\
  be.txt\
+ bs.txt\
  cy.txt\
  eo.txt\
  eu.txt\
@@ -115,24 +118,36 @@ GENRB_SOURCE =\
  ha.txt\
  haw.txt\
  hy.txt\
+ ig.txt\
  is.txt\
  ka.txt\
  kk.txt\
  km.txt\
+ lg.txt\
+ mfe.txt\
+ mg.txt\
  mk.txt\
+ mo.txt\
  ms.txt\
  mt.txt\
  ne.txt\
  nn.txt\
  no.txt\
+ nyn.txt\
  om.txt\
  or.txt\
  pa.txt\
  ps.txt\
+ rm.txt\
+ rw.txt\
  si.txt\
+ sn.txt\
  so.txt\
  sq.txt\
  ti.txt\
+ tl.txt\
+ to.txt\
  ur.txt\
  uz.txt\
+ yo.txt\
  zu.txt

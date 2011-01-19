@@ -1,7 +1,5 @@
-Index: source/data/coll/collocal.mk
-===================================================================
---- source/data/coll/collocal.mk	(revision 0)
-+++ source/data/coll/collocal.mk	(revision 0)
+--- source/data/coll/collocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/coll/collocal.mk	2011-01-11 15:38:04.071431000 -0800
 @@ -0,0 +1,90 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -93,10 +91,8 @@ Index: source/data/coll/collocal.mk
 + zh_Hant.txt\
 + bn.txt gu.txt kn.txt ml.txt mr.txt ta.txt te.txt\
 + fa.txt
-Index: source/data/curr/reslocal.mk
-===================================================================
---- source/data/curr/reslocal.mk	(revision 0)
-+++ source/data/curr/reslocal.mk	(revision 0)
+--- source/data/curr/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/curr/reslocal.mk	2011-01-19 14:49:11.741626000 -0800
 @@ -0,0 +1,105 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -203,11 +199,9 @@ Index: source/data/curr/reslocal.mk
 + vi.txt\
 + zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
 + zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt
-Index: source/data/lang/reslocal.mk
-===================================================================
---- source/data/lang/reslocal.mk	(revision 0)
-+++ source/data/lang/reslocal.mk	(revision 0)
-@@ -0,0 +1,138 @@
+--- source/data/lang/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/lang/reslocal.mk	2011-01-19 14:49:11.802629000 -0800
+@@ -0,0 +1,153 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +LANG_CLDR_VERSION = 1.9
@@ -314,8 +308,11 @@ Index: source/data/lang/reslocal.mk
 + zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
 + zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt\
 + af.txt\
++ ak.txt\
 + az.txt\
++ bem.txt\
 + be.txt\
++ bs.txt\
 + cy.txt\
 + eo.txt\
 + eu.txt\
@@ -325,32 +322,42 @@ Index: source/data/lang/reslocal.mk
 + ha.txt\
 + haw.txt\
 + hy.txt\
++ ig.txt\
 + is.txt\
 + ka.txt\
 + kk.txt\
 + km.txt\
++ lg.txt\
++ mfe.txt\
++ mg.txt\
 + mk.txt\
++ mo.txt\
 + ms.txt\
 + mt.txt\
 + ne.txt\
 + nn.txt\
 + no.txt\
++ nyn.txt\
 + om.txt\
 + or.txt\
 + pa.txt\
 + ps.txt\
++ rm.txt\
++ rw.txt\
 + si.txt\
++ sn.txt\
 + so.txt\
 + sq.txt\
 + ti.txt\
++ tl.txt\
++ to.txt\
 + ur.txt\
 + uz.txt\
++ yo.txt\
 + zu.txt
-Index: source/data/locales/reslocal.mk
-===================================================================
---- source/data/locales/reslocal.mk	(revision 0)
-+++ source/data/locales/reslocal.mk	(revision 0)
-@@ -0,0 +1,138 @@
+--- source/data/locales/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/locales/reslocal.mk	2011-01-19 14:49:11.765625000 -0800
+@@ -0,0 +1,153 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +GENRB_CLDR_VERSION = 1.9
@@ -457,8 +464,11 @@ Index: source/data/locales/reslocal.mk
 + zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
 + zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt\
 + af.txt\
++ ak.txt\
 + az.txt\
++ bem.txt\
 + be.txt\
++ bs.txt\
 + cy.txt\
 + eo.txt\
 + eu.txt\
@@ -468,31 +478,41 @@ Index: source/data/locales/reslocal.mk
 + ha.txt\
 + haw.txt\
 + hy.txt\
++ ig.txt\
 + is.txt\
 + ka.txt\
 + kk.txt\
 + km.txt\
++ lg.txt\
++ mfe.txt\
++ mg.txt\
 + mk.txt\
++ mo.txt\
 + ms.txt\
 + mt.txt\
 + ne.txt\
 + nn.txt\
 + no.txt\
++ nyn.txt\
 + om.txt\
 + or.txt\
 + pa.txt\
 + ps.txt\
++ rm.txt\
++ rw.txt\
 + si.txt\
++ sn.txt\
 + so.txt\
 + sq.txt\
 + ti.txt\
++ tl.txt\
++ to.txt\
 + ur.txt\
 + uz.txt\
++ yo.txt\
 + zu.txt
-Index: source/data/region/reslocal.mk
-===================================================================
---- source/data/region/reslocal.mk	(revision 0)
-+++ source/data/region/reslocal.mk	(revision 0)
+--- source/data/region/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/region/reslocal.mk	2011-01-19 14:49:11.822632000 -0800
 @@ -0,0 +1,105 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -599,16 +619,12 @@ Index: source/data/region/reslocal.mk
 + vi.txt\
 + zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
 + zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt
-Index: source/data/translit/trnslocal.mk
-===================================================================
---- source/data/translit/trnslocal.mk	(revision 0)
-+++ source/data/translit/trnslocal.mk	(revision 0)
+--- source/data/translit/trnslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/translit/trnslocal.mk	2011-01-11 15:38:04.169431000 -0800
 @@ -0,0 +1 @@
 +TRANSLIT_SOURCE=
-Index: source/data/zone/reslocal.mk
-===================================================================
---- source/data/zone/reslocal.mk	(revision 0)
-+++ source/data/zone/reslocal.mk	(revision 0)
+--- source/data/zone/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
++++ source/data/zone/reslocal.mk	2011-01-19 14:49:11.781620000 -0800
 @@ -0,0 +1,105 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
