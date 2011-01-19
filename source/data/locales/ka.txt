@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/ka.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 ka{
     AuxExemplarCharacters{
@@ -21,70 +23,5 @@ ka{
     LocaleScript{
         "Geor",
     }
-    NumberElements{
-        latn{
-            symbols{
-                decimal{","}
-                exponential{"E"}
-                group{"."}
-                infinity{"∞"}
-                list{";"}
-                minusSign{"-"}
-                nan{"NaN"}
-                perMille{"‰"}
-                percentSign{"%"}
-                plusSign{"+"}
-            }
-        }
-    }
     Version{"2.0.48.64"}
-    calendar{
-        gregorian{
-            quarters{
-                format{
-                    abbreviated{
-                        "I კვ.",
-                        "II კვ.",
-                        "III კვ.",
-                        "IV კვ.",
-                    }
-                    wide{
-                        "1-ლი კვარტალი",
-                        "მე-2 კვარტალი",
-                        "მე-3 კვარტალი",
-                        "მე-4 კვარტალი",
-                    }
-                }
-            }
-        }
-    }
-    delimiters{
-        alternateQuotationEnd{"’"}
-        alternateQuotationStart{"‘"}
-        quotationEnd{"”"}
-        quotationStart{"“"}
-    }
-    units{
-        day{
-            other{"{0} დღე"}
-        }
-        hour{
-            other{"{0} საათი"}
-        }
-        minute{
-            other{"{0} წუთი"}
-        }
-        month{
-            other{"{0} თვე"}
-        }
-        second{
-            other{"{0} წამი"}
-        }
-        week{
-            other{"{0} კვირა"}
-        }
-        year{
-            other{"{0} წელი"}
-        }
-    }
 }

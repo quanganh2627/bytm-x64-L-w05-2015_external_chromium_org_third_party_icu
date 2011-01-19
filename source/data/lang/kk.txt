@@ -8,10 +8,11 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/kk.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 kk{
     Languages{
         kk{"Қазақ"}
     }
-    Version{"2.0.47.67"}
 }

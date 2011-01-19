@@ -8,10 +8,11 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/fo.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 fo{
     Languages{
         fo{"føroyskt"}
     }
-    Version{"2.0.47.67"}
 }

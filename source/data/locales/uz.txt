@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/uz.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 uz{
     AuxExemplarCharacters{"[ц щ ы ь]"}

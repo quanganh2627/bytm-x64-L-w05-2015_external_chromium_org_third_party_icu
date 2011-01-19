@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/km.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 km{
     AuxExemplarCharacters{"[\u17B4\u17B5\u200B ឝ ឞ]"}
@@ -20,110 +22,5 @@ km{
     LocaleScript{
         "Khmr",
     }
-    NumberElements{
-        latn{
-            patterns{
-                currencyFormat{"#,##0.00¤"}
-            }
-            symbols{
-                decimal{","}
-                group{"."}
-            }
-        }
-    }
     Version{"2.0.47.67"}
-    calendar{
-        gregorian{
-            AmPmMarkers{
-                "ព្រឹក",
-                "ល្ងាច",
-            }
-            DateTimePatterns{
-                "H ម៉ោង m នាទី ss វិនាទី​ zzzz",
-                "H ម៉ោង m នាទី ss វិនាទី​z",
-                "H:mm:ss",
-                "H:mm",
-                "EEEE, y MMMM dd",
-                "y MMMM d",
-                "d MMM y",
-                "d/M/yyyy",
-                "{1}, {0}",
-                "{1}, {0}",
-                "{1}, {0}",
-                "{1}, {0}",
-                "{1}, {0}",
-            }
-            dayNames{
-                format{
-                    abbreviated{
-                        "អា",
-                        "ច",
-                        "អ",
-                        "ពុ",
-                        "ព្រ",
-                        "សុ",
-                        "ស",
-                    }
-                }
-            }
-            eras{
-                abbreviated{
-                    "មុន​គ.ស.",
-                    "គ.ស.",
-                }
-                wide{
-                    "មុន​គ្រិស្តសករាជ",
-                    "គ្រិស្តសករាជ",
-                }
-            }
-            monthNames{
-                format{
-                    abbreviated{
-                        "១",
-                        "២",
-                        "៣",
-                        "៤",
-                        "៥",
-                        "៦",
-                        "៧",
-                        "៨",
-                        "៩",
-                        "១០",
-                        "១១",
-                        "១២",
-                    }
-                    wide{
-                        "មករា",
-                        "កុម្ភៈ",
-                        "មិនា",
-                        "មេសា",
-                        "ឧសភា",
-                        "មិថុនា",
-                        "កក្កដា",
-                        "សីហា",
-                        "កញ្ញា",
-                        "តុលា",
-                        "វិច្ឆិកា",
-                        "ធ្នូ",
-                    }
-                }
-            }
-            quarters{
-                format{
-                    abbreviated{
-                        "ត្រី១",
-                        "ត្រី២",
-                        "ត្រី៣",
-                        "ត្រី៤",
-                    }
-                    wide{
-                        "ត្រីមាសទី១",
-                        "ត្រីមាសទី២",
-                        "ត្រីមាសទី៣",
-                        "ត្រីមាសទី៤",
-                    }
-                }
-            }
-        }
-    }
 }

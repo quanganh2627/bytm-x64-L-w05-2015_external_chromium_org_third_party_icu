@@ -6,7 +6,12 @@
 // * Source File:<path>/common/main/mo.xml
 // *
 // ***************************************************************************
+/**
+ *  ICU <specials> source: <path>/xml/main/mo.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
+ */
 mo{
-    "%%ALIAS"{"ro_MD"}
-    Version{"2.0.41.23"}
+    Languages{
+    }
 }

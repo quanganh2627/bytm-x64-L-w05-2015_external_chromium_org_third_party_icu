@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/hy.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 hy{
     ExemplarCharacters{
@@ -17,101 +19,5 @@ hy{
     LocaleScript{
         "Armn",
     }
-    NumberElements{
-        latn{
-            patterns{
-                currencyFormat{"#0.00 ¤"}
-                decimalFormat{"#0.###"}
-                percentFormat{"#0%"}
-            }
-            symbols{
-                decimal{","}
-                group{"."}
-            }
-        }
-    }
     Version{"2.0.47.67"}
-    calendar{
-        gregorian{
-            AmPmMarkers{
-                "Առ․",
-                "Կե․",
-            }
-            DateTimePatterns{
-                "HH:mm:ss zzzz",
-                "HH:mm:ss z",
-                "HH:mm:ss",
-                "HH:mm",
-                "EEEE, MMMM d, y",
-                "MMMM dd, y",
-                "MMM d, y",
-                "MM/dd/yy",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-            }
-            dayNames{
-                format{
-                    abbreviated{
-                        "Կիր",
-                        "Երկ",
-                        "Երք",
-                        "Չոր",
-                        "Հնգ",
-                        "Ուր",
-                        "Շաբ",
-                    }
-                    wide{
-                        "Կիրակի",
-                        "Երկուշաբթի",
-                        "Երեքշաբթի",
-                        "Չորեքշաբթի",
-                        "Հինգշաբթի",
-                        "Ուրբաթ",
-                        "Շաբաթ",
-                    }
-                }
-            }
-            eras{
-                abbreviated{
-                    "Մ․Թ․Ա․",
-                    "Մ․Թ․",
-                }
-            }
-            monthNames{
-                format{
-                    abbreviated{
-                        "Հնվ",
-                        "Փտվ",
-                        "Մրտ",
-                        "Ապր",
-                        "Մյս",
-                        "Հնս",
-                        "Հլս",
-                        "Օգս",
-                        "Սեպ",
-                        "Հոկ",
-                        "Նոյ",
-                        "Դեկ",
-                    }
-                    wide{
-                        "Հունվար",
-                        "Փետրվար",
-                        "Մարտ",
-                        "Ապրիլ",
-                        "Մայիս",
-                        "Հունիս",
-                        "Հուլիս",
-                        "Օգոստոս",
-                        "Սեպտեմբեր",
-                        "Հոկտեմբեր",
-                        "Նոյեմբեր",
-                        "Դեկտեմբեր",
-                    }
-                }
-            }
-        }
-    }
 }

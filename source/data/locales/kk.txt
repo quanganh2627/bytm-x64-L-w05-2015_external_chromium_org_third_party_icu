@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/kk.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 kk{
     AuxExemplarCharacters{"[һ]"}
@@ -18,89 +20,5 @@ kk{
     LocaleScript{
         "Cyrl",
     }
-    NumberElements{
-        latn{
-            patterns{
-                currencyFormat{"#,##0.00 ¤"}
-            }
-            symbols{
-                decimal{","}
-                group{" "}
-            }
-        }
-    }
     Version{"2.0.47.67"}
-    calendar{
-        gregorian{
-            DateTimePatterns{
-                "HH:mm:ss zzzz",
-                "HH:mm:ss z",
-                "HH:mm:ss",
-                "HH:mm",
-                "EEEE, d MMMM y 'ж'.",
-                "d MMMM y 'ж'.",
-                "dd.MM.yyyy",
-                "dd.MM.yy",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-            }
-            dayNames{
-                format{
-                    abbreviated{
-                        "жс.",
-                        "дс.",
-                        "сс.",
-                        "ср.",
-                        "бс.",
-                        "жм.",
-                        "сһ.",
-                    }
-                    wide{
-                        "жексені",
-                        "дуйсенбі",
-                        "сейсенбі",
-                        "сәренбі",
-                        "бейсенбі",
-                        "жұма",
-                        "сенбі",
-                    }
-                }
-            }
-            monthNames{
-                format{
-                    abbreviated{
-                        "қаң.",
-                        "ақп.",
-                        "нау.",
-                        "сәу.",
-                        "мам.",
-                        "мау.",
-                        "шіл.",
-                        "там.",
-                        "қыр.",
-                        "қаз.",
-                        "қар.",
-                        "желт.",
-                    }
-                    wide{
-                        "қаңтар",
-                        "ақпан",
-                        "наурыз",
-                        "сәуір",
-                        "мамыр",
-                        "маусым",
-                        "шілде",
-                        "тамыз",
-                        "қыркүйек",
-                        "қазан",
-                        "қараша",
-                        "желтоқсан",
-                    }
-                }
-            }
-        }
-    }
 }

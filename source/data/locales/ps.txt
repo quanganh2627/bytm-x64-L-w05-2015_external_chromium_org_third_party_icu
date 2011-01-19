@@ -8,6 +8,8 @@
 // ***************************************************************************
 /**
  *  ICU <specials> source: <path>/xml/main/ps.xml
+ *  Chrome Note: This locale data is abridged to contain categories
+ *  actually used by Chrome.
  */
 ps{
     AuxExemplarCharacters{"[\u200C \u200D]"}
@@ -19,117 +21,9 @@ ps{
     LocaleScript{
         "Arab",
     }
-    NumberElements{
-        arabext{
-            symbols{
-                decimal{"٫"}
-                exponential{"×۱۰^"}
-                group{"٬"}
-                percentSign{"٪"}
-            }
-        }
-        default{"arabext"}
-        latn{
-            patterns{
-                currencyFormat{"#,##0.00 ¤"}
-            }
-            symbols{
-                decimal{","}
-                exponential{"E"}
-                group{"."}
-                minusSign{"−"}
-                percentSign{"%"}
-            }
-        }
-    }
-    Version{"2.0.50.30"}
-    calendar{
-        gregorian{
-            AmPmMarkers{
-                "غ.م.",
-                "غ.و.",
-            }
-            DateTimePatterns{
-                "H:mm:ss (zzzz)",
-                "H:mm:ss (z)",
-                "H:mm:ss",
-                "H:mm",
-                "EEEE د y د MMMM d",
-                "د y د MMMM d",
-                "d MMM y",
-                "yyyy/M/d",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-                "{1} {0}",
-            }
-            availableFormats{
-                H{"H"}
-                Hm{"H:mm"}
-                Hms{"H:mm:ss"}
-            }
-            dayNames{
-                format{
-                    wide{
-                        "یکشنبه",
-                        "دوشنبه",
-                        "سه‌شنبه",
-                        "چهارشنبه",
-                        "پنجشنبه",
-                        "جمعه",
-                        "شنبه",
-                    }
-                }
-            }
-            eras{
-                abbreviated{
-                    "ق.م.",
-                    "م.",
-                }
-            }
-            monthNames{
-                format{
-                    wide{
-                        "جنوري",
-                        "فبروري",
-                        "مارچ",
-                        "اپریل",
-                        "می",
-                        "جون",
-                        "جولای",
-                        "اګست",
-                        "سپتمبر",
-                        "اکتوبر",
-                        "نومبر",
-                        "دسمبر",
-                    }
-                }
-            }
-        }
-        persian{
-            monthNames{
-                format{
-                    wide{
-                        "وری",
-                        "غویی",
-                        "غبرګولی",
-                        "چنګاښ",
-                        "زمری",
-                        "وږی",
-                        "تله",
-                        "لړم",
-                        "لیندۍ",
-                        "مرغومی",
-                        "سلواغه",
-                        "کب",
-                    }
-                }
-            }
-        }
-    }
     layout{
         characters{"right-to-left"}
         lines{"top-to-bottom"}
     }
+    Version{"2.0.50.30"}
 }
