@@ -144,7 +144,9 @@ tr{
                 "dd MMMM y EEEE",
                 "dd MMMM y",
                 "dd MMM y",
-                "dd.MM.yyyy",
+		// Chrome change begins
+                "dd MM yyyy",
+		// Chrone change ends
                 "{1} {0}",
                 "{1} {0}",
                 "{1} {0}",

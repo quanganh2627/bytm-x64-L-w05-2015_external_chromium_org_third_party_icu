@@ -11,6 +11,7 @@
  */
 sw{
     Countries{
+        419{"Amerika ya Kilatini na Karibiani"}
         AD{"Andora"}
         AE{"Falme za Kiarabu"}
         AF{"Afuganistani"}
