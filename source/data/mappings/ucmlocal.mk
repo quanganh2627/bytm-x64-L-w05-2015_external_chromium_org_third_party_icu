@@ -13,7 +13,7 @@
 #     to GBK in convrtrs.txt to treat GB2312 as a synonym of GBK.
 #   - GB-HZ is supported now that it uses the GBK table.
 # * Traditional Chinese : Big5 (Windows cp950), Big5HKSCS (no PUA)
-# * Japanese : SJIS (Windows cp932), EUC-JP (ibm-954_P101-2007)
+# * Japanese : SJIS (Windows cp932), EUC-JP (google-euc_jp_mod)
 # * Korean : Windows-949
 #  - EUC-KR table was removed. It's different from Windows-949, but
 #    in practice EUC-KR and Windows-949 are treated synonymously.
@@ -56,3 +56,10 @@ ibm-864_X110-1999.ucm\
 noop-cns-11643.ucm\
 noop-gb2312_gl.ucm\
 noop-iso-ir-165.ucm
+
+# Do not build EBCDIC converters.
+# ibm-37 and ibm-1047 are hardcoded in Makefile.in and
+# they're removed by modifying the file. It's also hard-coded in makedata.mak for
+# Winwodws, but we don't have to touch it because the data dll is generated out of
+# icu*.dat file generated on Linux.
+UCM_SOURCE_EBCDIC =
