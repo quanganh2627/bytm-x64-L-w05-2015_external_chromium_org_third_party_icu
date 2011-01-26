@@ -758,7 +758,7 @@ Index: source/data/lang/sw.txt
 ===================================================================
 --- source/data/lang/sw.txt	(revision 68397)
 +++ source/data/lang/sw.txt	(working copy)
-@@ -11,47 +11,116 @@
+@@ -11,47 +11,115 @@
   */
  sw{
      Languages{
@@ -839,7 +839,6 @@ Index: source/data/lang/sw.txt
          pl{"Kipolandi"}
 +        ps{"Kipashto"}
          pt{"Kireno"}
-+        pt{"Kireno"}
 +        qu{"Kiquechua"}
 +        rm{"Kirumi cha Raetia"}
          ro{"Kiromania"}
@@ -935,7 +934,7 @@ Index: source/data/lang/fil.txt
 +        th{"Thai"}
 +        ti{"Tigrinya"}
 +        tk{"Turkmen"}
-+        tlh{"Tagalog"}
++        tl{"Tagalog"}
          tlh{"Klingon"}
 -        tr{"Turkish"}
 +        tr{"Turko"}

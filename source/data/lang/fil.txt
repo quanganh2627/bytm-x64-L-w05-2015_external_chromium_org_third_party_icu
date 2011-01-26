@@ -108,7 +108,7 @@ fil{
         th{"Thai"}
         ti{"Tigrinya"}
         tk{"Turkmen"}
-        tlh{"Tagalog"}
+        tl{"Tagalog"}
         tlh{"Klingon"}
         tr{"Turko"}
         uk{"Ukranian"}

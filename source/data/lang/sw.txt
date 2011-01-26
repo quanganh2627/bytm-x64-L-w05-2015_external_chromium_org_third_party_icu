@@ -88,7 +88,6 @@ sw{
         pl{"Kipolandi"}
         ps{"Kipashto"}
         pt{"Kireno"}
-        pt{"Kireno"}
         qu{"Kiquechua"}
         rm{"Kirumi cha Raetia"}
         ro{"Kiromania"}
