@@ -121,6 +121,10 @@ static const struct AssemblyType {
         "\t.section .note.GNU-stack,\"\",%%progbits\n"
         "\t.section .rodata\n"
         "\t.align 8\n" /* Either align 8 bytes or 2^8 (256) bytes. 8 bytes is needed. */
+        /* The 3 lines below are added for Chrome. */
+        "#ifdef U_HIDE_DATA_SYMBOL\n"
+        "\t.hidden %s\n"
+        "#endif\n"
         "\t.type %s,%%object\n"
         "%s:\n\n",
 
@@ -130,6 +134,10 @@ static const struct AssemblyType {
         /*"\t.section __TEXT,__text,regular,pure_instructions\n"
         "\t.section __TEXT,__picsymbolstub1,symbol_stubs,pure_instructions,32\n"*/
         ".globl _%s\n"
+        /* The 3 lines below are added for Chrome. */
+        "#ifdef U_HIDE_DATA_SYMBOL\n"
+        "\t.private_extern _%s\n"
+        "#endif\n"
         "\t.data\n"
         "\t.const\n"
         "\t.align 4\n"  /* 1<<4 = 16 */
@@ -249,7 +257,7 @@ writeAssemblyCode(const char *filename, const char *destdir, const char *optEntr
         exit(U_FILE_ACCESS_ERROR);
     }
 
-    getOutFilename(filename, destdir, bufferStr, entry, ".s", optFilename);
+    getOutFilename(filename, destdir, bufferStr, entry, ".S", optFilename);
     out=T_FileStream_open(bufferStr, "w");
     if(out==NULL) {
         fprintf(stderr, "genccode: unable to open output file %s\n", bufferStr);
