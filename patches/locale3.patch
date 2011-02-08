@@ -114,7 +114,7 @@
 +# Ordinary resources
 +CURR_SOURCE =
 --- source/data/lang/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/lang/reslocal.mk	2011-01-24 17:03:49.212016000 -0800
++++ source/data/lang/reslocal.mk	2011-02-07 10:31:18.532209000 -0800
 @@ -0,0 +1,124 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -133,7 +133,7 @@
 +# name listing (in the UI).
 +# Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 +# build.xml)
-+LANG_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
++LANG_SYNTHETIC_ALIAS =
 +
 +# All aliases (to not be included under 'installed'), but not including root.
 +LANG_ALIAS_SOURCE = $(LANG_SYNTHETIC_ALIAS)\
@@ -241,7 +241,7 @@
 + yo.txt\
 + zu.txt
 --- source/data/locales/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/locales/reslocal.mk	2011-01-25 12:53:36.969437000 -0800
++++ source/data/locales/reslocal.mk	2011-02-07 10:31:35.632792000 -0800
 @@ -0,0 +1,125 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -260,7 +260,7 @@
 +# name listing (in the UI).
 +# Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 +# build.xml)
-+GENRB_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
++GENRB_SYNTHETIC_ALIAS =
 +
 +# All aliases (to not be included under 'installed'), but not including root.
 +GENRB_ALIAS_SOURCE = $(GENRB_SYNTHETIC_ALIAS)\
@@ -369,7 +369,7 @@
 + yo.txt\
 + zu.txt
 --- source/data/region/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/region/reslocal.mk	2011-01-24 17:03:49.234017000 -0800
++++ source/data/region/reslocal.mk	2011-02-07 10:31:52.621383000 -0800
 @@ -0,0 +1,76 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -388,7 +388,7 @@
 +# name listing (in the UI).
 +# Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 +# build.xml)
-+REGION_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
++REGION_SYNTHETIC_ALIAS =
 +
 +# All aliases (to not be included under 'installed'), but not including root.
 +REGION_ALIAS_SOURCE = $(REGION_SYNTHETIC_ALIAS)\
@@ -452,7 +452,7 @@
 @@ -0,0 +1 @@
 +TRANSLIT_SOURCE=
 --- source/data/zone/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/zone/reslocal.mk	2011-01-24 17:03:49.229014000 -0800
++++ source/data/zone/reslocal.mk	2011-02-07 10:32:03.211470000 -0800
 @@ -0,0 +1,75 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -471,7 +471,7 @@
 +# name listing (in the UI).
 +# Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 +# build.xml)
-+ZONE_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
++ZONE_SYNTHETIC_ALIAS =
 +
 +# All aliases (to not be included under 'installed'), but not including root.
 +ZONE_ALIAS_SOURCE = $(ZONE_SYNTHETIC_ALIAS)\

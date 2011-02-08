@@ -15,7 +15,7 @@ GENRB_CLDR_VERSION = 1.9
 # name listing (in the UI).
 # Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 # build.xml)
-GENRB_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
+GENRB_SYNTHETIC_ALIAS =
 
 # All aliases (to not be included under 'installed'), but not including root.
 GENRB_ALIAS_SOURCE = $(GENRB_SYNTHETIC_ALIAS)\

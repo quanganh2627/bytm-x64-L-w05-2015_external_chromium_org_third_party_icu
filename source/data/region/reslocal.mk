@@ -15,7 +15,7 @@ REGION_CLDR_VERSION = 1.9
 # name listing (in the UI).
 # Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
 # build.xml)
-REGION_SYNTHETIC_ALIAS = in_ID.txt iw_IL.txt no_NO.txt
+REGION_SYNTHETIC_ALIAS =
 
 # All aliases (to not be included under 'installed'), but not including root.
 REGION_ALIAS_SOURCE = $(REGION_SYNTHETIC_ALIAS)\
