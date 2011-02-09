@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="toolutil"
 	ProjectGUID="{DE98BCE1-9C31-44D4-B1BA-256E5285AB03}"
 	RootNamespace="toolutil"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -19,7 +20,6 @@
 			Name="Debug|Win32"
 			ConfigurationType="4"
 			InheritedPropertySheets=".\debug.vsprops;.\common.vsprops;.\icu.vsprops"
-			CharacterSet="1"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -71,7 +71,6 @@
 			Name="Release|Win32"
 			ConfigurationType="4"
 			InheritedPropertySheets=".\release.vsprops;.\common.vsprops;.\icu.vsprops"
-			CharacterSet="1"
 			WholeProgramOptimization="1"
 			>
 			<Tool
@@ -137,10 +136,6 @@
 			>
 		</File>
 		<File
-			RelativePath="..\source\tools\toolutil\pkgitems.cpp"
-			>
-		</File>
-		<File
 			RelativePath="..\source\tools\toolutil\pkg_genc.c"
 			>
 		</File>
@@ -149,11 +144,15 @@
 			>
 		</File>
 		<File
+			RelativePath="..\source\tools\toolutil\pkgitems.cpp"
+			>
+		</File>
+		<File
 			RelativePath="..\source\tools\toolutil\swapimpl.cpp"
 			>
 		</File>
 		<File
-			RelativePath="..\source\tools\toolutil\toolutil.c"
+			RelativePath="..\source\tools\toolutil\toolutil.cpp"
 			>
 		</File>
 		<File

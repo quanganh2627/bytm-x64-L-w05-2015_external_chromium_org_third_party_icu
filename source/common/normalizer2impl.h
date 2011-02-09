@@ -31,7 +31,7 @@
 
 U_NAMESPACE_BEGIN
 
-class CanonIterData;
+struct CanonIterData;
 
 class Hangul {
 public:

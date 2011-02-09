@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="icu"
 	ProjectGUID="{8C27D792-2648-4F5E-9ED0-374276327308}"
 	RootNamespace="icu"
 	Keyword="Win32Proj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -37,7 +38,9 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				WholeProgramOptimization="true"
 				GeneratePreprocessedFile="0"
+				RuntimeTypeInfo="true"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -89,6 +92,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
+				RuntimeTypeInfo="true"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -150,11 +154,11 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\i18n\buddhcal.cpp"
+				RelativePath="..\source\i18n\brktrans.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\i18n\brktrans.cpp"
+				RelativePath="..\source\i18n\buddhcal.cpp"
 				>
 			</File>
 			<File
@@ -254,7 +258,15 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\i18n\decContext.c"
+				>
+			</File>
+			<File
 				RelativePath="..\source\i18n\decimfmt.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\decNumber.c"
 				>
 			</File>
 			<File
@@ -302,6 +314,14 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\i18n\fphdlimp.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\fpositer.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\i18n\funcrepl.cpp"
 				>
 			</File>
@@ -331,6 +351,10 @@
 			</File>
 			<File
 				RelativePath="..\source\i18n\japancal.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\locdspnm.cpp"
 				>
 			</File>
 			<File
@@ -434,6 +458,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\i18n\regextxt.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\i18n\reldtfmt.cpp"
 				>
 			</File>
@@ -451,6 +479,10 @@
 			</File>
 			<File
 				RelativePath="..\source\i18n\search.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\selfmt.cpp"
 				>
 			</File>
 			<File
@@ -570,7 +602,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\i18n\ucol_wgt.c"
+				RelativePath="..\source\i18n\ucol_wgt.cpp"
 				>
 			</File>
 			<File
@@ -626,7 +658,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\i18n\uspoof_buildconf.cpp"
+				RelativePath="..\source\i18n\uspoof.cpp"
 				>
 			</File>
 			<File
@@ -634,15 +666,15 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\i18n\uspoof_buildwsconf.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\source\i18n\uspoof.cpp"
+				RelativePath="..\source\i18n\uspoof_conf.cpp"
 				>
 			</File>
 			<File
 				RelativePath="..\source\i18n\uspoof_impl.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\uspoof_wsconf.cpp"
 				>
 			</File>
 			<File
@@ -655,6 +687,10 @@
 			</File>
 			<File
 				RelativePath="..\source\i18n\vtzone.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\vzone.cpp"
 				>
 			</File>
 			<File
@@ -674,7 +710,15 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\i18n\zrule.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\i18n\zstrfmt.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\i18n\ztrans.cpp"
 				>
 			</File>
 		</Filter>
@@ -706,6 +750,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\common\charstr.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\common\cmemory.c"
 				>
 			</File>
@@ -730,7 +778,27 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\common\filterednormalizer2.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\icudataver.c"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\icuplug.c"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\locavailable.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\common\locbased.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\locdispnames.cpp"
 				>
 			</File>
 			<File
@@ -738,7 +806,15 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\common\loclikely.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\common\locmap.c"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\locresdata.cpp"
 				>
 			</File>
 			<File
@@ -747,6 +823,14 @@
 			</File>
 			<File
 				RelativePath="..\source\common\mutex.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\normalizer2.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\normalizer2impl.cpp"
 				>
 			</File>
 			<File
@@ -865,19 +949,19 @@
 				RelativePath="..\source\common\ubidi.c"
 				>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-                        PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
-                        PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
+						PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
 					/>
 				</FileConfiguration>
 			</File>
@@ -889,19 +973,19 @@
 				RelativePath="..\source\common\ubidiln.c"
 				>
 				<FileConfiguration
-					Name="Release|Win32"
-					>
-					<Tool
-						Name="VCCLCompilerTool"
-                        PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
-					/>
-				</FileConfiguration>
-				<FileConfiguration
 					Name="Debug|Win32"
 					>
 					<Tool
 						Name="VCCLCompilerTool"
-                        PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
+						PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
+					/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32"
+					>
+					<Tool
+						Name="VCCLCompilerTool"
+						PreprocessorDefinitions="U_COMMON_IMPLEMENTATION"
 					/>
 				</FileConfiguration>
 			</File>
@@ -1030,11 +1114,11 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\common\ucol_swp.c"
+				RelativePath="..\source\common\ucol_swp.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\common\udata.c"
+				RelativePath="..\source\common\udata.cpp"
 				>
 			</File>
 			<File
@@ -1154,7 +1238,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\common\uprops.c"
+				RelativePath="..\source\common\uprops.cpp"
 				>
 			</File>
 			<File
@@ -1250,15 +1334,19 @@
 				>
 			</File>
 			<File
+				RelativePath="..\source\common\utrie.c"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\utrie2.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\source\common\utrie2_builder.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\common\utrie2.c"
-				>
-			</File>
-			<File
-				RelativePath="..\source\common\utrie.c"
+				RelativePath="..\source\common\uts46.cpp"
 				>
 			</File>
 			<File
@@ -1271,6 +1359,10 @@
 			</File>
 			<File
 				RelativePath="..\source\common\uvectr32.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\source\common\uvectr64.cpp"
 				>
 			</File>
 			<File

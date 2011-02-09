@@ -2159,7 +2159,7 @@ uprv_dl_open(const char *libName, UErrorCode *status) {
   
   if(U_FAILURE(*status)) return NULL;
   
-  lib = LoadLibrary(libName);
+  lib = LoadLibraryA(libName);
   
   if(lib==NULL) {
     *status = U_MISSING_RESOURCE_ERROR;

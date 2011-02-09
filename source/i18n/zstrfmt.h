@@ -80,7 +80,7 @@ public:
  * ZSFStringPool   Pool of (UChar *) strings.  Provides for sharing of repeated
  *                 strings within ZoneStringFormats.
  */
-class ZSFStringPoolChunk;
+struct ZSFStringPoolChunk;
 class ZSFStringPool: public UMemory {
   public:
     ZSFStringPool(UErrorCode &status);

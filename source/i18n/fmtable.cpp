@@ -199,6 +199,9 @@ Formattable::Formattable(const Formattable* arrayToCopy, int32_t count)
 // -------------------------------------
 // copy constructor
 
+#ifdef U_WINODWS
+#pragram warning(disable: 4996)
+#endif
 
 Formattable::Formattable(const Formattable &source)
      :  UObject(*this)
