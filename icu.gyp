@@ -5,7 +5,7 @@
 {
   'variables': {
     'use_system_icu%': 0,
-    'icu_use_data_file%': 0,
+    'icu_use_data_file_flag%': 0,
   },
   'conditions': [
     ['use_system_icu==0', {
@@ -63,7 +63,7 @@
             [ 'chromeos != 1', {
               'sources!': ['cros/icudt46l_dat.S'],
             }],
-            [ 'OS != "win" and icu_use_data_file', {
+            [ 'OS != "win" and icu_use_data_file_flag', {
               # Remove any assembly data file.
               'sources/': [['exclude', 'icudt46l_dat']],
               # Compile in the stub data symbol.
