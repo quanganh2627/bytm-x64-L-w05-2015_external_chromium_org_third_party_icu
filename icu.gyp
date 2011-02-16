@@ -270,6 +270,21 @@
               'cflags': [
                 '-Wno-deprecated-declarations',
               ],
+              'cflags_cc': [
+                '-frtti',
+              ],
+            }],
+            ['OS == "mac"', {
+              'xcode_settings': {
+                'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
+              }
+            }],
+            ['OS == "win"', {
+              'msvs_settings': {
+                'VCCLCompilerTool': {
+                  'RuntimeTypeInfo': 'true',
+                },
+              }
             }],
           ],
         },
@@ -471,6 +486,21 @@
                 '-Wno-deprecated-declarations',
                 '-Wno-unused-function',
               ],
+              'cflags_cc': [
+                '-frtti',
+              ],
+            }],
+            ['OS == "mac"', {
+              'xcode_settings': {
+                'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
+              }
+            }],
+            ['OS == "win"', {
+              'msvs_settings': {
+                'VCCLCompilerTool': {
+                  'RuntimeTypeInfo': 'true',
+                },
+              }
             }],
           ],
         },

@@ -8,7 +8,7 @@
 * Since: ICU 2.4
 **********************************************************************
 */
-#include <typeinfo>  // for 'typeid' to work 
+#include "unicode/utypeinfo.h"  // for 'typeid' to work 
 
 #include "unicode/ustring.h"
 #include "unicode/strenum.h"

@@ -14,7 +14,7 @@
 */
 
 #include <stdio.h>
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "nfsubs.h"
 #include "digitlst.h"

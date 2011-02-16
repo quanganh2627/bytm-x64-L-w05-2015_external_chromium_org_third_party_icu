@@ -5,7 +5,7 @@
 ******************************************************************************
 */
 
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/uchriter.h"
 #include "unicode/ustring.h"

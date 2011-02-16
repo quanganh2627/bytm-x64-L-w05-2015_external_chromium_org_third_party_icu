@@ -13,7 +13,7 @@
 ******************************************************************************
 */
 
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/chariter.h"
 #include "unicode/schriter.h"

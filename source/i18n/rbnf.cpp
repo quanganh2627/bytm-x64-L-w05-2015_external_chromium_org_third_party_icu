@@ -5,7 +5,7 @@
 *******************************************************************************
 */
 
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/rbnf.h"
 

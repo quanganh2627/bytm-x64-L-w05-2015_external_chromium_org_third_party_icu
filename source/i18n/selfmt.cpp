@@ -14,7 +14,7 @@
  *   11/16/09    kirtig      Improved version
  ********************************************************************/
 
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/utypes.h"
 #include "unicode/ustring.h"

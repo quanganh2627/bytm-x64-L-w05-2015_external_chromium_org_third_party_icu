@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "uobjtest.h"
 #include "cmemory.h" // UAlignedMemory

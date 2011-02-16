@@ -9,7 +9,7 @@
  ****************************************************************************************/
 
 #include <string.h>
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/chariter.h"
 #include "unicode/ustring.h"

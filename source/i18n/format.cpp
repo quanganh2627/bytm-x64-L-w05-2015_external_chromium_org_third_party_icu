@@ -19,7 +19,7 @@
 // This file was generated from the java source file Format.java
 // *****************************************************************************
 
-#include <typeinfo>  // for 'typeid' to work
+#include "unicode/utypeinfo.h"  // for 'typeid' to work
 
 #include "unicode/utypes.h"
 
