@@ -306,14 +306,9 @@
 /** @{ Symbol import-export control                                              */
 /*===========================================================================*/
 
-#if 1
-/* Chrome-local change: on the Mac, ICU is exclusively used as a static
- * library, and nothing should ever be marked with default visibility.
- * Defining U_STATIC_IMPLEMENTATION handles most of this, but unfortunately
- * C functions declared with U_CAPI (defined in umachine.h) will still use
- * the definition of U_EXPORT. */
+#ifdef U_STATIC_IMPLEMENTATION
 #define U_EXPORT
-#elif 0
+#elif 1
 #define U_EXPORT __attribute__((visibility("default")))
 #elif (defined(__SUNPRO_CC) && __SUNPRO_CC >= 0x550) \
    || (defined(__SUNPRO_C) && __SUNPRO_C >= 0x550) 
