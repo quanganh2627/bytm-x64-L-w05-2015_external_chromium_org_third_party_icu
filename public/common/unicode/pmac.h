@@ -408,4 +408,17 @@
 # endif
 #endif
 
+/*===========================================================================*/
+/* Local defines                                                             */
+/*===========================================================================*/
+
+/* On the Mac, we define U_WCHAR_IS_UTF32 to treat wchar_t as though it
+   contains UTF-32 at all times.  Strictly speaking, that's not entirely
+   correct given Mac's libc (__STDC_ISO_10646__ is not defined) , but provided
+   that we ignore libc's locale support (by not calling setlocale) and its
+   multibyte string support, this should be fine.  Our codebase makes enough
+   other assumptions about a UTF-8 locale and UTF-32 wchar_t strings for this
+   to make sense. */
+#define U_WCHAR_IS_UTF32
+
 #endif
