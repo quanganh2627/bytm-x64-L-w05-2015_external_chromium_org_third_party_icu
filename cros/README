@@ -1,0 +1,16 @@
+data directory has additional abridged locale data for
+the following locales:
+
+   bn,gu,mr,ta,ml,kn,te,or,am,sw,fa
+
+They have the minimal locale data necessary to support them in Chrome 
+(Exemplar character set, native display name, writing direction). 
+
+We use them to build the ICU data file for CrOS : icudt46l_dat.S in this
+directory. Run 'cp -r data $ICUSRCROOT/source/data' before generating
+the ICU data file for CrOS in step 9 of README.chromium.
+
+Chrome/Chromium is localized to those languages, but CrOS is not. To save
+space on CrOS, we use the abridged locale files for them instead of the full
+locale data.
+
