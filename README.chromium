@@ -99,6 +99,7 @@ This directory contains the source code of ICU 4.6 for C/C++
       To remove some data files we don't use and cut down the data size.
   - patches/data.build.win.patch :
       Windows-only data build patch. Add a new target DATALIB to makedata.mak
+  - patches/clang.patch: To build with Clang.
   - add an empty file (stubdatabuilt.txt) to source/stubdata
 
 9. Pre-built data libraries are checked in.
