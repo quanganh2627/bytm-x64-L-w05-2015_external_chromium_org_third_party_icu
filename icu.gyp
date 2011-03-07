@@ -35,7 +35,7 @@
           'target_name': 'icudata',
           'type': '<(library)',
           'sources': [
-            'windows/icudt46.dll',
+            'windows/icudt.dll',
              # These are hand-generated, but will do for now.  The linux
              # version is an identical copy of the (mac) icudt46l_dat.S file,
              # modulo removal of the .private_extern and .const directives and
@@ -52,7 +52,7 @@
               'type': 'none',
               'msvs_tool_files': ['../../build/output_dll_copy.rules'],
             }, {  # else: OS != "win"
-              'sources!': ['windows/icudt46.dll'],
+              'sources!': ['windows/icudt.dll'],
             }],
             [ 'OS != "linux" or chromeos == 1', {
               'sources!': ['linux/icudt46l_dat.S'],
