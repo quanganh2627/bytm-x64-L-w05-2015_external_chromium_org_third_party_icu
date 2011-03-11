@@ -72,7 +72,7 @@ TransliterationRuleData::TransliterationRuleData(const TransliterationRuleData& 
     }
     // Remove the array and exit if memory allocation error occured.
     if (U_FAILURE(status)) {
-        for (int32_t n = i-1; n >= 0; n++) {
+        for (int32_t n = i-1; n >= 0; n--) {
             delete variables[n];
         }
         uprv_free(variables);
