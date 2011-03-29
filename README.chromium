@@ -137,3 +137,16 @@ This directory contains the source code of ICU 4.6 for C/C++
    source/common/unicode ==> public/common/unicode
    source/i18n/unicode   ==> public/i18n/unicode
 
+12. Fix for msvs2010 applied:
+--- D:/src/ent/src/third_party/icu/source/common/stringpiece.cpp
+ (revision 78292)
++++ D:/src/ent/src/third_party/icu/source/common/stringpiece.cpp
+ (working copy)
+@@ -75,7 +75,7 @@
+ * Visual Studios 9.0.
+ * Cygwin with MSVC 9.0 also complains here about redefinition.
+ */
+-#if (!defined(_MSC_VER) || (_MSC_VER > 1500)) && !defined(CYGWINMSVC)
++#if (!defined(_MSC_VER) || (_MSC_VER > 1600)) && !defined(CYGWINMSVC)
+ const int32_t StringPiece::npos;
+ #endif
