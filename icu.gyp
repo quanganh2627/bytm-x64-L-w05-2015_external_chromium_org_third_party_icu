@@ -7,6 +7,15 @@
     'use_system_icu%': 0,
     'icu_use_data_file_flag%': 0,
   },
+  'target_defaults': {
+    'direct_dependent_settings': {
+      'defines': [
+        # Tell ICU to not insert |using namespace icu;| into its headers,
+        # so that chrome's source explicitly has to use |icu::|.
+        'U_USING_ICU_NAMESPACE=0',
+      ],
+    },
+  },
   'conditions': [
     ['use_system_icu==0', {
       'target_defaults': {
