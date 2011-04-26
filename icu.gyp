@@ -23,7 +23,7 @@
           'U_USING_ICU_NAMESPACE=0',
         ],
         'conditions': [
-          ['OS!="win" or component=="static_library"', {
+          ['component=="static_library"', {
             'defines': [
               'U_STATIC_IMPLEMENTATION',
             ],
@@ -476,10 +476,7 @@
               'public/common',
             ],
             'conditions': [
-              # TODO(mark): Do we need this as a dependent setting
-              # on any platform? If we actually do need it, it's probably
-              # Windows-only...
-              [ 'OS != "mac" and (OS!="win" or component=="static_library")', {
+              [ 'component=="static_library"', {
                 'defines': [
                   'U_STATIC_IMPLEMENTATION',
                 ],
