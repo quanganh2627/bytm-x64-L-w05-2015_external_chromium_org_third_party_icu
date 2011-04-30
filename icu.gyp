@@ -37,7 +37,7 @@
           'source/common',
           'source/i18n',
         ],
-        'msvs_disabled_warnings': [4005],
+        'msvs_disabled_warnings': [4005, 4355, 4996],
       },
       'targets': [
         {
