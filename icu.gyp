@@ -67,7 +67,7 @@
                 },
               ],
             }],
-            [ 'OS != "linux" or chromeos == 1', {
+            [ 'OS == "win" or OS == "mac" or chromeos == 1', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
             [ 'OS != "mac"', {
@@ -277,7 +277,7 @@
             ],
           },
           'conditions': [
-            [ 'OS=="linux"', {
+            [ 'os_posix == 1 and OS != "mac"', {
               # Since ICU wants to internally use its own deprecated APIs, don't
               # complain about it.
               'cflags': [
@@ -489,7 +489,7 @@
                 'source/stubdata/stubdata.c',
               ],
             }],
-            [ 'OS == "linux"', {
+            [ 'os_posix == 1 and OS != "mac"', {
               'cflags': [
                 # Since ICU wants to internally use its own deprecated APIs,
                 # don't complain about it.

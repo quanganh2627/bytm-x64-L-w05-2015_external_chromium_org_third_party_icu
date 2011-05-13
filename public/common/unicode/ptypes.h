@@ -26,6 +26,8 @@
 #   include "unicode/pmac.h"
 #elif defined(__linux__)
 #   include "unicode/plinux.h"
+#elif defined(__FreeBSD__)
+#   include "unicode/pfreebsd.h"
 #else
 #   include "unicode/platform.h"
 #endif
