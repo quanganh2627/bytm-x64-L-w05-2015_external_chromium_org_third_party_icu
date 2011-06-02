@@ -239,7 +239,7 @@ _processVariableTop(CollatorSpec *spec, uint32_t value1, const char* string, UEr
             spec->variableTopString[i++] = readHexCodeUnit(&string, status);
         }
         spec->variableTopStringLen = i;
-        if(i == locElementCapacity && (*string != 0 || *string != '_')) {
+        if(i == locElementCapacity && *string != 0 && *string != '_') {
             *status = U_BUFFER_OVERFLOW_ERROR;
         }
     } else {

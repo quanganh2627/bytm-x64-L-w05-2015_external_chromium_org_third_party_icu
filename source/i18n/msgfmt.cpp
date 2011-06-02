@@ -775,17 +775,13 @@ MessageFormat::toPattern(UnicodeString& appendTo) const {
 
             appendTo += COMMA;
             if (formatAlias == *defaultDateTemplate) {
+                // default is medium. no need to handle medium separately.
                 appendTo += ID_DATE;
             }
             else if (formatAlias == *shortDateTemplate) {
                 appendTo += ID_DATE;
                 appendTo += COMMA;
                 appendTo += ID_SHORT;
-            }
-            else if (formatAlias == *defaultDateTemplate) {
-                appendTo += ID_DATE;
-                appendTo += COMMA;
-                appendTo += ID_MEDIUM;
             }
             else if (formatAlias == *longDateTemplate) {
                 appendTo += ID_DATE;
@@ -798,17 +794,13 @@ MessageFormat::toPattern(UnicodeString& appendTo) const {
                 appendTo += ID_FULL;
             }
             else if (formatAlias == *defaultTimeTemplate) {
+                // default is medium. no need to handle medium separately.
                 appendTo += ID_TIME;
             }
             else if (formatAlias == *shortTimeTemplate) {
                 appendTo += ID_TIME;
                 appendTo += COMMA;
                 appendTo += ID_SHORT;
-            }
-            else if (formatAlias == *defaultTimeTemplate) {
-                appendTo += ID_TIME;
-                appendTo += COMMA;
-                appendTo += ID_MEDIUM;
             }
             else if (formatAlias == *longTimeTemplate) {
                 appendTo += ID_TIME;

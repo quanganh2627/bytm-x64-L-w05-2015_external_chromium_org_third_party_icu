@@ -138,7 +138,11 @@ This directory contains the source code of ICU 4.6 for C/C++
    source/common/unicode ==> public/common/unicode
    source/i18n/unicode   ==> public/i18n/unicode
 
-12. Fix for msvs2010 applied:
+12. Apply the fix found with static analysis tools such as PSV and coverity
+
+  - patches/static.analysis.patch
+
+13. Fix for msvs2010 applied:
 --- D:/src/ent/src/third_party/icu/source/common/stringpiece.cpp
  (revision 78292)
 +++ D:/src/ent/src/third_party/icu/source/common/stringpiece.cpp
