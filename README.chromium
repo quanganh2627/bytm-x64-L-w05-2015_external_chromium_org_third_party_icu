@@ -155,3 +155,10 @@ This directory contains the source code of ICU 4.6 for C/C++
 +#if (!defined(_MSC_VER) || (_MSC_VER > 1600)) && !defined(CYGWINMSVC)
  const int32_t StringPiece::npos;
  #endif
+
+14. Fix for locales that don't use '.' as decimal separator: patches/nan.patch
+  - upstream bug: http://bugs.icu-project.org/trac/ticket/8561
+  - Handle other chars besides the dot. This is require because decNumber's
+    parser expects the dot as a decimal separator.
+  - Locales that don't use dot were producing "NaN" values.
+
