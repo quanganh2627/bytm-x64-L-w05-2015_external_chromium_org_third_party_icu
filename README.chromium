@@ -141,6 +141,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 12. Apply the fix found with static analysis tools such as PSV and coverity
 
   - patches/static.analysis.patch
+  - upstream trunk/4.8 do not have this code any more.
 
 13. Fix for msvs2010 applied:
 --- D:/src/ent/src/third_party/icu/source/common/stringpiece.cpp
@@ -162,3 +163,6 @@ This directory contains the source code of ICU 4.6 for C/C++
     parser expects the dot as a decimal separator.
   - Locales that don't use dot were producing "NaN" values.
 
+15. Fix a bug in the regex engine.
+  - patches/regex.patch
+  - upstream bug: http://bugs.icu-project.org/trac/ticket/8666 (fixed in the upstream)
