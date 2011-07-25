@@ -11,40 +11,7 @@
  */
 sk{
     Countries{
-        001{"Svet"}
-        002{"Afrika"}
-        003{"Severná Amerika (003)"}
-        005{"Južná Amerika"}
-        009{"Oceánia"}
-        011{"Západná Afrika"}
-        013{"Stredná Amerika"}
-        014{"Východná Afrika"}
-        015{"Severná Afrika"}
-        017{"Stredná Afrika"}
-        018{"Južná Afrika [018]"}
-        019{"Americký kontinent"}
-        021{"Severná Amerika"}
-        029{"Karibik"}
-        030{"Východná Ázia"}
-        034{"Južná Ázia"}
-        035{"Juhovýchodná Ázia"}
-        039{"Južná Európa"}
-        053{"Austrália a Nový Zéland"}
-        054{"Melanézia"}
-        057{"Mikronésia"}
-        061{"Polynézia"}
-        062{"Stredná a južná Ázia"}
-        142{"Ázia"}
-        143{"Stredná Ázia"}
-        145{"Západná Ázia"}
-        150{"Európa"}
-        151{"Východná Európa"}
-        154{"Severná Európa"}
-        155{"Západná Európa"}
-        172{"Spoločenstvo nezávislých štátov"}
-        200{"Československo"}
-        419{"Latinská Amerika a Karibik"}
-        830{"Kanál La Manche"}
+        419{"Latinská Amerika"}
         AD{"Andorra"}
         AE{"Spojené arabské emiráty"}
         AF{"Afganistan"}

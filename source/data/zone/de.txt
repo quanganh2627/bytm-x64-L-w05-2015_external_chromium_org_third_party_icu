@@ -308,28 +308,112 @@ de{
         "meta:Amazon"{
             ld{"Amazonas-Sommerzeit"}
         }
+        "meta:America_Central"{
+            ld{"Nordamerikanische Inland-Sommerzeit"}
+            lg{"Nordamerikanische Inlandzeit"}
+            ls{"Nordamerikanische Inland-Winterzeit"}
+        }
+        "meta:America_Eastern"{
+            ld{"Nordamerikanische Ostküsten-Sommerzeit"}
+            lg{"Nordamerikanische Ostküstenzeit"}
+            ls{"Nordamerikanische Ostküsten-Winterzeit"}
+        }
+        "meta:America_Mountain"{
+            ld{"Rocky Mountain Sommerzeit"}
+            lg{"Rocky Mountain Zeit"}
+            ls{"Rocky Mountain Winterzeit"}
+        }
+        "meta:America_Pacific"{
+            ld{"Nordamerikanische Westküsten-Sommerzeit"}
+            lg{"Nordamerikanische Westküstenzeit"}
+            ls{"Nordamerikanische Westküsten-Winterzeit"}
+        }
+        "meta:Anadyr"{
+            ld{"Anadyr Sommerzeit"}
+            lg{"Anadyr Zeit"}
+            ls{"Anadyr Winterzeit"}
+        }
+        "meta:Arabian"{
+            ld{"Arabische Sommerzeit"}
+            lg{"Arabische Zeit"}
+            ls{"Arabische Winterzeit"}
+        }
+        "meta:Argentina"{
+            ld{"Argentinische Sommerzeit"}
+            lg{"Argentinische Zeit"}
+            ls{"Argentinische Winterzeit"}
+        }
+        "meta:Argentina_Western"{
+            ld{"West-Argentinische Sommerzeit"}
+            lg{"West-Argentinische Zeit"}
+            ls{"West-Argentinische Winterzeit"}
+        }
+        "meta:Atlantic"{
+            ld{"Atlantik-Sommerzeit"}
+            lg{"Atlantik-Zeit"}
+            ls{"Atlantik-Winterzeit"}
+        }
+        "meta:Australia_Central"{
+            ld{"Zentralaustralische Sommerzeit"}
+            lg{"Zentralaustralische Zeit"}
+            ls{"Zentralaustralische Winterzeit"}
+        }
+        "meta:Australia_CentralWestern"{
+            ld{"Zentral-/Westaustralische Sommerzeit"}
+            lg{"Zentral-/Westaustralische Zeit"}
+            ls{"Zentral-/Westaustralische Winterzeit"}
+        }
+        "meta:Australia_Eastern"{
+            ld{"Ostaustralische Sommerzeit"}
+            lg{"Ostaustralische Zeit"}
+            ls{"Ostaustralische Winterzeit"}
+        }
+        "meta:Australia_Western"{
+            ld{"Westaustralische Sommerzeit"}
+            lg{"Westaustralische Zeit"}
+            ls{"Westaustralische Winterzeit"}
+        }
+        "meta:China"{
+            ld{"Chinesische Sommerzeit"}
+            lg{"Chinesische Zeit"}
+            ls{"Chinesische Winterzeit"}
+        }
         "meta:Europe_Central"{
             cu:int{1}
             ld{"Mitteleuropäische Sommerzeit"}
-            ls{"Mitteleuropäische Zeit"}
+            lg{"Mitteleuropäische Zeit"}
+            ls{"Mitteleuropäische Winterzeit"}
             sd{"MESZ"}
             ss{"MEZ"}
         }
         "meta:Europe_Eastern"{
             ld{"Osteuropäische Sommerzeit"}
-            ls{"Osteuropäische Zeit"}
+            lg{"Osteuropäische Zeit"}
+            ls{"Osteuropäische Winterzeit"}
             sd{"OESZ"}
             ss{"OEZ"}
         }
         "meta:Europe_Western"{
             ld{"Westeuropäische Sommerzeit"}
-            ls{"Westeuropäische Zeit"}
+            lg{"Westeuropäische Zeit"}
+            ls{"Westeuropäische Winterzeit"}
             sd{"WESZ"}
             ss{"WEZ"}
         }
+        "meta:Korea"{
+            ld{"Koreanische Sommerzeit"}
+            lg{"Koreanische Zeit"}
+            ls{"Koreanische Winterzeit"}
+        }
         "meta:Moscow"{
             ld{"Moskauer Sommerzeit"}
-            ls{"Moskauer Zeit"}
+            lg{"Moskauer Zeit"}
+            ls{"Moskauer Winterzeit"}
+        }
+        "meta:Japan"{
+            ld{"Japanische Sommerzeit"}
+            lg{"Japanische Zeit"}
+            ls{"Japanische Winterzeit"}
         }
         fallbackFormat{"{1} ({0})"}
         gmtFormat{"GMT{0}"}

@@ -12,39 +12,7 @@
 sr_Latn{
     %%ParentIsRoot:int{1}
     Countries{
-        001{"Svet"}
-        002{"Afrika"}
-        003{"Severnoamerički kontinent"}
-        005{"Južna Amerika"}
-        009{"Okeanija"}
-        011{"Zapadna Afrika"}
-        013{"Centralna Amerika"}
-        014{"Istočna Afrika"}
-        015{"Severna Afrika"}
-        017{"Centralna Afrika"}
-        018{"Južna Afrika"}
-        019{"Amerike"}
-        021{"Severna Amerika"}
-        029{"Karibi"}
-        030{"Istočna Azija"}
-        034{"Južna Azija"}
-        035{"Jugoistočna Azija"}
-        039{"Južna Evropa"}
-        053{"Australija i Novi Zeland"}
-        054{"Melanezija"}
-        057{"Micronezija"}
-        061{"Polinezija"}
-        062{"Južno-centralna Azija"}
-        142{"Azija"}
-        143{"Centralna Azija"}
-        145{"Zapadna Azija"}
-        150{"Evropa"}
-        151{"Istočna Evropa"}
-        154{"Severna Evropa"}
-        155{"Zapadna Evropa"}
-        172{"Komonvelt nezavisnih država"}
-        419{"Latinska Amerika i Karibi"}
-        830{"Kanalska ostrva"}
+        419{"Latinska Amerika"}
         AD{"Andora"}
         AE{"Ujedinjeni Arapski Emirati"}
         AF{"Avganistan"}

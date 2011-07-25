@@ -646,14 +646,22 @@ ja{
         }
         "meta:China"{
             ld{"中国夏時間"}
+            lg{"中国時間"}
             ls{"中国標準時"}
         }
         "meta:Europe_Central"{
             ld{"中欧夏時間"}
+            lg{"中欧時間"}
             ls{"中欧標準時"}
         }
         "meta:Europe_Eastern"{
             ld{"東欧夏時間"}
+            lg{"東欧時間"}
+            ls{"東欧標準時"}
+        }
+        "meta:Europe_Western"{
+            ld{"西欧夏時間"}
+            lg{"西欧時間"}
             ls{"東欧標準時"}
         }
         "meta:GMT"{
@@ -666,7 +674,13 @@ ja{
         "meta:Japan"{
             cu:int{1}
             ld{"日本夏時間"}
+            lg{"日本時間"}
             ls{"日本標準時"}
+        }
+        "meta:Korea"{
+            ld{"韓国夏時間"}
+            lg{"韓国時間"}
+            ls{"韓国標準時"}
         }
         "meta:Newfoundland"{
             ld{"ニューファンドランド島夏時間"}

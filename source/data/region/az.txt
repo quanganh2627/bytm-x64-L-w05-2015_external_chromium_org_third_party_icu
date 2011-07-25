@@ -11,38 +11,7 @@
  */
 az{
     Countries{
-        001{"Dünya"}
-        002{"Afrika"}
-        003{"Şimal Amerika"}
-        005{"Cənub Amerika"}
-        009{"Okeyaniya"}
-        011{"Qərb afrika"}
-        013{"Orta Amerika"}
-        014{"Şərq Afrika"}
-        015{"Şimal Afrika"}
-        017{"Orta Afrika"}
-        018{"018"}
-        019{"Amerikalar"}
-        021{"021"}
-        029{"Kariyıplar"}
-        030{"Şərq Asiya"}
-        034{"Cənub Asiya"}
-        035{"Cənub Şərq Asiya"}
-        039{"Cənub Avropa"}
-        053{"Avstraliya və Yeni Zelandiya"}
-        054{"Melanesya"}
-        057{"Mikronesiya reqionu"}
-        061{"Polineziya"}
-        062{"Cənub Orta Asiya"}
-        142{"Aziya"}
-        143{"Orta Aziya"}
-        145{"Qərb Asiya"}
-        150{"Avropa"}
-        151{"Şərq Avropa"}
-        154{"Şimal Avropa"}
-        155{"Qərb Avropa"}
-        172{"172"}
-        419{"Latın Amerikası və Kariblər"}
+        419{"Latın Amerikası"}
         AD{"Andorra"}
         AE{"Birləşmiş Ərəb Emiratları"}
         AF{"Əfqənistan"}

@@ -8,9 +8,6 @@
 // ***************************************************************************
 pt_PT{
     Countries{
-        009{"Oceânia"}
-        035{"Sudeste Asiático"}
-        154{"Europa do Norte"}
         AC{"Ascensão"}
         AE{"Emiratos Árabes Unidos"}
         AI{"Anguila"}

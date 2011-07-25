@@ -165,7 +165,7 @@
  
  !!safe_reverse;
 --- source/data/brkitr/line.txt	2010-09-17 18:22:35.000000000 -0700
-+++ source/data/brkitr/line.txt	2011-01-26 16:06:47.246010000 -0800
++++ source/data/brkitr/line.txt	2011-07-22 13:46:19.923562000 -0700
 @@ -11,6 +11,9 @@
  #         TODO:  Rule LB 8 remains as it was in Unicode 5.2
  #         This is only because of a limitation of ICU break engine implementation,
@@ -176,8 +176,15 @@
  
  #
  #  Character Classes defined by TR 14.
-@@ -57,13 +60,15 @@
+@@ -55,15 +58,22 @@
  #
+ #           See rule LB 19 for an example.
+ #
++$SmallHira = [\u3041 \u3043 \u3045 \u3047 \u3049 \u3063 \u3083 \u3085 \u3087 \u308E \u3095 \u3096];
++$SmallKata = [\u30A1 \u30A3 \u30A5 \u30A7 \u30A9 \u30C3 \u30E3 \u30E5 \u30E7 \u30EE \u30F5 \u30F6];
++$SmallKataExt = [\u31F0 \u31F1 \u31F2 \u31F3 \u31F4 \u31F5 \u31F6 \u31F7 \u31F8 \u31F9 \u31FA \u31FB \u31FC \u31FD \u31FE \u31FF];
++$SmallKanaAndProlongedMark = [[$SmallHira] [$SmallKata] [$SmallKataExt] [\u30FC]];
++
  
  $AI = [:LineBreak =  Ambiguous:];
 -$AL = [:LineBreak =  Alphabetic:];
@@ -195,28 +202,29 @@
  $CM = [:LineBreak =  Combining_Mark:];
  $CP = [:LineBreak =  Close_Parenthesis:];
  $CR = [:LineBreak =  Carriage_Return:];
-@@ -72,9 +77,9 @@
+@@ -72,17 +82,17 @@
  $HY = [:LineBreak =  Hyphen:];
  $H2 = [:LineBreak =  H2:];
  $H3 = [:LineBreak =  H3:];
 -$ID = [:LineBreak =  Ideographic:];
-+$ID = [[:LineBreak =  Ideographic:] - [\uFE51]];
++$ID = [[[:LineBreak =  Ideographic:] - [\uFE51]] [$SmallKanaAndProlongedMark]];
  $IN = [:LineBreak =  Inseperable:];
 -$IS = [:LineBreak =  Infix_Numeric:];
 +$IS = [[:LineBreak =  Infix_Numeric:] - [\uFE10]];
  $JL = [:LineBreak =  JL:];
  $JV = [:LineBreak =  JV:];
  $JT = [:LineBreak =  JT:];
-@@ -82,7 +87,7 @@
+ $LF = [:LineBreak =  Line_Feed:];
  $NL = [:LineBreak =  Next_Line:];
- $NS = [:LineBreak =  Nonstarter:];
+-$NS = [:LineBreak =  Nonstarter:];
++$NS = [[:LineBreak =  Nonstarter:] - [$SmallKanaAndProlongedMark]];
  $NU = [:LineBreak =  Numeric:];
 -$OP = [:LineBreak =  Open_Punctuation:];
 +$OP = [[:LineBreak =  Open_Punctuation:] \u23B4];
  $PO = [:LineBreak =  Postfix_Numeric:];
  $PR = [:LineBreak =  Prefix_Numeric:];
  $QU = [:LineBreak =  Quotation:];
-@@ -108,13 +113,15 @@
+@@ -108,13 +118,15 @@
  #                               XX  (Unknown, unassigned)
  #                         as $AL  (Alphabetic)
  #
@@ -233,7 +241,7 @@
  $BBcm = $BB $CM*;
  $B2cm = $B2 $CM*;
  $CLcm = $CL $CM*;
-@@ -148,6 +155,7 @@
+@@ -148,6 +160,7 @@
  #
  $ALPlus $CM+;
  $BA $CM+;
@@ -241,7 +249,7 @@
  $BB $CM+;
  $B2 $CM+;
  $CL $CM+;
-@@ -190,7 +198,7 @@
+@@ -190,7 +203,7 @@
  #            so for this one case we need to manually list out longer sequences.
  #
  $AL_FOLLOW_NOCM = [$BK $CR $LF $NL $ZW $SP];
@@ -250,7 +258,7 @@
  $AL_FOLLOW      = [$AL_FOLLOW_NOCM $AL_FOLLOW_CM];
  
  
-@@ -252,7 +260,7 @@
+@@ -252,7 +265,7 @@
  # LB 12a  Do not break before NBSP and related characters ...
  #            [^SP BA HY] x GL
  #
@@ -259,7 +267,7 @@
  $CM+ GLcm;
  
  
-@@ -325,7 +333,7 @@
+@@ -325,7 +338,7 @@
  # LB 21        x   (BA | HY | NS)
  #           BB x
  #
@@ -268,7 +276,7 @@
  
  $BBcm [^$CB];                                  #  $BB  x
  $BBcm $LB20NonBreaks $CM*;
-@@ -381,6 +389,8 @@
+@@ -381,6 +394,8 @@
  $CM+ $OPcm;         # The $CM+ is from rule 10, an unattached CM is treated as AL.          
  $CPcm ($ALcm | $NUcm);
  
@@ -277,7 +285,7 @@
  
  #
  #  Reverse Rules.
-@@ -391,6 +401,7 @@
+@@ -391,6 +406,7 @@
  
  $CM+ $ALPlus;
  $CM+ $BA;
@@ -285,7 +293,7 @@
  $CM+ $BB;
  $CM+ $B2;
  $CM+ $CL;
-@@ -479,7 +490,7 @@
+@@ -479,7 +495,7 @@
  # LB 12a
  #      [^SP BA HY] x GL
  #
@@ -294,7 +302,7 @@
  
  # LB 12
  #     GL  x
-@@ -549,7 +560,7 @@
+@@ -549,7 +565,7 @@
  #
  
  # LB 21
@@ -303,7 +311,7 @@
  
  $CM* [$LB20NonBreaks-$CM] $CM* $BB;                   #  BB x .
  [^$CB] $CM* $BB;                                      # 
-@@ -597,6 +608,8 @@
+@@ -597,6 +613,8 @@
  $CM* $OP $CM* ($ALPlus | $NU);
  $CM* ($ALPlus | $NU) $CM* $CP;
  

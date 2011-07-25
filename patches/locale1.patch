@@ -1,7 +1,350 @@
-Index: source/data/locales/ja.txt
-===================================================================
---- source/data/locales/ja.txt	(revision 68397)
-+++ source/data/locales/ja.txt	(working copy)
+--- source/data/lang/am.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/am.txt	2011-07-22 16:52:36.622365000 -0700
+@@ -37,15 +37,19 @@
+         dz{"ድዞንግኻኛ"}
+         el{"ግሪክኛ"}
+         en{"እንግሊዝኛ"}
++        en_GB{"ብሪቲሽ እንግሊዝኛ"}
++        en_US{"ዩ.ኤስ እንግሊዝኛ"}
+         eo{"ኤስፐራንቶ"}
+         es{"ስፓኒሽ"}
+         et{"ኤስቶኒአን"}
+         eu{"ባስክኛ"}
+         fa{"ፐርሲያኛ"}
+         fi{"ፊኒሽ"}
++        fil{"ፊሊፕኖኛ"}
+         fj{"ፊጂኛ"}
+         fo{"ፋሮኛ"}
+         fr{"ፈረንሳይኛ"}
++        fr_CA{"የካናዳ ፈረንሳይኛ"}
+         fy{"ፍሪስኛ"}
+         ga{"አይሪሽ"}
+         gd{"እስኮትስ ጌልክኛ"}
+@@ -54,6 +58,7 @@
+         gn{"ጓራኒኛ"}
+         gu{"ጉጃርቲኛ"}
+         ha{"ሃውሳኛ"}
++        haw{"ሀዋይኛ"}
+         he{"ዕብራስጥ"}
+         hi{"ሐንድኛ"}
+         hr{"ክሮሽያንኛ"}
+@@ -104,6 +109,8 @@
+         pl{"ፖሊሽኛ"}
+         ps{"ፑሽቶኛ"}
+         pt{"ፖርቱጋሊኛ"}
++        pt_BR{"የብራዚል ፖርቱጋሊኛ "}
++        pt_PT{"የፖርቱጋል አይበሪኛ"}
+         qu{"ኵቿኛ"}
+         rm{"ሮማንስ"}
+         rn{"ሩንዲኛ"}
+@@ -153,6 +160,9 @@
+         yo{"ዮሩባዊኛ"}
+         za{"ዡዋንግኛ"}
+         zh{"ቻይንኛ"}
++        zh_Hans{"ቀላል ቻይንኛ"}
++        zh_Hant{"ባህላዊ ቻይንኛ"}
++        znd{"ዛንዲኛ"}
+         zu{"ዙሉኛ"}
+     }
+     Version{"2.0.50.94"}
+--- source/data/lang/da.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/da.txt	2011-01-19 18:16:42.592783000 -0800
+@@ -82,7 +82,7 @@
+         bua{"buriatisk"}
+         bug{"buginesisk"}
+         byn{"blin"}
+-        ca{"katalansk"}
++        ca{"catalansk"}
+         cad{"caddo"}
+         cai{"mellemamerikansk indiansk sprog"}
+         car{"caribisk"}
+--- source/data/lang/fil.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/fil.txt	2011-01-21 16:11:12.781119000 -0800
+@@ -24,11 +24,13 @@
+         bs{"Bosnian"}
+         ca{"Catalan"}
+         cs{"Czech"}
++        cy{"Welsh"}
+         da{"Danish"}
+         de{"Aleman"}
+         el{"Griyego"}
+         en{"Ingles"}
+         en_GB{"Ingles (UK)"}
++        en_US{"Ingles (US)"}
+         eo{"Esperanto"}
+         es{"Espanyol"}
+         et{"Estonian"}
+@@ -38,6 +40,7 @@
+         fil{"Filipino"}
+         fo{"Faroeso"}
+         fr{"Pranses"}
++        fy{"Prisian"}
+         ga{"Irish"}
+         gd{"Scots Gaelic"}
+         gl{"Galician"}
+@@ -72,6 +75,7 @@
+         mr{"Marathi"}
+         ms{"Malay"}
+         mt{"Maltese"}
++        nb{"Norwegian"}
+         ne{"Nepali"}
+         nl{"Olandes"}
+         nn{"Norwegian Nynorsk"}
+@@ -82,25 +86,44 @@
+         pl{"Polish"}
+         ps{"Pashto"}
+         pt{"Portuges"}
++        pt_BR{"Portuges (Brasil)"}
+         rm{"Rhaeto-Romance"}
+         ro{"Romanian"}
+         ru{"Russian"}
+         sa{"Sanskrit"}
+         sd{"Sindhi"}
+         sh{"Serbo-Croatian"}
++        si{"Sinhalese"}
++        sk{"Eslobak"}
+         sl{"Slovenian"}
++        so{"Somali"}
+         sq{"Albanian"}
+         sr{"Serbian"}
++        st{"Sesoto"}
++        su{"Taga Sundan"}
+         sv{"Swedish"}
+         swb{"Comorian"}
++        ta{"Tamil"}
++        te{"Telugu"}
++        th{"Thai"}
++        ti{"Tigrinya"}
++        tk{"Turkmen"}
++        tl{"Tagalog"}
+         tlh{"Klingon"}
+-        tr{"Turkish"}
++        tr{"Turko"}
+         uk{"Ukranian"}
+         und{"und"}
++        ur{"Urdu"}
++        uz{"Uzbeko"}
++        vi{"Vietnamese"}
++        wo{"Wolof"}
++        xh{"Xhosa"}
++        yi{"Yiddish"}
+         yue{"Cantonese"}
+         zh{"Chinese"}
+         zh_Hans{"Chinese (pinasimple)"}
+         zh_Hant{"Chinese (tradisyunal)"}
++        zu{"Zulu"}
+     }
+     Variants{
+         PINYIN{"Pinyin Romanization"}
+--- source/data/lang/ko.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ko.txt	2011-07-22 13:46:05.760743000 -0700
+@@ -147,8 +147,8 @@
+         enm{"영어, 중세 (1100-1500)"}
+         eo{"에스페란토어"}
+         es{"스페인어"}
+-        es_419{"중남미 스페인어"}
+-        es_ES{"스페인어 (이베리아)"}
++        es_419{"스페인어 (중남미)"}
++        es_ES{"스페인어 (스페인)"}
+         et{"에스토니아어"}
+         eu{"바스크어"}
+         ewo{"이원도어"}
+--- source/data/lang/sw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/sw.txt	2011-07-22 16:52:36.769385000 -0700
+@@ -11,47 +11,115 @@
+  */
+ sw{
+     Languages{
++        af{"Kiafrikana"}
+         ak{"Kiakan"}
+         am{"Kiamhari"}
+         ar{"Kiarabu"}
++        az{"Kiazabaijani"}
+         be{"Kibelarusi"}
+         bg{"Kibulgaria"}
+         bn{"Kibangla"}
++        br{"Kibreton"}
++        bs{"Kibosnia"}
++        ca{"Kikatalani"}
++        co{"Kikosikani"}
+         cs{"Kicheki"}
++        cy{"Kiwelisi"}
++        da{"Kidenmaki"}
+         de{"Kijerumani"}
+         el{"Kigiriki"}
+         en{"Kiingereza"}
++        eo{"Kiesperanto"}
+         es{"Kihispania"}
++        et{"Kiestonia"}
++        eu{"Kibaski"}
+         fa{"Kiajemi"}
++        fil{"Kifilipino"}
++        fo{"Kifaroe"}
+         fr{"Kifaransa"}
++        fy{"Kifrisia cha Magharibi"}
++        ga{"Kiayalandi"}
++        gd{"Kigaeli"}
++        gl{"Kigalisia"}
++        gn{"Kiguarani"}
++        gu{"Kigujarati"}
+         ha{"Kihausa"}
++        he{"Kiyahudi"}
+         hi{"Kihindi"}
++        hr{"Kikroeshia"}
+         hu{"Kihungari"}
++        hy{"Kiarmenia"}
++        ia{"Kiintalingua"}
+         id{"Kiindonesia"}
+         ig{"Kiigbo"}
++        is{"Kiaislandi"}
+         it{"Kiitaliano"}
+         ja{"Kijapani"}
+         jv{"Kijava"}
++        jw{"Kijava"}
++        ka{"Kijojia"}
++        kk{"Kikazakhi"}
+         km{"Kikambodia"}
++        kn{"Kikannada"}
+         ko{"Kikorea"}
++        ku{"Kikurdi"}
++        ky{"Kikirgizi"}
++        la{"Kilatini"}
++        ln{"Kilingala"}
++        lo{"Kilaosi"}
++        lt{"Kilithuania"}
++        lv{"Kilatvia"}
++        mk{"Kimasedonia"}
++        ml{"Kimalayam"}
++        mn{"Kimongolia"}
++        mo{"Kimoldavia"}
++        mr{"Kimarathi"}
+         ms{"Kimalesia"}
++        mt{"Kimalta"}
+         my{"Kiburma"}
++        nb{"Kinorwe (Bokmål)"}
+         ne{"Kinepali"}
+         nl{"Kiholanzi"}
++        nn{"Kinorwe (Nynorsk)"}
++        no{"Kinorwe"}
++        oc{"Kiositani"}
++        or{"Kioriya"}
+         pa{"Kipunjabi"}
+         pl{"Kipolandi"}
++        ps{"Kipashto"}
+         pt{"Kireno"}
++        qu{"Kiquechua"}
++        rm{"Kirumi cha Raetia"}
+         ro{"Kiromania"}
+         ru{"Kirusi"}
+         rw{"Kinyarwanda"}
++        sd{"Kisindhi"}
++        sh{"Kiserbia-Kikroeshia"}
++        si{"Kisinhali"}
++        sk{"Kislovakia"}
++        sl{"Kislovenia"}
++        sn{"Kishona"}
+         so{"Kisomali"}
++        sq{"Kialbania"}
++        sr{"Kiserbia"}
++        st{"Kisotho"}
++        su{"Kinubi"}
+         sv{"Kiswidi"}
+         sw{"Kiswahili"}
+         ta{"Kitamil"}
++        te{"Kitelugu"}
++        tg{"Kitajiki"}
+         th{"Kitailandi"}
++        ti{"Kitigrinya"}
++        tk{"Kiturukimeni"}
++        to{"Kitonga"}
+         tr{"Kituruki"}
++        tt{"Kitatari"}
++        tw{"Kitwii"}
++        ug{"Kiuigur"}
+         uk{"Kiukrania"}
+         ur{"Kiurdu"}
++        uz{"Kiuzbeki"}
+         vi{"Kivietinamu"}
+         yo{"Kiyoruba"}
+         zh{"Kichina"}
+--- source/data/locales/am.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/am.txt	2011-07-22 16:52:36.855348000 -0700
+@@ -44,6 +44,8 @@
+                 "{1} {0}",
+             }
+             availableFormats{
++                h{"h a"}
++                H{"H"}
+                 Hm{"HH:mm"}
+                 Hms{"HH:mm:ss"}
+                 M{"L"}
+--- source/data/locales/bn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/bn.txt	2011-07-22 16:52:36.892354000 -0700
+@@ -14,6 +14,7 @@
+     ExemplarCharacters{
+         "[৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ \u09BC ং ঃ \u0981 ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ "
+         "ঝ ঞ ট ঠ ড {ড\u09BC} ঢ {ঢ\u09BC} ণ ৎ ত থ দ ধ ন প ফ ব ভ ম য {য\u09BC} র ল শ ষ "
++	"\u200C \u200D"
+         "স হ ঽ া ি ী \u09C1 \u09C2 \u09C3 \u09C4 \u09E2 \u09E3 ে ৈ ো ৌ \u09CD ৗ]"
+     }
+     ExemplarCharactersCurrency{"[৳]"}
+@@ -56,8 +57,8 @@
+     calendar{
+         gregorian{
+             AmPmMarkers{
+-                "পূর্বাহ্ণ",
+-                "অপরাহ্ণ",
++		"am",
++		"pm",
+             }
+             DateTimePatterns{
+                 "h:mm:ss a zzzz",
+--- source/data/locales/fil.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/fil.txt	2011-07-22 13:46:05.823727000 -0700
+@@ -65,6 +65,7 @@
+                 MMMMd{"MMMM d"}
+                 MMMd{"MMM d"}
+                 Md{"M-d"}
++		d{"d"}
+                 ms{"mm:ss"}
+                 y{"y"}
+                 yM{"yyyy-M"}
+--- source/data/locales/gu.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/gu.txt	2011-07-22 16:52:36.925360000 -0700
+@@ -14,6 +14,7 @@
+     ExemplarCharacters{
+         "[ૐ અ આ ઇ ઈ ઉ ઊ ઋ ૠ ઍ એ ઐ ઑ ઓ ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ ત થ દ ધ ન પ ફ બ"
+         " ભ મ ય ર લ વ શ ષ સ હ \u0ABC \u0A81 \u0A82 ઃ ળ ઽ \u0ACD ા િ ી \u0AC1 \u0AC2 "
++	"\u200C \u200D"
+         "\u0AC3 \u0AC4 \u0AC5 \u0AC7 \u0AC8 ૉ ો ૌ]"
+     }
+     ExemplarCharactersIndex{
+@@ -57,9 +58,13 @@
+             availableFormats{
+                 MMMMd{"d MMMM"}
+                 MMdd{"dd-MM"}
++		Md{"d/M"}
++		MEd{"E, d/M"}
+                 h{"hh a"}
+                 hm{"hh:mm a"}
+                 hms{"hh:mm:ss a"}
++                yM{"M/y"}
++                yMd{"d/M/y"}
+                 yyQ{"Q yy"}
+                 yyyyMM{"MM-yyyy"}
+                 yyyyMMMM{"MMMM y"}
+--- source/data/locales/hi.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/hi.txt	2011-01-19 18:16:42.486837000 -0800
+@@ -13,6 +13,7 @@
+     AuxExemplarCharacters{"[\u200C \u200D]"}
+     ExemplarCharacters{
+         "[ॐ अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब"
++	"\u200C \u200D"
+         " भ म य र ल ळ व श ष स ह ़ ँ ं ः ऽ ् ा ि ी ु ू ृ ॄ ॅ े ै ॉ ो ौ]"
+     }
+     ExemplarCharactersCurrency{"[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]"}
+--- source/data/locales/ja.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/ja.txt	2011-01-19 18:16:42.395861000 -0800
 @@ -12,59 +12,211 @@
  ja{
      AuxExemplarCharacters{"[兌 拼 楔 錄 鳯]"}
@@ -267,22 +610,379 @@ Index: source/data/locales/ja.txt
      }
      ExemplarCharactersCurrency{"[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]"}
      ExemplarCharactersIndex{"[あ か さ た な は ま や ら わ]"}
-Index: source/data/locales/gu.txt
-===================================================================
---- source/data/locales/gu.txt	(revision 68397)
-+++ source/data/locales/gu.txt	(working copy)
-@@ -14,6 +14,7 @@
+--- source/data/locales/kn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/kn.txt	2011-07-22 16:52:36.937365000 -0700
+@@ -13,6 +13,7 @@
      ExemplarCharacters{
-         "[ૐ અ આ ઇ ઈ ઉ ઊ ઋ ૠ ઍ એ ઐ ઑ ઓ ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ ત થ દ ધ ન પ ફ બ"
-         " ભ મ ય ર લ વ શ ષ સ હ \u0ABC \u0A81 \u0A82 ઃ ળ ઽ \u0ACD ા િ ી \u0AC1 \u0AC2 "
+         "[\u0CBC ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ೠ ಌ ೡ ಎ ಏ ಐ ಒ ಓ ಔ ಂ ಃ ಕ ಖ ಗ ಘ ಙ ಚ "
+         "ಛ ಜ ಝ ಞ ಟ ಠ ಡ ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಱ ಲ ವ ಶ ಷ ಸ ಹ ಳ ೞ ಽ ಾ \u0CBF ೀ ು ೂ"
 +	"\u200C \u200D"
-         "\u0AC3 \u0AC4 \u0AC5 \u0AC7 \u0AC8 ૉ ો ૌ]"
+         " ೃ ೄ \u0CC6 ೇ ೈ ೊ ೋ \u0CCC \u0CCD ೕ ೖ]"
      }
      ExemplarCharactersIndex{
-Index: source/data/locales/zh_Hant.txt
-===================================================================
---- source/data/locales/zh_Hant.txt	(revision 68397)
-+++ source/data/locales/zh_Hant.txt	(working copy)
+--- source/data/locales/ko.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ko.txt	2011-07-22 13:46:05.796736000 -0700
+@@ -80,8 +80,7 @@
+                 "{1} {0}",
+             }
+             availableFormats{
+-                EEEd{"d일 EEE"}
+-                Ed{"d일 (E)"}
++                EEEd{"d일 (E)"}
+                 H{"H시"}
+                 HHmmss{"HH:mm:ss"}
+                 Hm{"HH:mm"}
+@@ -101,13 +100,14 @@
+                 ms{"mm:ss"}
+                 y{"G y년"}
+                 yM{"G y. M."}
+-                yMEd{"G y. M. d. EEE"}
++                yMEd{"G y. M. d. (E)"}
+                 yMMM{"G y년 MMM"}
+-                yMMMEd{"G y년 MMM d일 EEE"}
++                yMMMEEEd{"G y년 MMM d일 (E)"}
++                yMMMEEEEd{"G y년 MMM d일 EEEE"}
+                 yMMMd{"G y년 MMM d일"}
+                 yQ{"G y년 Q분기"}
+                 yQQQ{"G y년 QQQ"}
+-                yyMM{"G YY. M."}
++                yyMM{"G yy. M."}
+                 yyMMM{"G y년 MMM"}
+                 yyQ{"G y년 Q분기"}
+                 yyyyMM{"G y. MM"}
+@@ -139,8 +139,7 @@
+                 "{1} {0}",
+             }
+             availableFormats{
+-                EEEd{"d일 EEE"}
+-                Ed{"d일 (E)"}
++                EEEd{"d일 (E)"}
+                 H{"H시"}
+                 HHmmss{"HH:mm:ss"}
+                 Hm{"HH:mm"}
+@@ -160,13 +159,14 @@
+                 ms{"mm:ss"}
+                 y{"y년"}
+                 yM{"yyyy. M."}
+-                yMEd{"yyyy. M. d. EEE"}
++                yMEd{"yyyy. M. d. (E)"}
+                 yMMM{"y년 MMM"}
+-                yMMMEd{"y년 MMM d일 EEE"}
++                yMMMEd{"y년 MMM d일 (E)"}
++                yMMMEEEEd{"y년 MMM d일 EEEE"}
+                 yMMMd{"y년 MMM d일"}
+                 yQ{"y년 Q분기"}
+                 yQQQ{"y년 QQQ"}
+-                yyMM{"YY. M."}
++                yyMM{"yy. M."}
+                 yyMMM{"yy년 MMM"}
+                 yyQ{"yy년 Q분기"}
+                 yyyyMM{"yyyy. MM"}
+@@ -263,15 +263,15 @@
+                     M{"M월 ~ M월"}
+                 }
+                 MEd{
+-                    M{"M. d E ~ M. d E"}
+-                    d{"M. d E ~ M. d E"}
++                    M{"M. d (E) ~ M. d (E)"}
++                    d{"M. d (E) ~ M. d (E)"}
+                 }
+                 MMM{
+                     M{"MMM ~ MMM"}
+                 }
+                 MMMEd{
+-                    M{"M월 d일 E ~ M월 d일 E"}
+-                    d{"M월 d일 E ~ d일 E"}
++                    M{"M월 d일 (E) ~ M월 d일 (E)"}
++                    d{"M월 d일 (E) ~ d일 (E)"}
+                 }
+                 MMMM{
+                     M{"LLLL-LLLL"}
+@@ -314,31 +314,31 @@
+                     y{"yyyy. M ~ yyyy. M"}
+                 }
+                 yMEd{
+-                    M{"yy. M. d. E ~ yy. M. d. E"}
+-                    d{"yy. M. d. E ~ yy. M. d. E"}
+-                    y{"yy. M. d. E ~ yy. M. d. E"}
++                    M{"yy. M. d. (E) ~ M. d. (E)"}
++                    d{"yy. M. d. (E) ~ d. (E)"}
++                    y{"yy. M. d. (E) ~ yy. M. d. (E)"}
+                 }
+                 yMMM{
+-                    M{"y년 M월~M월"}
++                    M{"y년 M월 ~ M월"}
+                     y{"y년 M월 ~ y년 M월"}
+                 }
+                 yMMMEd{
+-                    M{"y년 M월 d일 E ~ M월 d일 E"}
+-                    d{"y년 M월 d일 E ~ d일 E"}
+-                    y{"y년 M월 d일 E ~ y년 M월 d일 E"}
++                    M{"y년 M월 d일 (E) ~ M월 d일 (E)"}
++                    d{"y년 M월 d일 (E) ~ d일 (E)"}
++                    y{"y년 M월 d일 (E) ~ y년 M월 d일 (E)"}
+                 }
+                 yMMMM{
+-                    M{"y년 MM월 ~ MM월"}
+-                    y{"y년 MM월 ~ y년 MM월"}
++                    M{"y년 M월 ~ M월"}
++                    y{"y년 M월 ~ y년 M월"}
+                 }
+                 yMMMd{
+                     M{"y년 M월 d일 ~ M월 d일"}
+-                    d{"y년 M월 d일~d일"}
++                    d{"y년 M월 d일 ~ d일"}
+                     y{"y년 M월 d일 ~ y년 M월 d일"}
+                 }
+                 yMd{
+-                    M{"yy. M. d. ~ yy. M. d."}
+-                    d{"yy. M. d. ~ yy. M. d."}
++                    M{"yy. M. d ~ M. d"}
++                    d{"yy. M. d ~ d"}
+                     y{"yy. M. d. ~ yy. M. d."}
+                 }
+             }
+@@ -410,8 +410,7 @@
+                 "{1} {0}",
+             }
+             availableFormats{
+-                EEEd{"d일 EEE"}
+-                Ed{"d일 (E)"}
++                EEEd{"d일 (E)"}
+                 H{"H시"}
+                 HHmmss{"HH:mm:ss"}
+                 Hm{"HH:mm"}
+@@ -429,15 +428,16 @@
+                 hms{"a h:mm:ss"}
+                 mmss{"mm:ss"}
+                 ms{"mm:ss"}
+-                yyMM{"G YY. M."}
++                yyMM{"G yy. M."}
+                 yyMMM{"G yy년 MMM"}
+                 yyQ{"G yy년 Q분기"}
+                 yyyy{"G yy년"}
+                 yyyyM{"G y. M."}
+-                yyyyMEd{"G y. M. d. EEE"}
++                yyyyMEd{"G y. M. d. (EEE)"}
+                 yyyyMM{"G y. MM"}
+                 yyyyMMM{"G y년 MMM"}
+-                yyyyMMMEd{"G y년 MMM d일 EEE"}
++                yyyyMMMEd{"G y년 MMM d일 (EEE)"}
++                yyyyMMMEEEEd{"G y년 MMM d일 EEEE"}
+                 yyyyMMMd{"G yy년 MMM d일"}
+                 yyyyQ{"G yy년 Q분기"}
+                 yyyyQQQ{"G y년 QQQ"}
+@@ -700,8 +700,7 @@
+                 "{1} {0}",
+             }
+             availableFormats{
+-                EEEd{"d일 EEE"}
+-                Ed{"d일 (E)"}
++                EEEd{"d일 (EEE)"}
+                 H{"H시"}
+                 HHmmss{"HH:mm:ss"}
+                 Hm{"HH:mm"}
+@@ -719,7 +718,7 @@
+                 hms{"a h:mm:ss"}
+                 mmss{"mm:ss"}
+                 ms{"mm:ss"}
+-                yyMM{"G YY. M."}
++                yyMM{"G yy. M."}
+                 yyMMM{"G yy년 MMM"}
+                 yyQ{"G y년 Q분기"}
+                 yyyy{"G yy년"}
+@@ -727,7 +726,8 @@
+                 yyyyMEd{"G y. M. d. EEE"}
+                 yyyyMM{"G y. MM"}
+                 yyyyMMM{"G y년 MMM"}
+-                yyyyMMMEd{"G y년 MMM d일 EEE"}
++                yyyyMMMEd{"G y년 MMM d일 (EEE)"}
++                yyyyMMMEEEEd{"G y년 MMM d일 EEEE"}
+                 yyyyMMMd{"G yy년 MMM d일"}
+                 yyyyQ{"G y년 Q분기"}
+                 yyyyQQQ{"G y년 QQQ"}
+--- source/data/locales/lt.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/lt.txt	2011-07-22 13:46:18.962671000 -0700
+@@ -89,6 +89,9 @@
+                 h{"hh a"}
+                 hm{"hh:mm a"}
+                 hms{"hh:mm:ss a"}
++                yMd{"y-M-d"}
++                yMEd{"y-M-d EEE"}
++                yMMMd{"y MMM d"}
+                 yyQ{"Q yy"}
+                 yyyyMM{"yyyy.MM"}
+             }
+--- source/data/locales/lv.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/lv.txt	2011-07-22 13:46:05.834732000 -0700
+@@ -74,7 +74,7 @@
+                 MMMMEd{"E, d. MMMM"}
+                 MMMMd{"d. MMMM"}
+                 MMMd{"d. MMM"}
+-                Md{"dd.mm."}
++                Md{"dd.MM."}
+                 d{"d"}
+                 h{"h a"}
+                 hm{"h:mm a"}
+@@ -82,8 +82,8 @@
+                 mmss{"mm:ss"}
+                 ms{"mm:ss"}
+                 y{"y. 'g'."}
+-                yM{"mm.yyyy."}
+-                yMEd{"EEE, dd.mm.yyyy."}
++                yM{"MM.yyyy."}
++                yMEd{"EEE, dd.MM.yyyy."}
+                 yMMM{"yyyy. 'g'. MMM"}
+                 yMMMEd{"EEE, yyyy. 'g'. dd. MMM"}
+                 yMMMM{"y. 'g'. MMMM"}
+@@ -216,8 +216,8 @@
+                     d{"d.–d. MMM"}
+                 }
+                 Md{
+-                    M{"dd.mm–dd.mm"}
+-                    d{"dd.mm.–dd.mm."}
++                    M{"dd.MM–dd.MM"}
++                    d{"dd.MM.–dd.MM."}
+                 }
+                 d{
+                     d{"d.–d."}
+@@ -245,13 +245,13 @@
+                     y{"y.–y."}
+                 }
+                 yM{
+-                    M{"mm.yyyy.–mm.yyyy."}
+-                    y{"mm.yyyy.–mm.yyyy."}
++                    M{"MM.yyyy.–MM.yyyy."}
++                    y{"MM.yyyy.–MM.yyyy."}
+                 }
+                 yMEd{
+-                    M{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
+-                    d{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
+-                    y{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
++                    M{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
++                    d{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
++                    y{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
+                 }
+                 yMMM{
+                     M{"y. 'gada' MMM–MMM"}
+@@ -263,8 +263,8 @@
+                     y{"E, y. 'gada' d. MMM – E, y. 'gada' d. MMM"}
+                 }
+                 yMMMM{
+-                    M{"mm.yyyy.–mm.yyyy."}
+-                    y{"mm.yyyy.–mm.yyyy."}
++                    M{"MM.yyyy.–MM.yyyy."}
++                    y{"MM.yyyy.–MM.yyyy."}
+                 }
+                 yMMMd{
+                     M{"y. 'gada' d. MMM – d. MMM"}
+@@ -272,9 +272,9 @@
+                     y{"y. 'gada' d. MMM – y. 'gada' d. MMM"}
+                 }
+                 yMd{
+-                    M{"dd.mm.yy.–dd.mm.yy."}
+-                    d{"dd.mm.yyyy.–dd.mm.yyyy."}
+-                    y{"dd.mm.yy.–dd.mm.yy."}
++                    M{"dd.MM.yy.–dd.MM.yy."}
++                    d{"dd.MM.yyyy.–dd.MM.yyyy."}
++                    y{"dd.MM.yy.–dd.MM.yy."}
+                 }
+             }
+             monthNames{
+--- source/data/locales/ml.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/ml.txt	2011-07-22 16:52:36.968352000 -0700
+@@ -82,6 +82,7 @@
+                 yM{"M-y"}
+                 yMEd{"d-M-yyyy, EEE"}
+                 yMMM{"y MMM"}
++                yMMMd{"y MMM d"}
+                 yMMMEd{"y MMM d, EEE"}
+                 yMMMM{"y MMMM"}
+                 yQ{"yyyy Q"}
+--- source/data/locales/mr.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/mr.txt	2011-07-22 16:52:36.979384000 -0700
+@@ -14,6 +14,7 @@
+     ExemplarCharacters{
+         "[\u093C ० १ २ ३ ४ ५ ६ ७ ८ ९ ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क "
+         "ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ळ ऽ ा ि ी "
++	"\u200C \u200D"
+         "\u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]"
+     }
+     ExemplarCharactersIndex{
+@@ -58,6 +59,9 @@
+             availableFormats{
+                 Hm{"H-mm"}
+                 Hms{"H-mm-ss"}
++                M{"M"}
++                Md{"d/M"}
++                MEd{"E, d/M"}
+                 MMMMd{"d MMMM"}
+                 MMdd{"dd-MM"}
+                 yyQ{"Q yy"}
+--- source/data/locales/sr.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/sr.txt	2011-06-08 13:15:56.508012000 -0700
+@@ -29,9 +29,9 @@
+                 scientificFormat{"#E0"}
+             }
+             symbols{
+-                decimal{"."}
++                decimal{","}
+                 exponential{"E"}
+-                group{","}
++                group{"."}
+                 infinity{"∞"}
+                 list{";"}
+                 minusSign{"-"}
+--- source/data/locales/ta.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/ta.txt	2011-07-22 16:52:37.048348000 -0700
+@@ -12,6 +12,7 @@
+ ta{
+     ExemplarCharacters{
+         "[அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன ஜ ஷ ஸ ஹ ா ி "
++	"\u200C \u200D"
+         "\u0BC0 ு ூ ெ ே ை ொ ோ ௌ \u0BCD]"
+     }
+     ExemplarCharactersCurrency{"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"}
+--- source/data/locales/te.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/te.txt	2011-07-22 16:52:37.065347000 -0700
+@@ -14,6 +14,7 @@
+     ExemplarCharacters{
+         "[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ"
+         " బ భ మ య ర ఱ ల వ శ ష స హ ఁ ం ః \u0C4D ళ \u0C3E \u0C3F \u0C40 ు ూ ృ ౄ \u0C46 "
++	"\u200C \u200D"
+         "\u0C47 \u0C48 \u0C4A \u0C4B \u0C4C \u0C55 \u0C56]"
+     }
+     ExemplarCharactersIndex{
+@@ -55,8 +56,14 @@
+                 "{1} {0}",
+             }
+             availableFormats{
++                EEEd{"EEE d"}
++                Md{"d/M"}
++                MEd{"E, d/M"}
++                MMMEd{"E, d MMM"}
+                 MMMMd{"d MMMM"}
+                 MMdd{"dd-MM"}
++                yM{"M/y"}
++                yMd{"d/M/y"}
+                 yyQ{"Q yy"}
+                 yyyyMM{"MM-yyyy"}
+                 yyyyMMMM{"MMMM y"}
+--- source/data/locales/tr.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/tr.txt	2011-01-19 18:16:42.499823000 -0800
+@@ -144,7 +144,9 @@
+                 "dd MMMM y EEEE",
+                 "dd MMMM y",
+                 "dd MMM y",
+-                "dd.MM.yyyy",
++		// Chrome change begins
++                "dd MM yyyy",
++		// Chrone change ends
+                 "{1} {0}",
+                 "{1} {0}",
+                 "{1} {0}",
+--- source/data/locales/zh_Hant.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/zh_Hant.txt	2011-01-19 18:16:42.425865000 -0800
 @@ -13,60 +13,240 @@
      %%ParentIsRoot:int{1}
      AuxExemplarCharacters{"[伏 侶 兌 兹 别 勳 卑 占 叶 堤 墎 奥 孜 峇 巽 彝 楔 渾 燦 狄 琳 瑚 甫 礁 芒 苗 茨 蚩 蜀 隴]"}
@@ -578,108 +1278,8 @@ Index: source/data/locales/zh_Hant.txt
      }
      ExemplarCharactersIndex{"[一 丁 三 丑 丙 丞 串 並 亟 乘 乾 傢 亂 僧 億 儒 優 叢 嚥 勸 儷 儼 囌 囑 廳]"}
      LocaleScript{
-Index: source/data/locales/ta.txt
-===================================================================
---- source/data/locales/ta.txt	(revision 68397)
-+++ source/data/locales/ta.txt	(working copy)
-@@ -12,6 +12,7 @@
- ta{
-     ExemplarCharacters{
-         "[அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன ஜ ஷ ஸ ஹ ா ி "
-+	"\u200C \u200D"
-         "\u0BC0 ு ூ ெ ே ை ொ ோ ௌ \u0BCD]"
-     }
-     ExemplarCharactersCurrency{"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"}
-Index: source/data/locales/te.txt
-===================================================================
---- source/data/locales/te.txt	(revision 68397)
-+++ source/data/locales/te.txt	(working copy)
-@@ -14,6 +14,7 @@
-     ExemplarCharacters{
-         "[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ"
-         " బ భ మ య ర ఱ ల వ శ ష స హ ఁ ం ః \u0C4D ళ \u0C3E \u0C3F \u0C40 ు ూ ృ ౄ \u0C46 "
-+	"\u200C \u200D"
-         "\u0C47 \u0C48 \u0C4A \u0C4B \u0C4C \u0C55 \u0C56]"
-     }
-     ExemplarCharactersIndex{
-Index: source/data/locales/mr.txt
-===================================================================
---- source/data/locales/mr.txt	(revision 68397)
-+++ source/data/locales/mr.txt	(working copy)
-@@ -14,6 +14,7 @@
-     ExemplarCharacters{
-         "[\u093C ० १ २ ३ ४ ५ ६ ७ ८ ९ ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क "
-         "ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ळ ऽ ा ि ी "
-+	"\u200C \u200D"
-         "\u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]"
-     }
-     ExemplarCharactersIndex{
-Index: source/data/locales/hi.txt
-===================================================================
---- source/data/locales/hi.txt	(revision 68397)
-+++ source/data/locales/hi.txt	(working copy)
-@@ -13,6 +13,7 @@
-     AuxExemplarCharacters{"[\u200C \u200D]"}
-     ExemplarCharacters{
-         "[ॐ अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब"
-+	"\u200C \u200D"
-         " भ म य र ल ळ व श ष स ह ़ ँ ं ः ऽ ् ा ि ी ु ू ृ ॄ ॅ े ै ॉ ो ौ]"
-     }
-     ExemplarCharactersCurrency{"[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]"}
-Index: source/data/locales/tr.txt
-===================================================================
---- source/data/locales/tr.txt	(revision 68397)
-+++ source/data/locales/tr.txt	(working copy)
-@@ -144,7 +144,9 @@
-                 "dd MMMM y EEEE",
-                 "dd MMMM y",
-                 "dd MMM y",
--                "dd.MM.yyyy",
-+		// Chrome change begins
-+                "dd MM yyyy",
-+		// Chrone change ends
-                 "{1} {0}",
-                 "{1} {0}",
-                 "{1} {0}",
-Index: source/data/locales/kn.txt
-===================================================================
---- source/data/locales/kn.txt	(revision 68397)
-+++ source/data/locales/kn.txt	(working copy)
-@@ -13,6 +13,7 @@
-     ExemplarCharacters{
-         "[\u0CBC ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ೠ ಌ ೡ ಎ ಏ ಐ ಒ ಓ ಔ ಂ ಃ ಕ ಖ ಗ ಘ ಙ ಚ "
-         "ಛ ಜ ಝ ಞ ಟ ಠ ಡ ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಱ ಲ ವ ಶ ಷ ಸ ಹ ಳ ೞ ಽ ಾ \u0CBF ೀ ು ೂ"
-+	"\u200C \u200D"
-         " ೃ ೄ \u0CC6 ೇ ೈ ೊ ೋ \u0CCC \u0CCD ೕ ೖ]"
-     }
-     ExemplarCharactersIndex{
-Index: source/data/locales/bn.txt
-===================================================================
---- source/data/locales/bn.txt	(revision 68397)
-+++ source/data/locales/bn.txt	(working copy)
-@@ -14,6 +14,7 @@
-     ExemplarCharacters{
-         "[৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ \u09BC ং ঃ \u0981 ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ "
-         "ঝ ঞ ট ঠ ড {ড\u09BC} ঢ {ঢ\u09BC} ণ ৎ ত থ দ ধ ন প ফ ব ভ ম য {য\u09BC} র ল শ ষ "
-+	"\u200C \u200D"
-         "স হ ঽ া ি ী \u09C1 \u09C2 \u09C3 \u09C4 \u09E2 \u09E3 ে ৈ ো ৌ \u09CD ৗ]"
-     }
-     ExemplarCharactersCurrency{"[৳]"}
-@@ -56,8 +57,8 @@
-     calendar{
-         gregorian{
-             AmPmMarkers{
--                "পূর্বাহ্ণ",
--                "অপরাহ্ণ",
-+		"am",
-+		"pm",
-             }
-             DateTimePatterns{
-                 "h:mm:ss a zzzz",
-Index: source/data/locales/zh.txt
-===================================================================
---- source/data/locales/zh.txt	(revision 68397)
-+++ source/data/locales/zh.txt	(working copy)
+--- source/data/locales/zh.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/zh.txt	2011-01-19 18:16:42.551781000 -0800
 @@ -12,59 +12,7 @@
  zh{
      AuxExemplarCharacters{"[侣 傣 卑 厘 吕 堤 奎 巽 录 户 撤 楔 楠 滕 瑚 甫 盲 禄 粟 线 脚 钯 铂 锑 镑 魁]"}
@@ -741,288 +1341,134 @@ Index: source/data/locales/zh.txt
      }
      ExemplarCharactersCurrency{"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"}
      ExemplarCharactersIndex{"[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]"}
-Index: source/data/lang/da.txt
-===================================================================
---- source/data/lang/da.txt	(revision 68397)
-+++ source/data/lang/da.txt	(working copy)
-@@ -82,7 +82,7 @@
-         bua{"buriatisk"}
-         bug{"buginesisk"}
-         byn{"blin"}
--        ca{"katalansk"}
-+        ca{"catalansk"}
-         cad{"caddo"}
-         cai{"mellemamerikansk indiansk sprog"}
-         car{"caribisk"}
-Index: source/data/lang/sw.txt
-===================================================================
---- source/data/lang/sw.txt	(revision 68397)
-+++ source/data/lang/sw.txt	(working copy)
-@@ -11,47 +11,115 @@
-  */
- sw{
-     Languages{
-+        af{"Kiafrikana"}
-         ak{"Kiakan"}
-         am{"Kiamhari"}
-         ar{"Kiarabu"}
-+        az{"Kiazabaijani"}
-         be{"Kibelarusi"}
-         bg{"Kibulgaria"}
-         bn{"Kibangla"}
-+        br{"Kibreton"}
-+        bs{"Kibosnia"}
-+        ca{"Kikatalani"}
-+        co{"Kikosikani"}
-         cs{"Kicheki"}
-+        cy{"Kiwelisi"}
-+        da{"Kidenmaki"}
-         de{"Kijerumani"}
-         el{"Kigiriki"}
-         en{"Kiingereza"}
-+        eo{"Kiesperanto"}
-         es{"Kihispania"}
-+        et{"Kiestonia"}
-+        eu{"Kibaski"}
-         fa{"Kiajemi"}
-+        fil{"Kifilipino"}
-+        fo{"Kifaroe"}
-         fr{"Kifaransa"}
-+        fy{"Kifrisia cha Magharibi"}
-+        ga{"Kiayalandi"}
-+        gd{"Kigaeli"}
-+        gl{"Kigalisia"}
-+        gn{"Kiguarani"}
-+        gu{"Kigujarati"}
-         ha{"Kihausa"}
-+        he{"Kiyahudi"}
-         hi{"Kihindi"}
-+        hr{"Kikroeshia"}
-         hu{"Kihungari"}
-+        hy{"Kiarmenia"}
-+        ia{"Kiintalingua"}
-         id{"Kiindonesia"}
-         ig{"Kiigbo"}
-+        is{"Kiaislandi"}
-         it{"Kiitaliano"}
-         ja{"Kijapani"}
-         jv{"Kijava"}
-+        jw{"Kijava"}
-+        ka{"Kijojia"}
-+        kk{"Kikazakhi"}
-         km{"Kikambodia"}
-+        kn{"Kikannada"}
-         ko{"Kikorea"}
-+        ku{"Kikurdi"}
-+        ky{"Kikirgizi"}
-+        la{"Kilatini"}
-+        ln{"Kilingala"}
-+        lo{"Kilaosi"}
-+        lt{"Kilithuania"}
-+        lv{"Kilatvia"}
-+        mk{"Kimasedonia"}
-+        ml{"Kimalayam"}
-+        mn{"Kimongolia"}
-+        mo{"Kimoldavia"}
-+        mr{"Kimarathi"}
-         ms{"Kimalesia"}
-+        mt{"Kimalta"}
-         my{"Kiburma"}
-+        nb{"Kinorwe (Bokmål)"}
-         ne{"Kinepali"}
-         nl{"Kiholanzi"}
-+        nn{"Kinorwe (Nynorsk)"}
-+        no{"Kinorwe"}
-+        oc{"Kiositani"}
-+        or{"Kioriya"}
-         pa{"Kipunjabi"}
-         pl{"Kipolandi"}
-+        ps{"Kipashto"}
-         pt{"Kireno"}
-+        qu{"Kiquechua"}
-+        rm{"Kirumi cha Raetia"}
-         ro{"Kiromania"}
-         ru{"Kirusi"}
-         rw{"Kinyarwanda"}
-+        sd{"Kisindhi"}
-+        sh{"Kiserbia-Kikroeshia"}
-+        si{"Kisinhali"}
-+        sk{"Kislovakia"}
-+        sl{"Kislovenia"}
-+        sn{"Kishona"}
-         so{"Kisomali"}
-+        sq{"Kialbania"}
-+        sr{"Kiserbia"}
-+        st{"Kisotho"}
-+        su{"Kinubi"}
-         sv{"Kiswidi"}
-         sw{"Kiswahili"}
-         ta{"Kitamil"}
-+        te{"Kitelugu"}
-+        tg{"Kitajiki"}
-         th{"Kitailandi"}
-+        ti{"Kitigrinya"}
-+        tk{"Kiturukimeni"}
-+        to{"Kitonga"}
-         tr{"Kituruki"}
-+        tt{"Kitatari"}
-+        tw{"Kitwii"}
-+        ug{"Kiuigur"}
-         uk{"Kiukrania"}
-         ur{"Kiurdu"}
-+        uz{"Kiuzbeki"}
-         vi{"Kivietinamu"}
-         yo{"Kiyoruba"}
-         zh{"Kichina"}
-Index: source/data/lang/fil.txt
-===================================================================
---- source/data/lang/fil.txt	(revision 68397)
-+++ source/data/lang/fil.txt	(working copy)
-@@ -24,11 +24,13 @@
-         bs{"Bosnian"}
-         ca{"Catalan"}
-         cs{"Czech"}
-+        cy{"Welsh"}
-         da{"Danish"}
-         de{"Aleman"}
-         el{"Griyego"}
-         en{"Ingles"}
-         en_GB{"Ingles (UK)"}
-+        en_US{"Ingles (US)"}
-         eo{"Esperanto"}
-         es{"Espanyol"}
-         et{"Estonian"}
-@@ -38,6 +40,7 @@
-         fil{"Filipino"}
-         fo{"Faroeso"}
-         fr{"Pranses"}
-+        fy{"Prisian"}
-         ga{"Irish"}
-         gd{"Scots Gaelic"}
-         gl{"Galician"}
-@@ -72,6 +75,7 @@
-         mr{"Marathi"}
-         ms{"Malay"}
-         mt{"Maltese"}
-+        nb{"Norwegian"}
-         ne{"Nepali"}
-         nl{"Olandes"}
-         nn{"Norwegian Nynorsk"}
-@@ -82,25 +86,44 @@
-         pl{"Polish"}
-         ps{"Pashto"}
-         pt{"Portuges"}
-+        pt_BR{"Portuges (Brasil)"}
-         rm{"Rhaeto-Romance"}
-         ro{"Romanian"}
-         ru{"Russian"}
-         sa{"Sanskrit"}
-         sd{"Sindhi"}
-         sh{"Serbo-Croatian"}
-+        si{"Sinhalese"}
-+        sk{"Eslobak"}
-         sl{"Slovenian"}
-+        so{"Somali"}
-         sq{"Albanian"}
-         sr{"Serbian"}
-+        st{"Sesoto"}
-+        su{"Taga Sundan"}
-         sv{"Swedish"}
-         swb{"Comorian"}
-+        ta{"Tamil"}
-+        te{"Telugu"}
-+        th{"Thai"}
-+        ti{"Tigrinya"}
-+        tk{"Turkmen"}
-+        tl{"Tagalog"}
-         tlh{"Klingon"}
--        tr{"Turkish"}
-+        tr{"Turko"}
-         uk{"Ukranian"}
-         und{"und"}
-+        ur{"Urdu"}
-+        uz{"Uzbeko"}
-+        vi{"Vietnamese"}
-+        wo{"Wolof"}
-+        xh{"Xhosa"}
-+        yi{"Yiddish"}
-         yue{"Cantonese"}
-         zh{"Chinese"}
-         zh_Hans{"Chinese (pinasimple)"}
-         zh_Hant{"Chinese (tradisyunal)"}
-+        zu{"Zulu"}
-     }
-     Variants{
-         PINYIN{"Pinyin Romanization"}
-Index: source/data/lang/am.txt
-===================================================================
---- source/data/lang/am.txt	(revision 68397)
-+++ source/data/lang/am.txt	(working copy)
-@@ -37,15 +37,19 @@
-         dz{"ድዞንግኻኛ"}
-         el{"ግሪክኛ"}
-         en{"እንግሊዝኛ"}
-+        en_GB{"ብሪቲሽ እንግሊዝኛ"}
-+        en_US{"ዩ.ኤስ እንግሊዝኛ"}
-         eo{"ኤስፐራንቶ"}
-         es{"ስፓኒሽ"}
-         et{"ኤስቶኒአን"}
-         eu{"ባስክኛ"}
-         fa{"ፐርሲያኛ"}
-         fi{"ፊኒሽ"}
-+        fil{"ፊሊፕኖኛ"}
-         fj{"ፊጂኛ"}
-         fo{"ፋሮኛ"}
-         fr{"ፈረንሳይኛ"}
-+        fr_CA{"የካናዳ ፈረንሳይኛ"}
-         fy{"ፍሪስኛ"}
-         ga{"አይሪሽ"}
-         gd{"እስኮትስ ጌልክኛ"}
-@@ -54,6 +58,7 @@
-         gn{"ጓራኒኛ"}
-         gu{"ጉጃርቲኛ"}
-         ha{"ሃውሳኛ"}
-+        haw{"ሀዋይኛ"}
-         he{"ዕብራስጥ"}
-         hi{"ሐንድኛ"}
-         hr{"ክሮሽያንኛ"}
-@@ -104,6 +109,8 @@
-         pl{"ፖሊሽኛ"}
-         ps{"ፑሽቶኛ"}
-         pt{"ፖርቱጋሊኛ"}
-+        pt_BR{"የብራዚል ፖርቱጋሊኛ "}
-+        pt_PT{"የፖርቱጋል አይበሪኛ"}
-         qu{"ኵቿኛ"}
-         rm{"ሮማንስ"}
-         rn{"ሩንዲኛ"}
-@@ -153,6 +160,9 @@
-         yo{"ዮሩባዊኛ"}
-         za{"ዡዋንግኛ"}
-         zh{"ቻይንኛ"}
-+        zh_Hans{"ቀላል ቻይንኛ"}
-+        zh_Hant{"ባህላዊ ቻይንኛ"}
-+        znd{"ዛንዲኛ"}
-         zu{"ዙሉኛ"}
-     }
-     Version{"2.0.50.94"}
-Index: source/data/region/sw.txt
-===================================================================
---- source/data/region/sw.txt	(revision 68397)
-+++ source/data/region/sw.txt	(working copy)
+--- source/data/region/am.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/am.txt	2011-01-19 18:16:42.660793000 -0800
 @@ -11,6 +11,7 @@
   */
- sw{
+ am{
      Countries{
-+        419{"Amerika ya Kilatini na Karibiani"}
++        419{"ላቲን አሜሪካ እና ካሪቢያን"}
+         AD{"አንዶራ"}
+         AE{"የተባበሩት አረብ ኤምሬትስ"}
+         AF{"አፍጋኒስታን"}
+--- source/data/region/az.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/az.txt	2011-07-22 13:46:19.264639000 -0700
+@@ -42,7 +42,7 @@
+         154{"Şimal Avropa"}
+         155{"Qərb Avropa"}
+         172{"172"}
+-        419{"Latın Amerikası və Kariblər"}
++        419{"Latın Amerikası"}
+         AD{"Andorra"}
+         AE{"Birləşmiş Ərəb Emiratları"}
+         AF{"Əfqənistan"}
+--- source/data/region/bg.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/bg.txt	2011-07-22 13:46:19.359564000 -0700
+@@ -42,7 +42,7 @@
+         154{"Северна Европа"}
+         155{"Западна Европа"}
+         172{"Общност на независимите държави"}
+-        419{"Латинска Америка и Карибски басейн"}
++        419{"Латинска Америка"}
+         830{"Нормандски о-ви"}
+         AC{"Остров Възнесение"}
+         AD{"Андора"}
+--- source/data/region/bs.txt	2010-11-30 21:40:46.000000000 -0800
++++ source/data/region/bs.txt	2011-07-22 13:46:19.418604000 -0700
+@@ -42,7 +42,7 @@
+         154{"Severna Evropa"}
+         155{"Zapadna Evropa"}
+         172{"Komonvelt nezavisnih država"}
+-        419{"Latinska Amerika i Karibi"}
++        419{"Latinska Amerika"}
+         830{"Kanalska ostrva"}
          AD{"Andora"}
-         AE{"Falme za Kiarabu"}
-         AF{"Afuganistani"}
-Index: source/data/region/fil.txt
-===================================================================
---- source/data/region/fil.txt	(revision 68397)
-+++ source/data/region/fil.txt	(working copy)
-@@ -44,10 +44,13 @@
-         419{"Latin America at ang Caribbean"}
+         AE{"Ujedinjeni Arapski Emirati"}
+--- source/data/region/ca.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/ca.txt	2011-07-22 13:46:19.874566000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa septentrional"}
+         155{"Europa Occidental"}
+         172{"Comunitat d'Estats Independents"}
+-        419{"Amèrica Llatina i Carib"}
++        419{"Amèrica Llatina"}
+         AC{"Illa de l'Ascensió"}
+         AD{"Andorra"}
+         AE{"Unió dels Emirats Àrabs"}
+--- source/data/region/cs.txt	2010-09-13 12:12:47.000000000 -0700
++++ source/data/region/cs.txt	2011-07-22 13:46:19.048658000 -0700
+@@ -42,7 +42,7 @@
+         154{"Severní Evropa"}
+         155{"Západní Evropa"}
+         200{"Československo"}
+-        419{"Latinská Amerika a Karibské moře"}
++        419{"Latinská Amerika"}
+         830{"Normanské ostrovy"}
+         AD{"Andorra"}
+         AE{"Spojené arabské emiráty"}
+--- source/data/region/da.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/da.txt	2011-07-22 13:46:19.536614000 -0700
+@@ -42,7 +42,7 @@
+         154{"Nordeuropa"}
+         155{"Vesteuropa"}
+         172{"Sammenslutningen af uafhængige stater"}
+-        419{"Latinamerika og Caribien"}
++        419{"Latinamerika"}
+         AC{"Ascensionøen"}
+         AD{"Andorra"}
+         AE{"Forenede Arabiske Emirater"}
+--- source/data/region/de.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/de.txt	2011-07-22 13:46:19.570567000 -0700
+@@ -42,7 +42,7 @@
+         154{"Nordeuropa"}
+         155{"Westeuropa"}
+         172{"Gemeinschaft Unabhängiger Staaten"}
+-        419{"Lateinamerika und Karibik"}
++        419{"Lateinamerika"}
+         830{"Kanalinseln"}
+         AC{"Ascension"}
+         AD{"Andorra"}
+--- source/data/region/el.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/el.txt	2011-07-22 13:46:19.624564000 -0700
+@@ -42,7 +42,7 @@
+         154{"Βόρεια Ευρώπη"}
+         155{"Δυτική Ευρώπη"}
+         172{"Κοινοπολιτεία Ανεξαρτήτων Πολιτειών"}
+-        419{"Λατινική Αμερική και Καραϊβική"}
++        419{"Λατινική Αμερική"}
+         830{"Νησιά Τσάνελ"}
+         AC{"Νήσος Ασενσιόν"}
+         AD{"Ανδόρα"}
+--- source/data/region/es.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/es.txt	2011-07-22 13:46:19.236659000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa septentrional"}
+         155{"Europa occidental"}
+         172{"Comunidad de Estados Independientes"}
+-        419{"Latinoamérica y el Caribe"}
++        419{"Latinoamérica"}
+         AC{"Isla de la Ascensión"}
+         AD{"Andorra"}
+         AE{"Emiratos Árabes Unidos"}
+--- source/data/region/et.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/et.txt	2011-07-22 13:46:19.650560000 -0700
+@@ -42,7 +42,7 @@
+         154{"Põhja-Euroopa"}
+         155{"Lääne-Euroopa"}
+         172{"Sõltumatute Riikide Ühendus"}
+-        419{"Ladina-Ameerika ja Kariibi meri"}
++        419{"Ladina-Ameerika"}
+         AC{"Ascensioni saar"}
+         AD{"Andorra"}
+         AE{"Araabia Ühendemiraadid"}
+--- source/data/region/fil.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/fil.txt	2011-07-22 13:46:19.156670000 -0700
+@@ -41,13 +41,16 @@
+         151{"Silangang Europa"}
+         154{"Hilagang Europa"}
+         155{"Kanlurang Europa"}
+-        419{"Latin America at ang Caribbean"}
++        419{"Latin America"}
          AC{"Acsencion island"}
          AD{"Andorra"}
 +        AE{"United Arab Emirates"}
@@ -1249,15 +1695,645 @@ Index: source/data/region/fil.txt
          ZZ{"Hindi kilala o Hindi wastong Rehiyon"}
      }
      Version{"2.0.48.64"}
-Index: source/data/region/am.txt
-===================================================================
---- source/data/region/am.txt	(revision 68397)
-+++ source/data/region/am.txt	(working copy)
+--- source/data/region/fi.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/fi.txt	2011-07-22 13:46:19.670563000 -0700
+@@ -42,7 +42,7 @@
+         154{"Pohjois-Eurooppa"}
+         155{"Länsi-Eurooppa"}
+         172{"Itsenäisten valtioiden yhteisö"}
+-        419{"Latinalainen Amerikka ja Karibia"}
++        419{"Latinalainen Amerikka"}
+         830{"Kanaalisaaret"}
+         AC{"Ascension-saari"}
+         AD{"Andorra"}
+--- source/data/region/fr.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/fr.txt	2011-07-22 13:46:19.431584000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europe septentrionale"}
+         155{"Europe occidentale"}
+         172{"Communauté des États indépendants"}
+-        419{"Amérique latine et Caraïbes"}
++        419{"Amérique latine"}
+         830{"Îles Anglo-normandes"}
+         AC{"Île de l'Ascension"}
+         AD{"Andorre"}
+--- source/data/region/hu.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/hu.txt	2011-07-22 13:46:19.183679000 -0700
+@@ -42,7 +42,7 @@
+         154{"Észak-Európa"}
+         155{"Nyugat-Európa"}
+         172{"Független Államok Közössége"}
+-        419{"Latin-Amerika és a Karib-térség"}
++        419{"Latin-Amerika"}
+         830{"Csatorna-szigetek"}
+         AC{"Ascension-sziget"}
+         AD{"Andorra"}
+--- source/data/region/it.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/it.txt	2011-07-22 13:46:19.297612000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa del Nord"}
+         155{"Europa occidentale"}
+         172{"Comunità di Stati Indipendenti"}
+-        419{"America Latina e Caraibi"}
++        419{"America Latina"}
+         AC{"Isola di Ascensione"}
+         AD{"Andorra"}
+         AE{"Emirati Arabi Uniti"}
+--- source/data/region/ja.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/ja.txt	2011-07-22 13:46:19.377561000 -0700
+@@ -42,7 +42,7 @@
+         154{"北ヨーロッパ"}
+         155{"西ヨーロッパ"}
+         172{"独立国家共同体"}
+-        419{"ラテンアメリカ・カリブ地域"}
++        419{"ラテンアメリカ"}
+         830{"チャネル諸島"}
+         AC{"アセンション島"}
+         AD{"アンドラ"}
+--- source/data/region/ko.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/ko.txt	2011-07-22 13:46:19.065646000 -0700
+@@ -42,7 +42,7 @@
+         154{"북유럽"}
+         155{"서유럽"}
+         172{"독립 국가 연합"}
+-        419{"라틴 아메리카 및 카리브 해 제도"}
++        419{"라틴 아메리카"}
+         AD{"안도라"}
+         AE{"아랍에미리트 연합"}
+         AF{"아프가니스탄"}
+--- source/data/region/lt.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/lt.txt	2011-07-22 13:46:19.194643000 -0700
+@@ -43,7 +43,7 @@
+         155{"Vakarų Europa"}
+         172{"Nepriklausomų Valstybių Sandrauga"}
+         200{"Čekoslovakija"}
+-        419{"Lotynų Amerika ir Karibai"}
++        419{"Lotynų Amerika"}
+         AC{"Ascension sala"}
+         AD{"Andora"}
+         AE{"Jungtiniai Arabų Emyratai"}
+--- source/data/region/lv.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/lv.txt	2011-07-22 13:46:19.208652000 -0700
+@@ -42,7 +42,7 @@
+         154{"Ziemeļeiropa"}
+         155{"Rietumeiropa"}
+         172{"Neatkarīgo Valstu Savienība"}
+-        419{"Latīņamerika un Karību jūras reģions"}
++        419{"Latīņamerika"}
+         AC{"Debesbraukšanas sala"}
+         AD{"Andora"}
+         AE{"Apvienotie Arābu Emirāti"}
+--- source/data/region/mk.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/mk.txt	2011-07-22 13:46:19.248650000 -0700
+@@ -42,7 +42,7 @@
+         154{"Северна Европа"}
+         155{"Западна Европа"}
+         172{"Комонвелт на независни држави"}
+-        419{"Латинска Америка и Карибите"}
++        419{"Латинска Америка"}
+         AC{"Остров Асенсион"}
+         AD{"Андора"}
+         AE{"Обединети Арапски Емирати"}
+--- source/data/region/nb.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/nb.txt	2011-07-22 13:46:19.391560000 -0700
+@@ -42,7 +42,7 @@
+         154{"Nord-Europa"}
+         155{"Vest-Europa"}
+         172{"Samveldet av uavhengige stater"}
+-        419{"Latin-Amerika og Karibia"}
++        419{"Latin-Amerika"}
+         AC{"Ascension"}
+         AD{"Andorra"}
+         AE{"De forente arabiske emirater"}
+--- source/data/region/nl.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/nl.txt	2011-07-22 13:46:19.452568000 -0700
+@@ -42,7 +42,7 @@
+         154{"Noord-Europa"}
+         155{"West-Europa"}
+         172{"Gemenebest van Onafhankelijke Staten"}
+-        419{"Latijns-Amerika en het Caribisch gebied"}
++        419{"Latijns-Amerika"}
+         830{"Kanaaleilanden"}
+         AC{"Ascension"}
+         AD{"Andorra"}
+--- source/data/region/nn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/nn.txt	2011-07-22 13:46:19.471577000 -0700
+@@ -42,7 +42,7 @@
+         154{"Nord-Europa"}
+         155{"Vest-Europa"}
+         172{"Samveldet av uavhengige statar"}
+-        419{"Latin-Amerika og Karibia"}
++        419{"Latin-Amerika"}
+         830{"Kanaløyane"}
+         AC{"Ascension"}
+         AD{"Andorra"}
+--- source/data/region/pl.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/pl.txt	2011-07-22 13:46:19.594578000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa Północna"}
+         155{"Europa Zachodnia"}
+         172{"Wspólnota Niezależnych Państw"}
+-        419{"Ameryka Łacińska i Karaiby"}
++        419{"Ameryka Łacińska"}
+         830{"Wyspy Normandzkie"}
+         AC{"Wyspa Wniebowstąpienia"}
+         AD{"Andora"}
+--- source/data/region/pt.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/region/pt.txt	2011-07-22 13:46:19.616560000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa Setentrional"}
+         155{"Europa Ocidental"}
+         172{"Comunidade dos Estados Independentes"}
+-        419{"América Latina e Caribe"}
++        419{"América Latina"}
+         AC{"Ilha de Ascensão"}
+         AD{"Andorra"}
+         AE{"Emirados Árabes Unidos"}
+--- source/data/region/rm.txt	2010-10-24 23:30:04.000000000 -0700
++++ source/data/region/rm.txt	2011-07-22 13:46:19.485574000 -0700
+@@ -42,7 +42,7 @@
+         155{"Europa dal Vest"}
+         172{"Communitad dals Stadis Independents"}
+         200{"Tschecoslovachia"}
+-        419{"America Latina e Caribica"}
++        419{"America Latina"}
+         830{"Inslas dal Chanal da la Mongia"}
+         AD{"Andorra"}
+         AE{"Emirats Arabs Unids"}
+--- source/data/region/ro.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/ro.txt	2011-07-22 13:46:19.490581000 -0700
+@@ -42,7 +42,7 @@
+         154{"Europa Septentrională"}
+         155{"Europa Occidentală"}
+         172{"Comunitatea Statelor Independente"}
+-        419{"America Latină și Caraibe"}
++        419{"America Latină"}
+         830{"Insulele Anglo-Normande"}
+         AC{"Insula Ascension"}
+         AD{"Andorra"}
+--- source/data/region/ru.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/ru.txt	2011-07-22 13:46:19.503570000 -0700
+@@ -42,7 +42,7 @@
+         154{"Северная Европа"}
+         155{"Западная Европа"}
+         172{"СНГ"}
+-        419{"Латинская Америка и Карибские о-ва"}
++        419{"Латинская Америка"}
+         830{"Нормандские о-ва"}
+         AC{"Остров Вознесения"}
+         AD{"Андорра"}
+--- source/data/region/sk.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/sk.txt	2011-07-22 13:46:19.090643000 -0700
+@@ -43,7 +43,7 @@
+         155{"Západná Európa"}
+         172{"Spoločenstvo nezávislých štátov"}
+         200{"Československo"}
+-        419{"Latinská Amerika a Karibik"}
++        419{"Latinská Amerika"}
+         830{"Kanál La Manche"}
+         AD{"Andorra"}
+         AE{"Spojené arabské emiráty"}
+--- source/data/region/sl.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/sl.txt	2011-07-22 13:46:19.531602000 -0700
+@@ -42,7 +42,7 @@
+         154{"Severna Evropa"}
+         155{"Zahodna Evropa"}
+         172{"Skupnost neodvisnih držav"}
+-        419{"Latinska Amerika in Karibi"}
++        419{"Latinska Amerika"}
+         830{"Kanalski otoki"}
+         AC{"Otok Ascension"}
+         AD{"Andora"}
+--- source/data/region/sr_Latn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/sr_Latn.txt	2011-07-22 13:46:19.411561000 -0700
+@@ -43,7 +43,7 @@
+         154{"Severna Evropa"}
+         155{"Zapadna Evropa"}
+         172{"Komonvelt nezavisnih država"}
+-        419{"Latinska Amerika i Karibi"}
++        419{"Latinska Amerika"}
+         830{"Kanalska ostrva"}
+         AD{"Andora"}
+         AE{"Ujedinjeni Arapski Emirati"}
+--- source/data/region/sr.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/sr.txt	2011-07-22 13:46:19.549560000 -0700
+@@ -42,7 +42,7 @@
+         154{"Северна Европа"}
+         155{"Западна Европа"}
+         172{"Комонвелт независних држава"}
+-        419{"Латинска Америка и Кариби"}
++        419{"Латинска Америка"}
+         830{"Каналска острва"}
+         AC{"Острво Асенсион"}
+         AD{"Андора"}
+--- source/data/region/sv.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/sv.txt	2011-07-22 13:46:19.575569000 -0700
+@@ -42,7 +42,7 @@
+         154{"Nordeuropa"}
+         155{"Västeuropa"}
+         172{"Oberoende staters samvälde"}
+-        419{"Latinamerika och Karibien"}
++        419{"Latinamerika"}
+         830{"Kanalöarna"}
+         AC{"Ascension"}
+         AD{"Andorra"}
+--- source/data/region/sw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/region/sw.txt	2011-07-22 13:46:19.117647000 -0700
 @@ -11,6 +11,7 @@
   */
- am{
+ sw{
      Countries{
-+        419{"ላቲን አሜሪካ እና ካሪቢያን"}
-         AD{"አንዶራ"}
-         AE{"የተባበሩት አረብ ኤምሬትስ"}
-         AF{"አፍጋኒስታን"}
++        419{"Amerika ya Kilatini"}
+         AD{"Andora"}
+         AE{"Falme za Kiarabu"}
+         AF{"Afuganistani"}
+--- source/data/region/tr.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/tr.txt	2011-07-22 13:46:19.221670000 -0700
+@@ -42,7 +42,7 @@
+         154{"Kuzey Avrupa"}
+         155{"Batı Avrupa"}
+         172{"Bağımsız Devletler Topluluğu"}
+-        419{"Latin Amerika ve Karayipler"}
++        419{"Latin Amerika"}
+         830{"Kanal Adaları"}
+         AC{"Ascension Adası"}
+         AD{"Andorra"}
+--- source/data/region/uk.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/uk.txt	2011-07-22 13:46:19.337600000 -0700
+@@ -42,7 +42,7 @@
+         154{"Північна Європа"}
+         155{"Західна Європа"}
+         172{"Співдружність Незалежних Держав"}
+-        419{"Латинська Америка і Карибський басейн"}
++        419{"Латинська Америка"}
+         830{"Нормандські острови"}
+         AC{"Острів Вознесіння"}
+         AD{"Андорра"}
+--- source/data/region/vi.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/vi.txt	2011-07-22 13:46:19.844565000 -0700
+@@ -41,7 +41,7 @@
+         151{"Đông Âu"}
+         154{"Miền Bắc Châu Âu"}
+         155{"Tây Âu"}
+-        419{"Châu Mỹ La-tinh và Ca-ri-be"}
++        419{"Châu Mỹ La-tinh"}
+         AD{"Andorra"}
+         AE{"Các Tiểu Vương quốc A-rập Thống nhất"}
+         AF{"Áp-ga-ni-xtan"}
+--- source/data/region/zh.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/region/zh.txt	2011-07-22 13:46:19.856570000 -0700
+@@ -42,7 +42,7 @@
+         154{"北欧"}
+         155{"西欧"}
+         172{"独联体"}
+-        419{"拉丁美洲和加勒比海"}
++        419{"拉丁美洲"}
+         830{"海峡群岛"}
+         AC{"阿森松岛"}
+         AD{"安道尔"}
+--- source/data/zone/de.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/zone/de.txt	2011-07-22 16:00:32.959778000 -0700
+@@ -308,28 +308,112 @@
+         "meta:Amazon"{
+             ld{"Amazonas-Sommerzeit"}
+         }
++        "meta:America_Central"{
++            ld{"Nordamerikanische Inland-Sommerzeit"}
++            lg{"Nordamerikanische Inlandzeit"}
++            ls{"Nordamerikanische Inland-Winterzeit"}
++        }
++        "meta:America_Eastern"{
++            ld{"Nordamerikanische Ostküsten-Sommerzeit"}
++            lg{"Nordamerikanische Ostküstenzeit"}
++            ls{"Nordamerikanische Ostküsten-Winterzeit"}
++        }
++        "meta:America_Mountain"{
++            ld{"Rocky Mountain Sommerzeit"}
++            lg{"Rocky Mountain Zeit"}
++            ls{"Rocky Mountain Winterzeit"}
++        }
++        "meta:America_Pacific"{
++            ld{"Nordamerikanische Westküsten-Sommerzeit"}
++            lg{"Nordamerikanische Westküstenzeit"}
++            ls{"Nordamerikanische Westküsten-Winterzeit"}
++        }
++        "meta:Anadyr"{
++            ld{"Anadyr Sommerzeit"}
++            lg{"Anadyr Zeit"}
++            ls{"Anadyr Winterzeit"}
++        }
++        "meta:Arabian"{
++            ld{"Arabische Sommerzeit"}
++            lg{"Arabische Zeit"}
++            ls{"Arabische Winterzeit"}
++        }
++        "meta:Argentina"{
++            ld{"Argentinische Sommerzeit"}
++            lg{"Argentinische Zeit"}
++            ls{"Argentinische Winterzeit"}
++        }
++        "meta:Argentina_Western"{
++            ld{"West-Argentinische Sommerzeit"}
++            lg{"West-Argentinische Zeit"}
++            ls{"West-Argentinische Winterzeit"}
++        }
++        "meta:Atlantic"{
++            ld{"Atlantik-Sommerzeit"}
++            lg{"Atlantik-Zeit"}
++            ls{"Atlantik-Winterzeit"}
++        }
++        "meta:Australia_Central"{
++            ld{"Zentralaustralische Sommerzeit"}
++            lg{"Zentralaustralische Zeit"}
++            ls{"Zentralaustralische Winterzeit"}
++        }
++        "meta:Australia_CentralWestern"{
++            ld{"Zentral-/Westaustralische Sommerzeit"}
++            lg{"Zentral-/Westaustralische Zeit"}
++            ls{"Zentral-/Westaustralische Winterzeit"}
++        }
++        "meta:Australia_Eastern"{
++            ld{"Ostaustralische Sommerzeit"}
++            lg{"Ostaustralische Zeit"}
++            ls{"Ostaustralische Winterzeit"}
++        }
++        "meta:Australia_Western"{
++            ld{"Westaustralische Sommerzeit"}
++            lg{"Westaustralische Zeit"}
++            ls{"Westaustralische Winterzeit"}
++        }
++        "meta:China"{
++            ld{"Chinesische Sommerzeit"}
++            lg{"Chinesische Zeit"}
++            ls{"Chinesische Winterzeit"}
++        }
+         "meta:Europe_Central"{
+             cu:int{1}
+             ld{"Mitteleuropäische Sommerzeit"}
+-            ls{"Mitteleuropäische Zeit"}
++            lg{"Mitteleuropäische Zeit"}
++            ls{"Mitteleuropäische Winterzeit"}
+             sd{"MESZ"}
+             ss{"MEZ"}
+         }
+         "meta:Europe_Eastern"{
+             ld{"Osteuropäische Sommerzeit"}
+-            ls{"Osteuropäische Zeit"}
++            lg{"Osteuropäische Zeit"}
++            ls{"Osteuropäische Winterzeit"}
+             sd{"OESZ"}
+             ss{"OEZ"}
+         }
+         "meta:Europe_Western"{
+             ld{"Westeuropäische Sommerzeit"}
+-            ls{"Westeuropäische Zeit"}
++            lg{"Westeuropäische Zeit"}
++            ls{"Westeuropäische Winterzeit"}
+             sd{"WESZ"}
+             ss{"WEZ"}
+         }
++        "meta:Korea"{
++            ld{"Koreanische Sommerzeit"}
++            lg{"Koreanische Zeit"}
++            ls{"Koreanische Winterzeit"}
++        }
+         "meta:Moscow"{
+             ld{"Moskauer Sommerzeit"}
+-            ls{"Moskauer Zeit"}
++            lg{"Moskauer Zeit"}
++            ls{"Moskauer Winterzeit"}
++        }
++        "meta:Japan"{
++            ld{"Japanische Sommerzeit"}
++            lg{"Japanische Zeit"}
++            ls{"Japanische Winterzeit"}
+         }
+         fallbackFormat{"{1} ({0})"}
+         gmtFormat{"GMT{0}"}
+--- source/data/zone/it.txt	2010-10-28 12:45:36.000000000 -0700
++++ source/data/zone/it.txt	2011-07-22 16:00:32.906774000 -0700
+@@ -205,6 +205,26 @@
+             ld{"Ora Legale Alaska"}
+             ls{"Ora Standard Alaska"}
+         }
++        "meta:America_Central"{
++            ld{"Ora legale centrale USA"}
++            lg{"Ora centrale USA"}
++            ls{"Ora standard centrale USA"}
++        }
++        "meta:America_Eastern"{
++            ld{"Ora legale orientale USA"}
++            lg{"Ora orientale USA"}
++            ls{"Ora standard orientale USA"}
++        }
++        "meta:America_Mountain"{
++            ld{"Ora legale delle Montagne Rocciose USA"}
++            lg{"Ora sulle Montagne Rocciose USA"}
++            ls{"Ora standard sulle Montagne Rocciose USA"}
++        }
++        "meta:America_Pacific"{
++            ld{"Ora legale della costa del Pacifico USA"}
++            lg{"Ora del Pacifico USA"}
++            ls{"Ora standard della costa del Pacifico USA"}
++        }
+         "meta:China"{
+             ld{"Ora Legale Cina"}
+             ls{"Ora Standard Cina"}
+@@ -219,6 +239,10 @@
+             ld{"Ora Legale Europa Orientale"}
+             ls{"Ora Standard Europa Orientale"}
+         }
++        "meta:Europe_Western"{
++            ld{"Ora Legale Europa Occidentale"}
++            ls{"Ora Standard Europa Occidentale"}
++        }
+         "meta:Hawaii"{
+             ld{"Ora Legale Hawaii"}
+             ls{"Ora Standard Hawaii"}
+--- source/data/zone/ja.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/zone/ja.txt	2011-07-22 16:00:32.922792000 -0700
+@@ -646,14 +646,22 @@
+         }
+         "meta:China"{
+             ld{"中国夏時間"}
++            lg{"中国時間"}
+             ls{"中国標準時"}
+         }
+         "meta:Europe_Central"{
+             ld{"中欧夏時間"}
++            lg{"中欧時間"}
+             ls{"中欧標準時"}
+         }
+         "meta:Europe_Eastern"{
+             ld{"東欧夏時間"}
++            lg{"東欧時間"}
++            ls{"東欧標準時"}
++        }
++        "meta:Europe_Western"{
++            ld{"西欧夏時間"}
++            lg{"西欧時間"}
+             ls{"東欧標準時"}
+         }
+         "meta:GMT"{
+@@ -666,8 +674,14 @@
+         "meta:Japan"{
+             cu:int{1}
+             ld{"日本夏時間"}
++            lg{"日本時間"}
+             ls{"日本標準時"}
+         }
++        "meta:Korea"{
++            ld{"韓国夏時間"}
++            lg{"韓国時間"}
++            ls{"韓国標準時"}
++        }
+         "meta:Newfoundland"{
+             ld{"ニューファンドランド島夏時間"}
+             ls{"ニューファンドランド島標準時"}
+--- source/data/zone/ko.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/zone/ko.txt	2011-07-22 16:59:40.198820000 -0700
+@@ -1127,24 +1127,24 @@
+             ls{"아마존 표준시"}
+         }
+         "meta:America_Central"{
+-            ld{"미 중부 하계 표준시"}
+-            lg{"중부 표준시"}
+-            ls{"중부 표준시"}
++            ld{"북미 중부 하계 표준시"}
++            lg{"북미 중부 시간"}
++            ls{"북미 중부 표준시"}
+         }
+         "meta:America_Eastern"{
+-            ld{"미 동부 하계 표준시"}
+-            lg{"동부 표준시"}
+-            ls{"동부 표준시"}
++            ld{"북미 동부 하계 표준시"}
++            lg{"북미 동부 시간"}
++            ls{"북미 동부 표준시"}
+         }
+         "meta:America_Mountain"{
+-            ld{"미 산지 하계 표준시"}
+-            lg{"산지 표준시"}
+-            ls{"산악 표준시"}
++            ld{"북미 로키 산맥 하계 표준시"}
++            lg{"북미 로키 산맥 시간"}
++            ls{"북미 로키 산맥 표준시"}
+         }
+         "meta:America_Pacific"{
+-            ld{"미 태평양 하계 표준시"}
+-            lg{"태평양 표준시"}
+-            ls{"태평양 표준시"}
++            ld{"북미 태평양 하계 표준시"}
++            lg{"북미 태평양 시간"}
++            ls{"북미 평양 표준시"}
+         }
+         "meta:Aqtau"{
+             sd{"AQTST (아크타우)"}
+@@ -1163,29 +1163,29 @@
+             ss{"AST(아라비아)"}
+         }
+         "meta:Atlantic"{
+-            ld{"미 대서양 하계 표준시"}
+-            lg{"대서양 표준시"}
+-            ls{"대서양 표준시"}
++            ld{"북미 대서양 하계 표준시"}
++            lg{"북미 대서양 시간"}
++            ls{"북미 대서양 표준시"}
+         }
+         "meta:Australia_Central"{
+-            ld{"오스트레일리아 중부 하계 표준시"}
+-            lg{"중앙 오스트레일리아 시간"}
+-            ls{"오스트레일리아 중부 표준시"}
++            ld{"호주 중부 하계 표준시"}
++            lg{"호주 중부 시간"}
++            ls{"호주 중부 표준시"}
+         }
+         "meta:Australia_CentralWestern"{
+-            ld{"오스트레일리아 중서부 하계 표준시"}
+-            lg{"오스트레일리아 중서부 시간"}
+-            ls{"오스트레일리아 중서부 표준시"}
++            ld{"호주 중서부 하계 표준시"}
++            lg{"호주 중서부 시간"}
++            ls{"호주 중서부 표준시"}
+         }
+         "meta:Australia_Eastern"{
+-            ld{"오스트레일리아 동부 하계 표준시"}
+-            lg{"동부 오스트레일리아 시간"}
+-            ls{"오스트레일리아 동부 표준시"}
++            ld{"호주 동부 하계 표준시"}
++            lg{"호주 동부 시간"}
++            ls{"호주 동부 표준시"}
+         }
+         "meta:Australia_Western"{
+-            ld{"오스트레일리아 서부 하계 표준시"}
+-            lg{"서부 오스트레일리아 시간"}
+-            ls{"오스트레일리아 서부 표준시"}
++            ld{"호주 서부 하계 표준시"}
++            lg{"호주 서부 시간"}
++            ls{"호주 서부 표준시"}
+         }
+         "meta:Azores"{
+             ld{"아조레스 하계 표준시"}
+@@ -1214,6 +1214,7 @@
+         }
+         "meta:China"{
+             ld{"중국 하계 표준시"}
++            lg{"중국 시간"}
+             ls{"중국 표준시"}
+             sd{"CDT (중국)"}
+             sg{"CT (중국)"}
+@@ -1246,15 +1247,18 @@
+         }
+         "meta:Europe_Central"{
+             ld{"중부유럽 하계 표준시"}
++            lg{"중부유럽 시간"}
+             ls{"중부유럽 표준시"}
+         }
+         "meta:Europe_Eastern"{
+-            ld{"동부유럽 하계 표준시"}
+-            ls{"동부유럽 표준시"}
++            ld{"동유럽 하계 표준시"}
++            lg{"동유럽 시간"}
++            ls{"동유럽 표준시"}
+         }
+         "meta:Europe_Western"{
+-            ld{"서부 유럽 하계 표준시"}
+-            ls{"서부 유럽 시간"}
++            ld{"서유럽 하계 표준시"}
++            lg{"서유럽 시간"}
++            ls{"서유럽 표준시"}
+         }
+         "meta:Falkland"{
+             ld{"포클랜드 하계 표준시"}
+@@ -1278,7 +1282,8 @@
+         }
+         "meta:Hong_Kong"{
+             ld{"홍콩 하계 표준시"}
+-            ls{"홍콩 시간"}
++            lg{"홍콩 시간"}
++            ls{"홍콩 표준시"}
+         }
+         "meta:India"{
+             ls{"인도 표준시"}
+@@ -1305,11 +1310,13 @@
+         }
+         "meta:Japan"{
+             ld{"일본 하계 표준시"}
++            lg{"일본 시간"}
+             ls{"일본 표준시"}
+         }
+         "meta:Korea"{
+             cu:int{1}
+             ld{"한국 하계 표준시"}
++            lg{"한국 시간"}
+             ls{"한국 표준시"}
+         }
+         "meta:Lord_Howe"{
+@@ -1328,6 +1335,7 @@
+         }
+         "meta:Moscow"{
+             ld{"모스크바 하계 표준시"}
++            lg{"모스크바 시간"}
+             ls{"모스크바 표준시"}
+         }
+         "meta:New_Zealand"{

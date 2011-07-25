@@ -205,6 +205,26 @@ it{
             ld{"Ora Legale Alaska"}
             ls{"Ora Standard Alaska"}
         }
+        "meta:America_Central"{
+            ld{"Ora legale centrale USA"}
+            lg{"Ora centrale USA"}
+            ls{"Ora standard centrale USA"}
+        }
+        "meta:America_Eastern"{
+            ld{"Ora legale orientale USA"}
+            lg{"Ora orientale USA"}
+            ls{"Ora standard orientale USA"}
+        }
+        "meta:America_Mountain"{
+            ld{"Ora legale delle Montagne Rocciose USA"}
+            lg{"Ora sulle Montagne Rocciose USA"}
+            ls{"Ora standard sulle Montagne Rocciose USA"}
+        }
+        "meta:America_Pacific"{
+            ld{"Ora legale della costa del Pacifico USA"}
+            lg{"Ora del Pacifico USA"}
+            ls{"Ora standard della costa del Pacifico USA"}
+        }
         "meta:China"{
             ld{"Ora Legale Cina"}
             ls{"Ora Standard Cina"}
@@ -218,6 +238,10 @@ it{
         "meta:Europe_Eastern"{
             ld{"Ora Legale Europa Orientale"}
             ls{"Ora Standard Europa Orientale"}
+        }
+        "meta:Europe_Western"{
+            ld{"Ora Legale Europa Occidentale"}
+            ls{"Ora Standard Europa Occidentale"}
         }
         "meta:Hawaii"{
             ld{"Ora Legale Hawaii"}

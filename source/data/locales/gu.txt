@@ -58,9 +58,13 @@ gu{
             availableFormats{
                 MMMMd{"d MMMM"}
                 MMdd{"dd-MM"}
+		Md{"d/M"}
+		MEd{"E, d/M"}
                 h{"hh a"}
                 hm{"hh:mm a"}
                 hms{"hh:mm:ss a"}
+                yM{"M/y"}
+                yMd{"d/M/y"}
                 yyQ{"Q yy"}
                 yyyyMM{"MM-yyyy"}
                 yyyyMMMM{"MMMM y"}

@@ -56,8 +56,14 @@ te{
                 "{1} {0}",
             }
             availableFormats{
+                EEEd{"EEE d"}
+                Md{"d/M"}
+                MEd{"E, d/M"}
+                MMMEd{"E, d MMM"}
                 MMMMd{"d MMMM"}
                 MMdd{"dd-MM"}
+                yM{"M/y"}
+                yMd{"d/M/y"}
                 yyQ{"Q yy"}
                 yyyyMM{"MM-yyyy"}
                 yyyyMMMM{"MMMM y"}

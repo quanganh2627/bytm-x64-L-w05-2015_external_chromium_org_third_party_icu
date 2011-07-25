@@ -29,9 +29,9 @@ sr{
                 scientificFormat{"#E0"}
             }
             symbols{
-                decimal{"."}
+                decimal{","}
                 exponential{"E"}
-                group{","}
+                group{"."}
                 infinity{"∞"}
                 list{";"}
                 minusSign{"-"}

@@ -84,6 +84,10 @@ This directory contains the source code of ICU 4.6 for C/C++
     add reslocal.mk or {trns,sprep,rbnf,coll}local.mk files to
     source/data/{coll,curr,lang.locale,curr,region,translit,zone,rbnf,sprep}.
 
+  - In source/data/region, run the following command to get rid of numeric region
+    display names we don't use (everything other than 419).
+     $ sed -i  '/[0-35-9][0-9][0-9]{/ d' *.txt
+
 7. Removal of unihan collation tables from data/coll/{zh,ja,ko}.txt
 
   - patches/unihan.patch:

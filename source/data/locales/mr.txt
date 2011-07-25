@@ -59,6 +59,9 @@ mr{
             availableFormats{
                 Hm{"H-mm"}
                 Hms{"H-mm-ss"}
+                M{"M"}
+                Md{"d/M"}
+                MEd{"E, d/M"}
                 MMMMd{"d MMMM"}
                 MMdd{"dd-MM"}
                 yyQ{"Q yy"}

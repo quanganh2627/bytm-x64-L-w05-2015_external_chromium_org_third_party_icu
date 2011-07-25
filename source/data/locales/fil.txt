@@ -65,6 +65,7 @@ fil{
                 MMMMd{"MMMM d"}
                 MMMd{"MMM d"}
                 Md{"M-d"}
+		d{"d"}
                 ms{"mm:ss"}
                 y{"y"}
                 yM{"yyyy-M"}

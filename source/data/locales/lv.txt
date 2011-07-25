@@ -74,7 +74,7 @@ lv{
                 MMMMEd{"E, d. MMMM"}
                 MMMMd{"d. MMMM"}
                 MMMd{"d. MMM"}
-                Md{"dd.mm."}
+                Md{"dd.MM."}
                 d{"d"}
                 h{"h a"}
                 hm{"h:mm a"}
@@ -82,8 +82,8 @@ lv{
                 mmss{"mm:ss"}
                 ms{"mm:ss"}
                 y{"y. 'g'."}
-                yM{"mm.yyyy."}
-                yMEd{"EEE, dd.mm.yyyy."}
+                yM{"MM.yyyy."}
+                yMEd{"EEE, dd.MM.yyyy."}
                 yMMM{"yyyy. 'g'. MMM"}
                 yMMMEd{"EEE, yyyy. 'g'. dd. MMM"}
                 yMMMM{"y. 'g'. MMMM"}
@@ -216,8 +216,8 @@ lv{
                     d{"d.–d. MMM"}
                 }
                 Md{
-                    M{"dd.mm–dd.mm"}
-                    d{"dd.mm.–dd.mm."}
+                    M{"dd.MM–dd.MM"}
+                    d{"dd.MM.–dd.MM."}
                 }
                 d{
                     d{"d.–d."}
@@ -245,13 +245,13 @@ lv{
                     y{"y.–y."}
                 }
                 yM{
-                    M{"mm.yyyy.–mm.yyyy."}
-                    y{"mm.yyyy.–mm.yyyy."}
+                    M{"MM.yyyy.–MM.yyyy."}
+                    y{"MM.yyyy.–MM.yyyy."}
                 }
                 yMEd{
-                    M{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
-                    d{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
-                    y{"EEE, dd.mm.yy. – EEE, dd.mm.yy."}
+                    M{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
+                    d{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
+                    y{"EEE, dd.MM.yy. – EEE, dd.MM.yy."}
                 }
                 yMMM{
                     M{"y. 'gada' MMM–MMM"}
@@ -263,8 +263,8 @@ lv{
                     y{"E, y. 'gada' d. MMM – E, y. 'gada' d. MMM"}
                 }
                 yMMMM{
-                    M{"mm.yyyy.–mm.yyyy."}
-                    y{"mm.yyyy.–mm.yyyy."}
+                    M{"MM.yyyy.–MM.yyyy."}
+                    y{"MM.yyyy.–MM.yyyy."}
                 }
                 yMMMd{
                     M{"y. 'gada' d. MMM – d. MMM"}
@@ -272,9 +272,9 @@ lv{
                     y{"y. 'gada' d. MMM – y. 'gada' d. MMM"}
                 }
                 yMd{
-                    M{"dd.mm.yy.–dd.mm.yy."}
-                    d{"dd.mm.yyyy.–dd.mm.yyyy."}
-                    y{"dd.mm.yy.–dd.mm.yy."}
+                    M{"dd.MM.yy.–dd.MM.yy."}
+                    d{"dd.MM.yyyy.–dd.MM.yyyy."}
+                    y{"dd.MM.yy.–dd.MM.yy."}
                 }
             }
             monthNames{

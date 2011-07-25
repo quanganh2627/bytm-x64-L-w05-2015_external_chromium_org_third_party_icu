@@ -44,6 +44,8 @@ am{
                 "{1} {0}",
             }
             availableFormats{
+                h{"h a"}
+                H{"H"}
                 Hm{"HH:mm"}
                 Hms{"HH:mm:ss"}
                 M{"L"}

@@ -89,6 +89,9 @@ lt{
                 h{"hh a"}
                 hm{"hh:mm a"}
                 hms{"hh:mm:ss a"}
+                yMd{"y-M-d"}
+                yMEd{"y-M-d EEE"}
+                yMMMd{"y MMM d"}
                 yyQ{"Q yy"}
                 yyyyMM{"yyyy.MM"}
             }

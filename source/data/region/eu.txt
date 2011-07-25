@@ -11,11 +11,6 @@
  */
 eu{
     Countries{
-        002{"Afrika"}
-        019{"Amerika"}
-        029{"Karibea"}
-        053{"Australia eta Zeelanda Berria"}
-        150{"Europa"}
         419{"Latinoamerika"}
         AC{"Ascension Uhartea"}
         AD{"Andorra"}
