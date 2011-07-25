@@ -92,8 +92,8 @@
 + bn.txt gu.txt kn.txt ml.txt mr.txt ta.txt te.txt\
 + fa.txt
 --- source/data/curr/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/curr/reslocal.mk	2011-01-25 09:53:17.542707000 -0800
-@@ -0,0 +1,19 @@
++++ source/data/curr/reslocal.mk	2011-07-25 02:16:27.244259000 -0700
+@@ -0,0 +1,78 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
 +CURR_CLDR_VERSION = 1.9
@@ -102,19 +102,78 @@
 +# constrained by
 +# the size (and/or their target OS already has ICU with the full locale data.)
 +#
-+# At the moment, we don't use currency format in Chrome although there's a plan to use
-+# it for Javascript I18n APIs. When it becomes necessary, set the values below
-+# as necessary (as done in {lang,locales,region,zone}/reslocal.mk,
++# Listed below are locale data files necessary for 40 + 1 + 8 languages Chrome
++# is localized to.
 +#
++# In addition to them, 40+ "abridged" locale data files are listed. Chrome is
++# localized to them, but
++# uses a few categories of data in those locales for IDN handling and language
++# name listing (in the UI).
++# Aliases which do not have a corresponding xx.xml file (see icu-config.xml &
++# build.xml)
 +CURR_SYNTHETIC_ALIAS =
 +
 +# All aliases (to not be included under 'installed'), but not including root.
-+CURR_ALIAS_SOURCE = $(CURR_SYNTHETIC_ALIAS)
++CURR_ALIAS_SOURCE = $(CURR_SYNTHETIC_ALIAS)\
++ zh_CN.txt zh_TW.txt zh_HK.txt zh_SG.txt\
++ no.txt in.txt iw.txt
 +
 +# Ordinary resources
-+CURR_SOURCE =
++CURR_SOURCE =\
++ am.txt\
++ ar.txt\
++ bg.txt\
++ bn.txt\
++ ca.txt\
++ cs.txt\
++ da.txt\
++ de.txt\
++ el.txt\
++ en.txt\
++ es.txt\
++ es_AR.txt es_CO.txt es_EC.txt es_HN.txt es_UY.txt\
++ es_MX.txt es_CL.txt\
++ es_GT.txt es_PR.txt es_US.txt\
++ et.txt\
++ fa.txt\
++ fi.txt\
++ fil.txt\
++ fr.txt\
++ gu.txt\
++ he.txt\
++ hi.txt\
++ hr.txt\
++ hu.txt\
++ id.txt\
++ it.txt\
++ ja.txt\
++ kn.txt\
++ ko.txt\
++ lt.txt\
++ lv.txt\
++ ml.txt\
++ mr.txt\
++ nb.txt\
++ nl.txt\
++ pl.txt\
++ pt.txt pt_PT.txt\
++ ro.txt\
++ ru.txt\
++ sk.txt\
++ sl.txt\
++ sr.txt\
++ sv.txt\
++ sw.txt\
++ ta.txt\
++ te.txt\
++ th.txt\
++ tr.txt\
++ uk.txt\
++ vi.txt\
++ zh.txt zh_Hans.txt zh_Hans_CN.txt zh_Hans_SG.txt\
++ zh_Hant.txt zh_Hant_TW.txt zh_Hant_HK.txt
 --- source/data/lang/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/lang/reslocal.mk	2011-02-07 10:31:18.532209000 -0800
++++ source/data/lang/reslocal.mk	2011-07-25 02:16:27.318258000 -0700
 @@ -0,0 +1,124 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -241,7 +300,7 @@
 + yo.txt\
 + zu.txt
 --- source/data/locales/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/locales/reslocal.mk	2011-02-07 10:31:35.632792000 -0800
++++ source/data/locales/reslocal.mk	2011-07-25 02:16:27.385258000 -0700
 @@ -0,0 +1,125 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -369,7 +428,7 @@
 + yo.txt\
 + zu.txt
 --- source/data/region/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/region/reslocal.mk	2011-02-07 10:31:52.621383000 -0800
++++ source/data/region/reslocal.mk	2011-07-25 02:16:27.442259000 -0700
 @@ -0,0 +1,76 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.
@@ -452,7 +511,7 @@
 @@ -0,0 +1 @@
 +TRANSLIT_SOURCE=
 --- source/data/zone/reslocal.mk	1969-12-31 16:00:00.000000000 -0800
-+++ source/data/zone/reslocal.mk	2011-02-07 10:32:03.211470000 -0800
++++ source/data/zone/reslocal.mk	2011-07-25 02:16:27.447258000 -0700
 @@ -0,0 +1,75 @@
 +# *   Copyright (C) 1998-2010, International Business Machines
 +# *   Corporation and others.  All Rights Reserved.

@@ -24,10 +24,8 @@ CURR_ALIAS_SOURCE = $(CURR_SYNTHETIC_ALIAS)\
 
 # Ordinary resources
 CURR_SOURCE =\
- am.txt\
  ar.txt\
  bg.txt\
- bn.txt\
  ca.txt\
  cs.txt\
  da.txt\
@@ -39,11 +37,9 @@ CURR_SOURCE =\
  es_MX.txt es_CL.txt\
  es_GT.txt es_PR.txt es_US.txt\
  et.txt\
- fa.txt\
  fi.txt\
  fil.txt\
  fr.txt\
- gu.txt\
  he.txt\
  hi.txt\
  hr.txt\
@@ -51,12 +47,9 @@ CURR_SOURCE =\
  id.txt\
  it.txt\
  ja.txt\
- kn.txt\
  ko.txt\
  lt.txt\
  lv.txt\
- ml.txt\
- mr.txt\
  nb.txt\
  nl.txt\
  pl.txt\
@@ -67,9 +60,6 @@ CURR_SOURCE =\
  sl.txt\
  sr.txt\
  sv.txt\
- sw.txt\
- ta.txt\
- te.txt\
  th.txt\
  tr.txt\
  uk.txt\
