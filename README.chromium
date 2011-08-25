@@ -132,11 +132,6 @@ This directory contains the source code of ICU 4.6 for C/C++
     - {mac,linux}/icudt46l_dat.S : Built on Mac and Linux with all the
       patches above applied and checked in.
 
-    - cros/icudt46l_dat.S : Built on Linux with
-      abriged locale source files in cros/data put
-      in source/data. Those abridged locales files are
-      for locales ChromeOS is not localized to.
-
 11. The header files were moved as shown below:
 
    source/common/unicode ==> public/common/unicode

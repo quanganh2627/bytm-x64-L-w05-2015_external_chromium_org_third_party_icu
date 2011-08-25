@@ -48,12 +48,8 @@
              # version is an identical copy of the (mac) icudt46l_dat.S file,
              # modulo removal of the .private_extern and .const directives and
              # with no leading underscore on the icudt46_dat symbol.
-             # The ChromiumOS version is slightly smaller because it doesn't
-             # have locale data for locales Chrome is localized to but ChromeOS
-             # is not localized to.
              'linux/icudt46l_dat.S',
              'mac/icudt46l_dat.S',
-             'cros/icudt46l_dat.S',
           ],
           'conditions': [
             [ 'OS == "win"', {
@@ -67,14 +63,11 @@
                 },
               ],
             }],
-            [ 'OS == "win" or OS == "mac" or chromeos == 1', {
+            [ 'OS == "win" or OS == "mac"', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
             [ 'OS != "mac"', {
               'sources!': ['mac/icudt46l_dat.S'],
-            }],
-            [ 'chromeos != 1', {
-              'sources!': ['cros/icudt46l_dat.S'],
             }],
             [ 'OS != "win" and icu_use_data_file_flag', {
               # Remove any assembly data file.
