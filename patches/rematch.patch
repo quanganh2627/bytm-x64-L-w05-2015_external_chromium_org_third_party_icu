@@ -10,7 +10,7 @@ Index: source/i18n/rematch.cpp
                      
                      #ifdef REGEX_SMART_BACKTRACKING
                      int32_t originalInputIdx = fp->fInputIdx;
-@@ -5607,23 +5608,29 @@
+@@ -5607,23 +5608,31 @@
                      foldOffset = foldLength = 0;
  
                      while (patternChars < patternEnd && success) {
@@ -46,6 +46,8 @@ Index: source/i18n/rematch.cpp
 +                                    }
                                  }
                              }
++                        } else {
++                          c_is_valid = FALSE;
                          }
                          
 -                        if (fp->fInputIdx <= fActiveLimit) {
@@ -53,7 +55,7 @@ Index: source/i18n/rematch.cpp
                              if (U_IS_BMP(c)) {
                                  success = (*patternChars == c);
                                  patternChars += 1;
-@@ -6070,4 +6077,3 @@
+@@ -6070,4 +6079,3 @@
  U_NAMESPACE_END
  
  #endif  // !UCONFIG_NO_REGULAR_EXPRESSIONS

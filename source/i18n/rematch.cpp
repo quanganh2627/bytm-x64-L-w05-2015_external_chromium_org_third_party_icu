@@ -5628,6 +5628,8 @@ GC_Done:
                                     }
                                 }
                             }
+                        } else {
+                          c_is_valid = FALSE;
                         }
                         
                         if (fp->fInputIdx <= fActiveLimit && c_is_valid) {
