@@ -169,3 +169,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 16. Apply the upstream patch for Korean search collator support (ICU 4.6.1).
    - patches/search_collation.patch
    - upstream bug: http://bugs.icu-project.org/trac/ticket/8290
+
+17. Fix a use of uninitialized memory bug in regular expression matching
+   - patches/rematch.patch
+   - upstream bug: http://bugs.icu-project.org/trac/ticket/8824
