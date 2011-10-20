@@ -28,6 +28,8 @@
 #   include "unicode/plinux.h"
 #elif defined(__FreeBSD__)
 #   include "unicode/pfreebsd.h"
+#elif defined(__OpenBSD__)
+#   include "unicode/popenbsd.h"
 #else
 #   include "unicode/platform.h"
 #endif

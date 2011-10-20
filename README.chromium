@@ -9,7 +9,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 
     $ svn export --native-eol LF http://source.icu-project.org/repos/icu/icu/tags/release-4-6 icu46
 
-2. Platform header files for Linux, FreeBSD, and Mac OS X:
+2. Platform header files for Linux, FreeBSD, OpenBSD  and Mac OS X:
 
    - Apply platform.patch in patches directory. : It applies the upstream
      patch to platform.h.in (see http://bugs.icu-project.org/trac/ticket/8248)
@@ -20,7 +20,12 @@ This directory contains the source code of ICU 4.6 for C/C++
      'runConfigureICU MacOSX' are run to generate
      source/common/unicode/platform.h.
 
-   - Rename it to 'plinux.h', 'pfreebsd.h', and 'pmac.h'
+   - On OpenBSD, source/common/unicode/platform.h is being generated
+     by the icu4c port in the ports directory and not by runConfigureICU.
+     In case the file has to be updated you can do:
+     cd /home/ports/textproc/icu4c && make configure
+
+   - Rename it to 'plinux.h', 'pfreebsd.h', 'popenbsd.h' and 'pmac.h'
 
    - Apply patches/pmach.h.patch on Mac to pmac.h
 
