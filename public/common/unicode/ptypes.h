@@ -30,6 +30,8 @@
 #   include "unicode/pfreebsd.h"
 #elif defined(__OpenBSD__)
 #   include "unicode/popenbsd.h"
+#elif defined(ANDROID)
+#   include "unicode/pandroid.h"
 #else
 #   include "unicode/platform.h"
 #endif

@@ -292,6 +292,34 @@
                 },
               }
             }],
+            ['OS == "android"', {
+              'include_dirs': [
+                '<(android_ndk_root)/sources/cxx-stl/gabi++/include',
+              ],
+              'conditions': [
+                ['target_arch=="arm" and armv7==1', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi-v7a/libgabi++_static.a',
+                    ]
+                  },
+                }],
+                ['target_arch=="arm" and armv7==0', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi/libgabi++_static.a',
+                    ]
+                  },
+                }],
+                ['target_arch=="ia32"', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/x86/libgabi++_static.a',
+                    ]
+                  },
+                }],
+              ],
+            }],
           ],
         },
         {
@@ -504,6 +532,34 @@
                   'RuntimeTypeInfo': 'true',
                 },
               }
+            }],
+            ['OS == "android"', {
+              'include_dirs': [
+                '<(android_ndk_root)/sources/cxx-stl/gabi++/include',
+              ],
+              'conditions': [
+                ['target_arch=="arm" and armv7==1', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi-v7a/libgabi++_static.a',
+                    ]
+                  },
+                }],
+                ['target_arch=="arm" and armv7==0', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi/libgabi++_static.a',
+                    ]
+                  },
+                }],
+                ['target_arch=="ia32"', {
+                  'link_settings': {
+                    'libraries': [
+                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/x86/libgabi++_static.a',
+                    ]
+                  },
+                }],
+              ],
             }],
           ],
         },
