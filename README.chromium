@@ -102,7 +102,20 @@ This directory contains the source code of ICU 4.6 for C/C++
     unihan collation tables are never used in Chrome/Webkit, but it takes
     about 1MB in the uncompressed ICU data file in ICU 4.2.1.
 
-8. Build-related changes
+8. Timezone data update
+  - Grab the latest version of the following timezone data files and 
+    put them in source/data/misc.
+
+     metaZones.txt
+     timezoneTypes.txt
+     windowsZones.txt
+     zoneinfo64.txt
+
+   As of Nov, 2011, the latest version is 2011n and the above files
+   are available at
+   http://source.icu-project.org/repos/icu/data/trunk/tzdata/icunew/2011n/44/
+
+9. Build-related changes
 
   - patches/wpo.patch
   - patches/vscomp.patch
@@ -117,7 +130,7 @@ This directory contains the source code of ICU 4.6 for C/C++
   - patches/clang.patch: To build with Clang.
   - add an empty file (stubdatabuilt.txt) to source/stubdata
 
-9. Pre-built data libraries are checked in.
+10. Pre-built data libraries are checked in.
 
     Before building data file on Linux, re-run runConfigureICU Linux again
     if it's run without data.build.patch in #8 above.
@@ -166,7 +179,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 
 14. Fix for locales that don't use '.' as decimal separator: patches/nan.patch
   - upstream bug: http://bugs.icu-project.org/trac/ticket/8561
-  - Handle other chars besides the dot. This is require because decNumber's
+  - Handle other chars besides the dot. This is required because decNumber's
     parser expects the dot as a decimal separator.
   - Locales that don't use dot were producing "NaN" values.
 
@@ -183,4 +196,4 @@ This directory contains the source code of ICU 4.6 for C/C++
    - upstream bug: http://bugs.icu-project.org/trac/ticket/8824
 
 18. Make it compile with -Werror on gcc 4.6
-   - patches/gcc46.patch
+   - patches/gcc46.patch (ToT upstream does not have this code any more).

@@ -1144,7 +1144,7 @@ ko{
         "meta:America_Pacific"{
             ld{"북미 태평양 하계 표준시"}
             lg{"북미 태평양 시간"}
-            ls{"북미 평양 표준시"}
+            ls{"북미 태평양 표준시"}
         }
         "meta:Aqtau"{
             sd{"AQTST (아크타우)"}
