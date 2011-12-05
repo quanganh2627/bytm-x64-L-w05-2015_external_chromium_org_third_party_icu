@@ -1,5 +1,5 @@
 --- source/data/lang/am.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/lang/am.txt	2011-07-22 16:52:36.622365000 -0700
++++ source/data/lang/am.txt	2011-07-25 02:16:27.276258000 -0700
 @@ -37,15 +37,19 @@
          dz{"ድዞንግኻኛ"}
          el{"ግሪክኛ"}
@@ -150,7 +150,7 @@
          eu{"바스크어"}
          ewo{"이원도어"}
 --- source/data/lang/sw.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/lang/sw.txt	2011-07-22 16:52:36.769385000 -0700
++++ source/data/lang/sw.txt	2011-07-25 02:16:27.322258000 -0700
 @@ -11,47 +11,115 @@
   */
  sw{
@@ -268,7 +268,7 @@
          yo{"Kiyoruba"}
          zh{"Kichina"}
 --- source/data/locales/am.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/am.txt	2011-07-22 16:52:36.855348000 -0700
++++ source/data/locales/am.txt	2011-07-25 02:16:27.338258000 -0700
 @@ -44,6 +44,8 @@
                  "{1} {0}",
              }
@@ -279,7 +279,7 @@
                  Hms{"HH:mm:ss"}
                  M{"L"}
 --- source/data/locales/bn.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/bn.txt	2011-07-22 16:52:36.892354000 -0700
++++ source/data/locales/bn.txt	2011-07-25 02:16:27.346260000 -0700
 @@ -14,6 +14,7 @@
      ExemplarCharacters{
          "[৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ \u09BC ং ঃ \u0981 ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ "
@@ -310,7 +310,7 @@
                  y{"y"}
                  yM{"yyyy-M"}
 --- source/data/locales/gu.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/gu.txt	2011-07-22 16:52:36.925360000 -0700
++++ source/data/locales/gu.txt	2011-07-25 02:16:27.355258000 -0700
 @@ -14,6 +14,7 @@
      ExemplarCharacters{
          "[ૐ અ આ ઇ ઈ ઉ ઊ ઋ ૠ ઍ એ ઐ ઑ ઓ ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ ત થ દ ધ ન પ ફ બ"
@@ -343,6 +343,19 @@
          " भ म य र ल ळ व श ष स ह ़ ँ ं ः ऽ ् ा ि ी ु ू ृ ॄ ॅ े ै ॉ ो ौ]"
      }
      ExemplarCharactersCurrency{"[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]"}
+--- source/data/locales/id.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/id.txt	2011-12-01 15:14:28.384233000 -0800
+@@ -59,8 +59,8 @@
+         }
+         gregorian{
+             AmPmMarkers{
+-                "pagi",
+-                "malam",
++                "AM",
++                "PM",
+             }
+             DateTimePatterns{
+                 "H:mm:ss zzzz",
 --- source/data/locales/ja.txt	2010-10-18 20:27:40.000000000 -0700
 +++ source/data/locales/ja.txt	2011-01-19 18:16:42.395861000 -0800
 @@ -12,59 +12,211 @@
@@ -611,7 +624,7 @@
      ExemplarCharactersCurrency{"[a b c č d e f g h i j k l ł m n o º p q r s t u v w x y z]"}
      ExemplarCharactersIndex{"[あ か さ た な は ま や ら わ]"}
 --- source/data/locales/kn.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/kn.txt	2011-07-22 16:52:36.937365000 -0700
++++ source/data/locales/kn.txt	2011-07-25 02:16:27.359258000 -0700
 @@ -13,6 +13,7 @@
      ExemplarCharacters{
          "[\u0CBC ೦ ೧ ೨ ೩ ೪ ೫ ೬ ೭ ೮ ೯ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ೠ ಌ ೡ ಎ ಏ ಐ ಒ ಓ ಔ ಂ ಃ ಕ ಖ ಗ ಘ ಙ ಚ "
@@ -890,7 +903,7 @@
              }
              monthNames{
 --- source/data/locales/ml.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/ml.txt	2011-07-22 16:52:36.968352000 -0700
++++ source/data/locales/ml.txt	2011-07-25 02:16:27.363259000 -0700
 @@ -82,6 +82,7 @@
                  yM{"M-y"}
                  yMEd{"d-M-yyyy, EEE"}
@@ -900,7 +913,7 @@
                  yMMMM{"y MMMM"}
                  yQ{"yyyy Q"}
 --- source/data/locales/mr.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/mr.txt	2011-07-22 16:52:36.979384000 -0700
++++ source/data/locales/mr.txt	2011-07-25 02:16:27.367258000 -0700
 @@ -14,6 +14,7 @@
      ExemplarCharacters{
          "[\u093C ० १ २ ३ ४ ५ ६ ७ ८ ९ ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क "
@@ -934,7 +947,7 @@
                  list{";"}
                  minusSign{"-"}
 --- source/data/locales/ta.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/ta.txt	2011-07-22 16:52:37.048348000 -0700
++++ source/data/locales/ta.txt	2011-07-25 02:16:27.410258000 -0700
 @@ -12,6 +12,7 @@
  ta{
      ExemplarCharacters{
@@ -944,7 +957,7 @@
      }
      ExemplarCharactersCurrency{"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"}
 --- source/data/locales/te.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/locales/te.txt	2011-07-22 16:52:37.065347000 -0700
++++ source/data/locales/te.txt	2011-07-25 02:16:27.431266000 -0700
 @@ -14,6 +14,7 @@
      ExemplarCharacters{
          "[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ"
@@ -1342,7 +1355,7 @@
      ExemplarCharactersCurrency{"[a b c d e f g h i j k l m n o p q r s t u v w x y z]"}
      ExemplarCharactersIndex{"[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]"}
 --- source/data/region/am.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/am.txt	2011-01-19 18:16:42.660793000 -0800
++++ source/data/region/am.txt	2011-07-24 21:47:06.871489000 -0700
 @@ -11,6 +11,7 @@
   */
  am{
@@ -1352,121 +1365,466 @@
          AE{"የተባበሩት አረብ ኤምሬትስ"}
          AF{"አፍጋኒስታን"}
 --- source/data/region/az.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/az.txt	2011-07-22 13:46:19.264639000 -0700
-@@ -42,7 +42,7 @@
-         154{"Şimal Avropa"}
-         155{"Qərb Avropa"}
-         172{"172"}
++++ source/data/region/az.txt	2011-07-24 21:47:06.900490000 -0700
+@@ -11,38 +11,7 @@
+  */
+ az{
+     Countries{
+-        001{"Dünya"}
+-        002{"Afrika"}
+-        003{"Şimal Amerika"}
+-        005{"Cənub Amerika"}
+-        009{"Okeyaniya"}
+-        011{"Qərb afrika"}
+-        013{"Orta Amerika"}
+-        014{"Şərq Afrika"}
+-        015{"Şimal Afrika"}
+-        017{"Orta Afrika"}
+-        018{"018"}
+-        019{"Amerikalar"}
+-        021{"021"}
+-        029{"Kariyıplar"}
+-        030{"Şərq Asiya"}
+-        034{"Cənub Asiya"}
+-        035{"Cənub Şərq Asiya"}
+-        039{"Cənub Avropa"}
+-        053{"Avstraliya və Yeni Zelandiya"}
+-        054{"Melanesya"}
+-        057{"Mikronesiya reqionu"}
+-        061{"Polineziya"}
+-        062{"Cənub Orta Asiya"}
+-        142{"Aziya"}
+-        143{"Orta Aziya"}
+-        145{"Qərb Asiya"}
+-        150{"Avropa"}
+-        151{"Şərq Avropa"}
+-        154{"Şimal Avropa"}
+-        155{"Qərb Avropa"}
+-        172{"172"}
 -        419{"Latın Amerikası və Kariblər"}
 +        419{"Latın Amerikası"}
          AD{"Andorra"}
          AE{"Birləşmiş Ərəb Emiratları"}
          AF{"Əfqənistan"}
 --- source/data/region/bg.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/bg.txt	2011-07-22 13:46:19.359564000 -0700
-@@ -42,7 +42,7 @@
-         154{"Северна Европа"}
-         155{"Западна Европа"}
-         172{"Общност на независимите държави"}
++++ source/data/region/bg.txt	2011-07-24 21:47:06.918491000 -0700
+@@ -11,39 +11,7 @@
+  */
+ bg{
+     Countries{
+-        001{"Земята"}
+-        002{"Африка"}
+-        003{"Северноамерикански континент"}
+-        005{"Южна Америка"}
+-        009{"Океания"}
+-        011{"Западна Афирка"}
+-        013{"Централна Америка"}
+-        014{"Източна Африка"}
+-        015{"Северна Африка"}
+-        017{"Централна Африка"}
+-        018{"Южноафрикански регион"}
+-        019{"Америка"}
+-        021{"Северна Америка"}
+-        029{"Карибски о-ви"}
+-        030{"Източна Азия"}
+-        034{"Южна Азия"}
+-        035{"Югоизточна Азия"}
+-        039{"Южна Европа"}
+-        053{"Австралия и Нова Зеландия"}
+-        054{"Меланезия"}
+-        057{"Микронезия"}
+-        061{"Полинезия"}
+-        062{"Южна Азия [062]"}
+-        142{"Азия"}
+-        143{"Централна Азия"}
+-        145{"Западна Азия"}
+-        150{"Европа"}
+-        151{"Източна Европа"}
+-        154{"Северна Европа"}
+-        155{"Западна Европа"}
+-        172{"Общност на независимите държави"}
 -        419{"Латинска Америка и Карибски басейн"}
+-        830{"Нормандски о-ви"}
 +        419{"Латинска Америка"}
-         830{"Нормандски о-ви"}
          AC{"Остров Възнесение"}
          AD{"Андора"}
+         AE{"Обединени арабски емирства"}
 --- source/data/region/bs.txt	2010-11-30 21:40:46.000000000 -0800
-+++ source/data/region/bs.txt	2011-07-22 13:46:19.418604000 -0700
-@@ -42,7 +42,7 @@
-         154{"Severna Evropa"}
-         155{"Zapadna Evropa"}
-         172{"Komonvelt nezavisnih država"}
++++ source/data/region/bs.txt	2011-07-24 21:47:06.945488000 -0700
+@@ -11,39 +11,7 @@
+  */
+ bs{
+     Countries{
+-        001{"Svet"}
+-        002{"Afrika"}
+-        003{"Severnoamerički kontinent"}
+-        005{"Južna Amerika"}
+-        009{"Okeanija"}
+-        011{"Zapadna Afrika"}
+-        013{"Centralna Amerika"}
+-        014{"Istočna Afrika"}
+-        015{"Severna Afrika"}
+-        017{"Centralna Afrika"}
+-        018{"Južna Afrika"}
+-        019{"Amerike"}
+-        021{"Severna Amerika"}
+-        029{"Karibi"}
+-        030{"Istočna Azija"}
+-        034{"Južna Azija"}
+-        035{"Jugoistočna Azija"}
+-        039{"Južna Evropa"}
+-        053{"Australija i Novi Zeland"}
+-        054{"Melanezija"}
+-        057{"Micronezija"}
+-        061{"Polinezija"}
+-        062{"Južno-centralna Azija"}
+-        142{"Azija"}
+-        143{"Centralna Azija"}
+-        145{"Zapadna Azija"}
+-        150{"Evropa"}
+-        151{"Istočna Evropa"}
+-        154{"Severna Evropa"}
+-        155{"Zapadna Evropa"}
+-        172{"Komonvelt nezavisnih država"}
 -        419{"Latinska Amerika i Karibi"}
+-        830{"Kanalska ostrva"}
 +        419{"Latinska Amerika"}
-         830{"Kanalska ostrva"}
          AD{"Andora"}
          AE{"Ujedinjeni Arapski Emirati"}
+         AF{"Avganistan"}
 --- source/data/region/ca.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/ca.txt	2011-07-22 13:46:19.874566000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa septentrional"}
-         155{"Europa Occidental"}
-         172{"Comunitat d'Estats Independents"}
++++ source/data/region/ca.txt	2011-07-24 21:47:06.948489000 -0700
+@@ -11,38 +11,7 @@
+  */
+ ca{
+     Countries{
+-        001{"Món"}
+-        002{"Àfrica"}
+-        003{"Amèrica del Nord"}
+-        005{"Amèrica del Sud"}
+-        009{"Oceania"}
+-        011{"Àfrica Occidental"}
+-        013{"Amèrica Central"}
+-        014{"Àfrica Oriental"}
+-        015{"Àfrica septentrional"}
+-        017{"Àfrica Central"}
+-        018{"Àfrica meridional"}
+-        019{"Amèrica"}
+-        021{"Amèrica septentrional"}
+-        029{"Carib"}
+-        030{"Àsia Oriental"}
+-        034{"Àsia meridional"}
+-        035{"Àsia Sud-oriental"}
+-        039{"Europa meridional"}
+-        053{"Austràlia i Nova Zelanda"}
+-        054{"Melanèsia"}
+-        057{"Regió de la Micronèsia"}
+-        061{"Polinèsia"}
+-        062{"Àsia Sud-central"}
+-        142{"Àsia"}
+-        143{"Àsia Central"}
+-        145{"Àsia Occidental"}
+-        150{"Europa"}
+-        151{"Europa Oriental"}
+-        154{"Europa septentrional"}
+-        155{"Europa Occidental"}
+-        172{"Comunitat d'Estats Independents"}
 -        419{"Amèrica Llatina i Carib"}
 +        419{"Amèrica Llatina"}
          AC{"Illa de l'Ascensió"}
          AD{"Andorra"}
          AE{"Unió dels Emirats Àrabs"}
 --- source/data/region/cs.txt	2010-09-13 12:12:47.000000000 -0700
-+++ source/data/region/cs.txt	2011-07-22 13:46:19.048658000 -0700
-@@ -42,7 +42,7 @@
-         154{"Severní Evropa"}
-         155{"Západní Evropa"}
-         200{"Československo"}
++++ source/data/region/cs.txt	2011-07-24 21:47:06.960488000 -0700
+@@ -11,39 +11,7 @@
+  */
+ cs{
+     Countries{
+-        001{"Svět"}
+-        002{"Afrika"}
+-        003{"003"}
+-        005{"Jižní Amerika"}
+-        009{"Oceánie"}
+-        011{"Západní Afrika"}
+-        013{"Střední Amerika"}
+-        014{"Východní Afrika"}
+-        015{"Severní Afrika"}
+-        017{"Střední Afrika"}
+-        018{"Jižní Afrika"}
+-        019{"Amerika"}
+-        021{"Severní Amerika"}
+-        029{"Karibik"}
+-        030{"Východní Asie"}
+-        034{"Jižní Asie"}
+-        035{"Jihovýchodní Asie"}
+-        039{"Jižní Evropa"}
+-        053{"Austrálie a Nový Zéland"}
+-        054{"Melanésie"}
+-        057{"Mikronésie"}
+-        061{"Polynésie"}
+-        062{"Jižní a centrální Asie"}
+-        142{"Asie"}
+-        143{"Střední Asie"}
+-        145{"Západní Asie"}
+-        150{"Evropa"}
+-        151{"Východní Evropa"}
+-        154{"Severní Evropa"}
+-        155{"Západní Evropa"}
+-        200{"Československo"}
 -        419{"Latinská Amerika a Karibské moře"}
+-        830{"Normanské ostrovy"}
 +        419{"Latinská Amerika"}
-         830{"Normanské ostrovy"}
          AD{"Andorra"}
          AE{"Spojené arabské emiráty"}
+         AF{"Afghánistán"}
 --- source/data/region/da.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/da.txt	2011-07-22 13:46:19.536614000 -0700
-@@ -42,7 +42,7 @@
-         154{"Nordeuropa"}
-         155{"Vesteuropa"}
-         172{"Sammenslutningen af uafhængige stater"}
++++ source/data/region/da.txt	2011-07-24 21:47:06.968492000 -0700
+@@ -11,38 +11,7 @@
+  */
+ da{
+     Countries{
+-        001{"Verden"}
+-        002{"Afrika"}
+-        003{"Nordamerika"}
+-        005{"Sydamerika"}
+-        009{"Oceanien"}
+-        011{"Vestafrika"}
+-        013{"Mellemamerika"}
+-        014{"Østafrika"}
+-        015{"Nordafrika"}
+-        017{"Centralafrika"}
+-        018{"Det sydlige Afrika"}
+-        019{"Amerika"}
+-        021{"Det nordlige Amerika"}
+-        029{"Caribien"}
+-        030{"Østasien"}
+-        034{"Sydasien"}
+-        035{"Sydøstasien"}
+-        039{"Sydeuropa"}
+-        053{"Australien og New Zealand"}
+-        054{"Melanesien"}
+-        057{"Mikronesien"}
+-        061{"Polynesien"}
+-        062{"Sydcentralasien"}
+-        142{"Asien"}
+-        143{"Centralasien"}
+-        145{"Vestasien"}
+-        150{"Europa"}
+-        151{"Østeuropa"}
+-        154{"Nordeuropa"}
+-        155{"Vesteuropa"}
+-        172{"Sammenslutningen af uafhængige stater"}
 -        419{"Latinamerika og Caribien"}
 +        419{"Latinamerika"}
          AC{"Ascensionøen"}
          AD{"Andorra"}
          AE{"Forenede Arabiske Emirater"}
 --- source/data/region/de.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/de.txt	2011-07-22 13:46:19.570567000 -0700
-@@ -42,7 +42,7 @@
-         154{"Nordeuropa"}
-         155{"Westeuropa"}
-         172{"Gemeinschaft Unabhängiger Staaten"}
++++ source/data/region/de.txt	2011-07-24 21:47:06.989484000 -0700
+@@ -11,39 +11,7 @@
+  */
+ de{
+     Countries{
+-        001{"Welt"}
+-        002{"Afrika"}
+-        003{"Nordamerika"}
+-        005{"Südamerika"}
+-        009{"Ozeanien"}
+-        011{"Westafrika"}
+-        013{"Mittelamerika"}
+-        014{"Ostafrika"}
+-        015{"Nordafrika"}
+-        017{"Zentralafrika"}
+-        018{"Südliches Afrika"}
+-        019{"Amerika"}
+-        021{"Nördliches Amerika"}
+-        029{"Karibik"}
+-        030{"Ostasien"}
+-        034{"Südasien"}
+-        035{"Südostasien"}
+-        039{"Südeuropa"}
+-        053{"Australien und Neuseeland"}
+-        054{"Melanesien"}
+-        057{"Mikronesisches Inselgebiet"}
+-        061{"Polynesien"}
+-        062{"Süd-Zentralasien"}
+-        142{"Asien"}
+-        143{"Zentralasien"}
+-        145{"Westasien"}
+-        150{"Europa"}
+-        151{"Osteuropa"}
+-        154{"Nordeuropa"}
+-        155{"Westeuropa"}
+-        172{"Gemeinschaft Unabhängiger Staaten"}
 -        419{"Lateinamerika und Karibik"}
+-        830{"Kanalinseln"}
 +        419{"Lateinamerika"}
-         830{"Kanalinseln"}
          AC{"Ascension"}
          AD{"Andorra"}
+         AE{"Vereinigte Arabische Emirate"}
 --- source/data/region/el.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/el.txt	2011-07-22 13:46:19.624564000 -0700
-@@ -42,7 +42,7 @@
-         154{"Βόρεια Ευρώπη"}
-         155{"Δυτική Ευρώπη"}
-         172{"Κοινοπολιτεία Ανεξαρτήτων Πολιτειών"}
++++ source/data/region/el.txt	2011-07-24 21:47:07.003463000 -0700
+@@ -11,39 +11,7 @@
+  */
+ el{
+     Countries{
+-        001{"Κόσμος"}
+-        002{"Αφρική"}
+-        003{"Βόρεια Αμερική"}
+-        005{"Νότια Αμερική"}
+-        009{"Ωκεανία"}
+-        011{"Δυτική Αφρική"}
+-        013{"Κεντρική Αμερική"}
+-        014{"Ανατολική Αφρική"}
+-        015{"Βόρεια Αφρική"}
+-        017{"Μέση Αφρική"}
+-        018{"Νότιος Αφρική"}
+-        019{"Αμερική"}
+-        021{"Βόρειος Αμερική"}
+-        029{"Καραϊβική"}
+-        030{"Ανατολική Ασία"}
+-        034{"Νότια Ασία"}
+-        035{"Νοτιοανατολική Ασία"}
+-        039{"Νότια Ευρώπη"}
+-        053{"Αυστραλία και Νέα Ζηλανδία"}
+-        054{"Μελανησία"}
+-        057{"Περιοχή Μικρονησίας"}
+-        061{"Πολυνησία"}
+-        062{"Νότια Κεντρική Ασία"}
+-        142{"Ασία"}
+-        143{"Κεντρική Ασία"}
+-        145{"Δυτική Ασία"}
+-        150{"Ευρώπη"}
+-        151{"Ανατολική Ευρώπη"}
+-        154{"Βόρεια Ευρώπη"}
+-        155{"Δυτική Ευρώπη"}
+-        172{"Κοινοπολιτεία Ανεξαρτήτων Πολιτειών"}
 -        419{"Λατινική Αμερική και Καραϊβική"}
+-        830{"Νησιά Τσάνελ"}
 +        419{"Λατινική Αμερική"}
-         830{"Νησιά Τσάνελ"}
          AC{"Νήσος Ασενσιόν"}
          AD{"Ανδόρα"}
+         AE{"Ηνωμένα Αραβικά Εμιράτα"}
 --- source/data/region/es.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/es.txt	2011-07-22 13:46:19.236659000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa septentrional"}
-         155{"Europa occidental"}
-         172{"Comunidad de Estados Independientes"}
++++ source/data/region/es.txt	2011-07-24 21:47:07.029442000 -0700
+@@ -11,38 +11,7 @@
+  */
+ es{
+     Countries{
+-        001{"Mundo"}
+-        002{"África"}
+-        003{"América del Norte"}
+-        005{"Suramérica"}
+-        009{"Oceanía"}
+-        011{"África occidental"}
+-        013{"Centroamérica"}
+-        014{"África oriental"}
+-        015{"África septentrional"}
+-        017{"África central"}
+-        018{"África meridional"}
+-        019{"Américas"}
+-        021{"Norteamérica"}
+-        029{"Caribe"}
+-        030{"Asia oriental"}
+-        034{"Asia meridional"}
+-        035{"Sudeste asiático"}
+-        039{"Europa meridional"}
+-        053{"Australia y Nueva Zelanda"}
+-        054{"Melanesia"}
+-        057{"Micronesia [057]"}
+-        061{"Polinesia"}
+-        062{"Asia centromeridional"}
+-        142{"Asia"}
+-        143{"Asia central"}
+-        145{"Asia occidental"}
+-        150{"Europa"}
+-        151{"Europa oriental"}
+-        154{"Europa septentrional"}
+-        155{"Europa occidental"}
+-        172{"Comunidad de Estados Independientes"}
 -        419{"Latinoamérica y el Caribe"}
 +        419{"Latinoamérica"}
          AC{"Isla de la Ascensión"}
          AD{"Andorra"}
          AE{"Emiratos Árabes Unidos"}
 --- source/data/region/et.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/et.txt	2011-07-22 13:46:19.650560000 -0700
-@@ -42,7 +42,7 @@
-         154{"Põhja-Euroopa"}
-         155{"Lääne-Euroopa"}
-         172{"Sõltumatute Riikide Ühendus"}
++++ source/data/region/et.txt	2011-07-24 21:47:07.033434000 -0700
+@@ -11,38 +11,7 @@
+  */
+ et{
+     Countries{
+-        001{"maailm"}
+-        002{"Aafrika"}
+-        003{"Põhja-Ameerika"}
+-        005{"Lõuna-Ameerika"}
+-        009{"Okeaania"}
+-        011{"Lääne-Aafrika"}
+-        013{"Kesk-Ameerika"}
+-        014{"Ida-Aafrika"}
+-        015{"Põhja-Aafrika"}
+-        017{"Kesk-Aafrika"}
+-        018{"Lõuna-Aafrika"}
+-        019{"Ameerika maailmajagu"}
+-        021{"Ameerika põhjaosa"}
+-        029{"Kariibi meri"}
+-        030{"Ida-Aasia"}
+-        034{"Lõuna-Aasia"}
+-        035{"Kagu-Aasia"}
+-        039{"Lõuna-Euroopa"}
+-        053{"Austraalia ja Uus-Meremaa"}
+-        054{"Melaneesia"}
+-        057{"Mikroneesia"}
+-        061{"Polüneesia"}
+-        062{"Kesk-Aasia lõunaosa"}
+-        142{"Aasia"}
+-        143{"Kesk-Aasia"}
+-        145{"Lääne-Aasia"}
+-        150{"Euroopa"}
+-        151{"Ida-Euroopa"}
+-        154{"Põhja-Euroopa"}
+-        155{"Lääne-Euroopa"}
+-        172{"Sõltumatute Riikide Ühendus"}
 -        419{"Ladina-Ameerika ja Kariibi meri"}
 +        419{"Ladina-Ameerika"}
          AC{"Ascensioni saar"}
          AD{"Andorra"}
          AE{"Araabia Ühendemiraadid"}
 --- source/data/region/fil.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/fil.txt	2011-07-22 13:46:19.156670000 -0700
-@@ -41,13 +41,16 @@
-         151{"Silangang Europa"}
-         154{"Hilagang Europa"}
-         155{"Kanlurang Europa"}
++++ source/data/region/fil.txt	2011-07-24 21:47:07.059411000 -0700
+@@ -11,43 +11,16 @@
+  */
+ fil{
+     Countries{
+-        001{"Mundo"}
+-        002{"Africa"}
+-        003{"North America"}
+-        005{"South America"}
+-        009{"Oceania"}
+-        011{"Kanlurang Africa"}
+-        013{"Gitnang Amerika"}
+-        014{"Silangang Africa"}
+-        015{"Hilagang Africa"}
+-        017{"Gitnang Africa"}
+-        018{"Katimugang Africa"}
+-        019{"Americas"}
+-        021{"Hilagang Amerika"}
+-        029{"Carribbean"}
+-        030{"Silangang Asya"}
+-        034{"Katimugang Asya"}
+-        035{"Timog-Silangang Asya"}
+-        039{"Katimugang Europa"}
+-        053{"Australia at New Zealand"}
+-        054{"Melanesia"}
+-        057{"Rehiyong Micronesia"}
+-        061{"Polynesia"}
+-        062{"Timog-Gitnang Asya"}
+-        142{"Asya"}
+-        143{"Gitnang Asya"}
+-        145{"Kanlurang Asya"}
+-        150{"Europa"}
+-        151{"Silangang Europa"}
+-        154{"Hilagang Europa"}
+-        155{"Kanlurang Europa"}
 -        419{"Latin America at ang Caribbean"}
 +        419{"Latin America"}
          AC{"Acsencion island"}
@@ -1481,7 +1839,7 @@
          AO{"Angola"}
          AQ{"Antartica"}
          AR{"Argentina"}
-@@ -60,62 +63,213 @@
+@@ -60,62 +33,213 @@
          BA{"Bosnia and Herzegovina"}
          BB{"Barbados"}
          BD{"Bangladesh"}
@@ -1696,249 +2054,948 @@
      }
      Version{"2.0.48.64"}
 --- source/data/region/fi.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/fi.txt	2011-07-22 13:46:19.670563000 -0700
-@@ -42,7 +42,7 @@
-         154{"Pohjois-Eurooppa"}
-         155{"Länsi-Eurooppa"}
-         172{"Itsenäisten valtioiden yhteisö"}
++++ source/data/region/fi.txt	2011-07-24 21:47:07.063407000 -0700
+@@ -11,39 +11,7 @@
+  */
+ fi{
+     Countries{
+-        001{"maailma"}
+-        002{"Afrikka"}
+-        003{"Pohjois-Amerikka"}
+-        005{"Etelä-Amerikka"}
+-        009{"Oseania"}
+-        011{"Länsi-Afrikka"}
+-        013{"Väli-Amerikka"}
+-        014{"Itä-Afrikka"}
+-        015{"Pohjois-Afrikka"}
+-        017{"Keski-Afrikka"}
+-        018{"eteläinen Afrikka"}
+-        019{"Amerikka"}
+-        021{"pohjoinen Amerikka"}
+-        029{"Karibia"}
+-        030{"Itä-Aasia"}
+-        034{"Etelä-Aasia"}
+-        035{"Kaakkois-Aasia"}
+-        039{"Etelä-Eurooppa"}
+-        053{"Australia ja Uusi-Seelanti"}
+-        054{"Melanesia"}
+-        057{"Mikronesia"}
+-        061{"Polynesia"}
+-        062{"Etelä- ja Keski-Aasia"}
+-        142{"Aasia"}
+-        143{"Keski-Aasia"}
+-        145{"Länsi-Aasia"}
+-        150{"Eurooppa"}
+-        151{"Itä-Eurooppa"}
+-        154{"Pohjois-Eurooppa"}
+-        155{"Länsi-Eurooppa"}
+-        172{"Itsenäisten valtioiden yhteisö"}
 -        419{"Latinalainen Amerikka ja Karibia"}
+-        830{"Kanaalisaaret"}
 +        419{"Latinalainen Amerikka"}
-         830{"Kanaalisaaret"}
          AC{"Ascension-saari"}
          AD{"Andorra"}
+         AE{"Arabiemiirikunnat"}
 --- source/data/region/fr.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/fr.txt	2011-07-22 13:46:19.431584000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europe septentrionale"}
-         155{"Europe occidentale"}
-         172{"Communauté des États indépendants"}
++++ source/data/region/fr.txt	2011-07-24 21:47:07.073405000 -0700
+@@ -11,39 +11,7 @@
+  */
+ fr{
+     Countries{
+-        001{"Monde"}
+-        002{"Afrique"}
+-        003{"Amérique du Nord"}
+-        005{"Amérique du Sud"}
+-        009{"Océanie"}
+-        011{"Afrique occidentale"}
+-        013{"Amérique centrale"}
+-        014{"Afrique orientale"}
+-        015{"Afrique septentrionale"}
+-        017{"Afrique centrale"}
+-        018{"Afrique australe"}
+-        019{"Amériques"}
+-        021{"Amérique septentrionale"}
+-        029{"Caraïbes"}
+-        030{"Asie orientale"}
+-        034{"Asie du Sud"}
+-        035{"Asie du Sud-Est"}
+-        039{"Europe méridionale"}
+-        053{"Australie et Nouvelle-Zélande"}
+-        054{"Mélanésie"}
+-        057{"région micronésienne"}
+-        061{"Polynésie"}
+-        062{"Asie centrale et du Sud"}
+-        142{"Asie"}
+-        143{"Asie centrale"}
+-        145{"Asie occidentale"}
+-        150{"Europe"}
+-        151{"Europe orientale"}
+-        154{"Europe septentrionale"}
+-        155{"Europe occidentale"}
+-        172{"Communauté des États indépendants"}
 -        419{"Amérique latine et Caraïbes"}
+-        830{"Îles Anglo-normandes"}
 +        419{"Amérique latine"}
-         830{"Îles Anglo-normandes"}
          AC{"Île de l'Ascension"}
          AD{"Andorre"}
+         AE{"Émirats arabes unis"}
 --- source/data/region/hu.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/hu.txt	2011-07-22 13:46:19.183679000 -0700
-@@ -42,7 +42,7 @@
-         154{"Észak-Európa"}
-         155{"Nyugat-Európa"}
-         172{"Független Államok Közössége"}
++++ source/data/region/hu.txt	2011-07-24 21:47:07.211405000 -0700
+@@ -11,39 +11,7 @@
+  */
+ hu{
+     Countries{
+-        001{"Világ"}
+-        002{"Afrika"}
+-        003{"Észak-Amerika"}
+-        005{"Dél-Amerika"}
+-        009{"Óceánia"}
+-        011{"Nyugat-Afrika"}
+-        013{"Közép-Amerika"}
+-        014{"Kelet-Afrika"}
+-        015{"Észak-Afrika"}
+-        017{"Közép-Afrika"}
+-        018{"Afrika déli része"}
+-        019{"Amerika"}
+-        021{"Amerika északi része"}
+-        029{"Karib-térség"}
+-        030{"Kelet-Ázsia"}
+-        034{"Dél-Ázsia"}
+-        035{"Délkelet-Ázsia"}
+-        039{"Dél-Európa"}
+-        053{"Ausztrália és Új-Zéland"}
+-        054{"Melanézia"}
+-        057{"Mikronéziai régió"}
+-        061{"Polinézia"}
+-        062{"Délközép-Ázsia"}
+-        142{"Ázsia"}
+-        143{"Közép-Ázsia"}
+-        145{"Nyugat-Ázsia"}
+-        150{"Európa"}
+-        151{"Kelet-Európa"}
+-        154{"Észak-Európa"}
+-        155{"Nyugat-Európa"}
+-        172{"Független Államok Közössége"}
 -        419{"Latin-Amerika és a Karib-térség"}
+-        830{"Csatorna-szigetek"}
 +        419{"Latin-Amerika"}
-         830{"Csatorna-szigetek"}
          AC{"Ascension-sziget"}
          AD{"Andorra"}
+         AE{"Egyesült Arab Emirátus"}
 --- source/data/region/it.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/it.txt	2011-07-22 13:46:19.297612000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa del Nord"}
-         155{"Europa occidentale"}
-         172{"Comunità di Stati Indipendenti"}
++++ source/data/region/it.txt	2011-07-24 21:47:07.264410000 -0700
+@@ -11,38 +11,7 @@
+  */
+ it{
+     Countries{
+-        001{"Mondo"}
+-        002{"Africa"}
+-        003{"Nord America"}
+-        005{"America del Sud"}
+-        009{"Oceania"}
+-        011{"Africa occidentale"}
+-        013{"America centrale"}
+-        014{"Africa orientale"}
+-        015{"Africa del Nord"}
+-        017{"Africa centrale"}
+-        018{"Africa del Sud"}
+-        019{"Americhe"}
+-        021{"America del Nord"}
+-        029{"Caraibi"}
+-        030{"Asia orientale"}
+-        034{"Asia del Sud"}
+-        035{"Asia sudorientale"}
+-        039{"Europa del Sud"}
+-        053{"Australia e Nuova Zelanda"}
+-        054{"Melanesia"}
+-        057{"Regione Micronesiana"}
+-        061{"Polinesia"}
+-        062{"Asia centro-meridionale"}
+-        142{"Asia"}
+-        143{"Asia centrale"}
+-        145{"Asia occidentale"}
+-        150{"Europa"}
+-        151{"Europa orientale"}
+-        154{"Europa del Nord"}
+-        155{"Europa occidentale"}
+-        172{"Comunità di Stati Indipendenti"}
 -        419{"America Latina e Caraibi"}
 +        419{"America Latina"}
          AC{"Isola di Ascensione"}
          AD{"Andorra"}
          AE{"Emirati Arabi Uniti"}
 --- source/data/region/ja.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/ja.txt	2011-07-22 13:46:19.377561000 -0700
-@@ -42,7 +42,7 @@
-         154{"北ヨーロッパ"}
-         155{"西ヨーロッパ"}
-         172{"独立国家共同体"}
++++ source/data/region/ja.txt	2011-07-24 21:47:07.284414000 -0700
+@@ -11,39 +11,7 @@
+  */
+ ja{
+     Countries{
+-        001{"世界"}
+-        002{"アフリカ"}
+-        003{"北米"}
+-        005{"南アメリカ"}
+-        009{"オセアニア"}
+-        011{"西アフリカ"}
+-        013{"中央アメリカ"}
+-        014{"東アフリカ"}
+-        015{"北アフリカ"}
+-        017{"中部アフリカ"}
+-        018{"南部アフリカ"}
+-        019{"アメリカ大陸"}
+-        021{"北アメリカ"}
+-        029{"カリブ海"}
+-        030{"東アジア"}
+-        034{"南アジア"}
+-        035{"東南アジア"}
+-        039{"南ヨーロッパ"}
+-        053{"オーストラリア・ニュージーランド"}
+-        054{"メラネシア"}
+-        057{"ミクロネシア地域"}
+-        061{"ポリネシア"}
+-        062{"南中央アジア"}
+-        142{"アジア"}
+-        143{"中央アジア"}
+-        145{"西アジア"}
+-        150{"ヨーロッパ"}
+-        151{"東ヨーロッパ"}
+-        154{"北ヨーロッパ"}
+-        155{"西ヨーロッパ"}
+-        172{"独立国家共同体"}
 -        419{"ラテンアメリカ・カリブ地域"}
+-        830{"チャネル諸島"}
 +        419{"ラテンアメリカ"}
-         830{"チャネル諸島"}
          AC{"アセンション島"}
          AD{"アンドラ"}
+         AE{"アラブ首長国連邦"}
 --- source/data/region/ko.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/ko.txt	2011-07-22 13:46:19.065646000 -0700
-@@ -42,7 +42,7 @@
-         154{"북유럽"}
-         155{"서유럽"}
-         172{"독립 국가 연합"}
++++ source/data/region/ko.txt	2011-07-24 21:47:07.397404000 -0700
+@@ -11,38 +11,7 @@
+  */
+ ko{
+     Countries{
+-        001{"세계"}
+-        002{"아프리카"}
+-        003{"북아메리카"}
+-        005{"남아메리카[남미]"}
+-        009{"오세아니아, 대양주"}
+-        011{"서아프리카"}
+-        013{"중앙 아메리카"}
+-        014{"동부 아프리카"}
+-        015{"북부 아프리카"}
+-        017{"중부 아프리카"}
+-        018{"남부 아프리카"}
+-        019{"아메리카 대륙"}
+-        021{"북부 아메리카"}
+-        029{"카리브 해 제도"}
+-        030{"동아시아"}
+-        034{"남아시아"}
+-        035{"동남 아시아"}
+-        039{"남유럽"}
+-        053{"오스트레일리아와 뉴질랜드"}
+-        054{"멜라네시아"}
+-        057{"미크로네시아 지역"}
+-        061{"폴리네시아"}
+-        062{"중남 아시아"}
+-        142{"아시아"}
+-        143{"중앙 아시아"}
+-        145{"서아시아"}
+-        150{"유럽"}
+-        151{"동유럽"}
+-        154{"북유럽"}
+-        155{"서유럽"}
+-        172{"독립 국가 연합"}
 -        419{"라틴 아메리카 및 카리브 해 제도"}
 +        419{"라틴 아메리카"}
          AD{"안도라"}
          AE{"아랍에미리트 연합"}
          AF{"아프가니스탄"}
 --- source/data/region/lt.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/lt.txt	2011-07-22 13:46:19.194643000 -0700
-@@ -43,7 +43,7 @@
-         155{"Vakarų Europa"}
-         172{"Nepriklausomų Valstybių Sandrauga"}
-         200{"Čekoslovakija"}
++++ source/data/region/lt.txt	2011-07-24 21:47:07.414412000 -0700
+@@ -11,39 +11,7 @@
+  */
+ lt{
+     Countries{
+-        001{"Pasaulis"}
+-        002{"Afrika"}
+-        003{"Šiaurės Amerika"}
+-        005{"Pietų Amerika"}
+-        009{"Okeanija"}
+-        011{"Vakarų Afrika"}
+-        013{"Centrinė Amerika"}
+-        014{"Rytų Afrika"}
+-        015{"Šiaurės Afrika"}
+-        017{"Vidurio Afrika"}
+-        018{"Pietų Afrika [018]"}
+-        019{"Amerika"}
+-        021{"Šiaurinė Amerika"}
+-        029{"Karibai"}
+-        030{"Rytų Azija"}
+-        034{"Pietų Azija"}
+-        035{"Pietryčių Azija"}
+-        039{"Pietų Europa"}
+-        053{"Australija ir Naujoji Zelandija"}
+-        054{"Melanezija"}
+-        057{"Mikronezijos regionas"}
+-        061{"Polinezija"}
+-        062{"Pietų vidurio Azija"}
+-        142{"Azija"}
+-        143{"Centrinė Azija"}
+-        145{"Vakarų Azija"}
+-        150{"Europa"}
+-        151{"Rytų Europa"}
+-        154{"Šiaurės Europa"}
+-        155{"Vakarų Europa"}
+-        172{"Nepriklausomų Valstybių Sandrauga"}
+-        200{"Čekoslovakija"}
 -        419{"Lotynų Amerika ir Karibai"}
 +        419{"Lotynų Amerika"}
          AC{"Ascension sala"}
          AD{"Andora"}
          AE{"Jungtiniai Arabų Emyratai"}
 --- source/data/region/lv.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/lv.txt	2011-07-22 13:46:19.208652000 -0700
-@@ -42,7 +42,7 @@
-         154{"Ziemeļeiropa"}
-         155{"Rietumeiropa"}
-         172{"Neatkarīgo Valstu Savienība"}
++++ source/data/region/lv.txt	2011-07-24 21:47:07.427405000 -0700
+@@ -11,38 +11,7 @@
+  */
+ lv{
+     Countries{
+-        001{"pasaule"}
+-        002{"Āfrika"}
+-        003{"Ziemeļamerika"}
+-        005{"Dienvidamerika"}
+-        009{"Okeānija"}
+-        011{"Rietumāfrika"}
+-        013{"Centrālamerika"}
+-        014{"Austrumāfrika"}
+-        015{"Ziemeļāfrika"}
+-        017{"Vidusāfrika"}
+-        018{"Āfrikas dienvidi"}
+-        019{"Amerika"}
+-        021{"Amerikas ziemeļi"}
+-        029{"Karību jūras reģions"}
+-        030{"Austrumāzija"}
+-        034{"Dienvidāzija"}
+-        035{"Centrālaustrumāzija"}
+-        039{"Dienvideiropa"}
+-        053{"Austrālija un Jaunzēlande"}
+-        054{"Melanēzija"}
+-        057{"Mikronēzijas reģions"}
+-        061{"Polinēzija"}
+-        062{"Centrāldienvidāzija"}
+-        142{"Āzija"}
+-        143{"Centrālāzija"}
+-        145{"Rietumāzija"}
+-        150{"Eiropa"}
+-        151{"Austrumeiropa"}
+-        154{"Ziemeļeiropa"}
+-        155{"Rietumeiropa"}
+-        172{"Neatkarīgo Valstu Savienība"}
 -        419{"Latīņamerika un Karību jūras reģions"}
 +        419{"Latīņamerika"}
          AC{"Debesbraukšanas sala"}
          AD{"Andora"}
          AE{"Apvienotie Arābu Emirāti"}
 --- source/data/region/mk.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/mk.txt	2011-07-22 13:46:19.248650000 -0700
-@@ -42,7 +42,7 @@
-         154{"Северна Европа"}
-         155{"Западна Европа"}
-         172{"Комонвелт на независни држави"}
++++ source/data/region/mk.txt	2011-07-24 21:47:07.467411000 -0700
+@@ -11,38 +11,7 @@
+  */
+ mk{
+     Countries{
+-        001{"Свет"}
+-        002{"Африка"}
+-        003{"Северна Америка"}
+-        005{"Јужна Америка"}
+-        009{"Океанија"}
+-        011{"Западна Африка"}
+-        013{"Централна Америка"}
+-        014{"Источна Африка"}
+-        015{"Северна Африка"}
+-        017{"Средна Африка"}
+-        018{"Јужна континентална Африка"}
+-        019{"Америки"}
+-        021{"Северна континентална Америка"}
+-        029{"Кариби"}
+-        030{"Источна Азија"}
+-        034{"Јужна Азија"}
+-        035{"Југоисточна Азија"}
+-        039{"Јужна Европа"}
+-        053{"Австралија и Нов Зеланд"}
+-        054{"Меланезија"}
+-        057{"Микронезиски регион"}
+-        061{"Полинезија"}
+-        062{"Јужно-централна Азија"}
+-        142{"Азија"}
+-        143{"Централна Азија"}
+-        145{"Западна Азија"}
+-        150{"Европа"}
+-        151{"Источна Европа"}
+-        154{"Северна Европа"}
+-        155{"Западна Европа"}
+-        172{"Комонвелт на независни држави"}
 -        419{"Латинска Америка и Карибите"}
 +        419{"Латинска Америка"}
          AC{"Остров Асенсион"}
          AD{"Андора"}
          AE{"Обединети Арапски Емирати"}
 --- source/data/region/nb.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/nb.txt	2011-07-22 13:46:19.391560000 -0700
-@@ -42,7 +42,7 @@
-         154{"Nord-Europa"}
-         155{"Vest-Europa"}
-         172{"Samveldet av uavhengige stater"}
++++ source/data/region/nb.txt	2011-07-24 21:47:07.544404000 -0700
+@@ -11,38 +11,7 @@
+  */
+ nb{
+     Countries{
+-        001{"verden"}
+-        002{"Afrika"}
+-        003{"Nord-Amerika"}
+-        005{"Sør-Amerika"}
+-        009{"Oseania"}
+-        011{"Vest-Afrika"}
+-        013{"Sentral-Amerika"}
+-        014{"Øst-Afrika"}
+-        015{"Nord-Afrika"}
+-        017{"Sentral-Afrika"}
+-        018{"Sørlige Afrika"}
+-        019{"Amerika"}
+-        021{"Nordlige Amerika"}
+-        029{"Karibia"}
+-        030{"Øst-Asia"}
+-        034{"Sør-Asia"}
+-        035{"Sørøst-Asia"}
+-        039{"Sør-Europa"}
+-        053{"Australia og New Zealand"}
+-        054{"Melanesia"}
+-        057{"Mikronesia"}
+-        061{"Polynesia"}
+-        062{"Sørsentral-Asia"}
+-        142{"Asia"}
+-        143{"Sentral-Asia"}
+-        145{"Vest-Asia"}
+-        150{"Europa"}
+-        151{"Øst-Europa"}
+-        154{"Nord-Europa"}
+-        155{"Vest-Europa"}
+-        172{"Samveldet av uavhengige stater"}
 -        419{"Latin-Amerika og Karibia"}
 +        419{"Latin-Amerika"}
          AC{"Ascension"}
          AD{"Andorra"}
          AE{"De forente arabiske emirater"}
 --- source/data/region/nl.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/nl.txt	2011-07-22 13:46:19.452568000 -0700
-@@ -42,7 +42,7 @@
-         154{"Noord-Europa"}
-         155{"West-Europa"}
-         172{"Gemenebest van Onafhankelijke Staten"}
++++ source/data/region/nl.txt	2011-07-24 21:47:07.570406000 -0700
+@@ -11,39 +11,7 @@
+  */
+ nl{
+     Countries{
+-        001{"Wereld"}
+-        002{"Afrika"}
+-        003{"Noord-Amerika"}
+-        005{"Zuid-Amerika"}
+-        009{"Oceanië"}
+-        011{"West-Afrika"}
+-        013{"Midden-Amerika"}
+-        014{"Oost-Afrika"}
+-        015{"Noord-Afrika"}
+-        017{"Centraal-Afrika"}
+-        018{"Zuidelijk Afrika"}
+-        019{"Amerika"}
+-        021{"Noordelijk Amerika"}
+-        029{"Caribisch gebied"}
+-        030{"Oost-Azië"}
+-        034{"Zuid-Azië"}
+-        035{"Zuidoost-Azië"}
+-        039{"Zuid-Europa"}
+-        053{"Australië en Nieuw-Zeeland"}
+-        054{"Melanesië"}
+-        057{"Micronesische regio"}
+-        061{"Polynesië"}
+-        062{"Zuidelijk Centraal-Azië"}
+-        142{"Azië"}
+-        143{"Centraal-Azië"}
+-        145{"West-Azië"}
+-        150{"Europa"}
+-        151{"Oost-Europa"}
+-        154{"Noord-Europa"}
+-        155{"West-Europa"}
+-        172{"Gemenebest van Onafhankelijke Staten"}
 -        419{"Latijns-Amerika en het Caribisch gebied"}
+-        830{"Kanaaleilanden"}
 +        419{"Latijns-Amerika"}
-         830{"Kanaaleilanden"}
          AC{"Ascension"}
          AD{"Andorra"}
+         AE{"Verenigde Arabische Emiraten"}
 --- source/data/region/nn.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/nn.txt	2011-07-22 13:46:19.471577000 -0700
-@@ -42,7 +42,7 @@
-         154{"Nord-Europa"}
-         155{"Vest-Europa"}
-         172{"Samveldet av uavhengige statar"}
++++ source/data/region/nn.txt	2011-07-24 21:47:07.578408000 -0700
+@@ -11,39 +11,7 @@
+  */
+ nn{
+     Countries{
+-        001{"verda"}
+-        002{"Afrika"}
+-        003{"Nord-Amerika"}
+-        005{"Sør-Amerika"}
+-        009{"Oseania"}
+-        011{"Vest-Afrika"}
+-        013{"Sentral-Amerika"}
+-        014{"Aust-Afrika"}
+-        015{"Nord-Afrika"}
+-        017{"Sentral-Afrika"}
+-        018{"Sørlege Afrika"}
+-        019{"Amerika"}
+-        021{"nordlege Amerika"}
+-        029{"Karibia"}
+-        030{"Aust-Asia"}
+-        034{"Sør-Asia"}
+-        035{"Søraust-Asia"}
+-        039{"Sør-Europa"}
+-        053{"Australia og New Zealand"}
+-        054{"Melanesia"}
+-        057{"Mikronesia"}
+-        061{"Polynesia"}
+-        062{"Sørlege Sentral-Asia"}
+-        142{"Asia"}
+-        143{"Sentral-Asia"}
+-        145{"Vest-Asia"}
+-        150{"Europa"}
+-        151{"Aust-Europa"}
+-        154{"Nord-Europa"}
+-        155{"Vest-Europa"}
+-        172{"Samveldet av uavhengige statar"}
 -        419{"Latin-Amerika og Karibia"}
+-        830{"Kanaløyane"}
 +        419{"Latin-Amerika"}
-         830{"Kanaløyane"}
          AC{"Ascension"}
          AD{"Andorra"}
+         AE{"Dei sameinte arabiske emirata"}
 --- source/data/region/pl.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/pl.txt	2011-07-22 13:46:19.594578000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa Północna"}
-         155{"Europa Zachodnia"}
-         172{"Wspólnota Niezależnych Państw"}
++++ source/data/region/pl.txt	2011-07-24 21:47:07.648404000 -0700
+@@ -11,39 +11,7 @@
+  */
+ pl{
+     Countries{
+-        001{"Świat"}
+-        002{"Afryka"}
+-        003{"Ameryka Północna"}
+-        005{"Ameryka Południowa"}
+-        009{"Oceania"}
+-        011{"Afryka Zachodnia"}
+-        013{"Ameryka Środkowa"}
+-        014{"Afryka Wschodnia"}
+-        015{"Afryka Północna"}
+-        017{"Afryka Środkowa"}
+-        018{"Afryka Południowa"}
+-        019{"Ameryka"}
+-        021{"Ameryka Północna - Kanada, USA"}
+-        029{"Karaiby"}
+-        030{"Azja Wschodnia"}
+-        034{"Azja Południowa"}
+-        035{"Azja Południowo-Wschodnia"}
+-        039{"Europa Południowa"}
+-        053{"Australia i Nowa Zelandia"}
+-        054{"Melanezja"}
+-        057{"Mikronezja"}
+-        061{"Polinezja"}
+-        062{"Azja Południowo-Środkowa"}
+-        142{"Azja"}
+-        143{"Azja Środkowa"}
+-        145{"Azja Zachodnia"}
+-        150{"Europa"}
+-        151{"Europa Wschodnia"}
+-        154{"Europa Północna"}
+-        155{"Europa Zachodnia"}
+-        172{"Wspólnota Niezależnych Państw"}
 -        419{"Ameryka Łacińska i Karaiby"}
+-        830{"Wyspy Normandzkie"}
 +        419{"Ameryka Łacińska"}
-         830{"Wyspy Normandzkie"}
          AC{"Wyspa Wniebowstąpienia"}
          AD{"Andora"}
+         AE{"Zjednoczone Emiraty Arabskie"}
 --- source/data/region/pt.txt	2010-10-28 12:45:36.000000000 -0700
-+++ source/data/region/pt.txt	2011-07-22 13:46:19.616560000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa Setentrional"}
-         155{"Europa Ocidental"}
-         172{"Comunidade dos Estados Independentes"}
++++ source/data/region/pt.txt	2011-07-24 21:47:07.660407000 -0700
+@@ -11,38 +11,7 @@
+  */
+ pt{
+     Countries{
+-        001{"Mundo"}
+-        002{"África"}
+-        003{"América do Norte"}
+-        005{"América do Sul"}
+-        009{"Oceania"}
+-        011{"África Ocidental"}
+-        013{"América Central"}
+-        014{"África Oriental"}
+-        015{"África do Norte"}
+-        017{"África Central"}
+-        018{"África Austral"}
+-        019{"Américas"}
+-        021{"América Setentrional"}
+-        029{"Caribe"}
+-        030{"Ásia Oriental"}
+-        034{"Ásia do Sul"}
+-        035{"Ásia Centro-Oriental"}
+-        039{"Europa do Sul"}
+-        053{"Austrália e Nova Zelândia"}
+-        054{"Melanésia"}
+-        057{"Região da Micronésia"}
+-        061{"Polinésia"}
+-        062{"Ásia Centro-Meridional"}
+-        142{"Ásia"}
+-        143{"Ásia Central"}
+-        145{"Ásia Ocidental"}
+-        150{"Europa"}
+-        151{"Europa Oriental"}
+-        154{"Europa Setentrional"}
+-        155{"Europa Ocidental"}
+-        172{"Comunidade dos Estados Independentes"}
 -        419{"América Latina e Caribe"}
 +        419{"América Latina"}
          AC{"Ilha de Ascensão"}
          AD{"Andorra"}
          AE{"Emirados Árabes Unidos"}
 --- source/data/region/rm.txt	2010-10-24 23:30:04.000000000 -0700
-+++ source/data/region/rm.txt	2011-07-22 13:46:19.485574000 -0700
-@@ -42,7 +42,7 @@
-         155{"Europa dal Vest"}
-         172{"Communitad dals Stadis Independents"}
-         200{"Tschecoslovachia"}
++++ source/data/region/rm.txt	2011-07-24 21:47:07.664411000 -0700
+@@ -11,39 +11,7 @@
+  */
+ rm{
+     Countries{
+-        001{"mund"}
+-        002{"Africa"}
+-        003{"America dal Nord"}
+-        005{"America dal Sid"}
+-        009{"Oceania"}
+-        011{"Africa dal Vest"}
+-        013{"America Centrala"}
+-        014{"Africa da l'Ost"}
+-        015{"Africa dal Nord"}
+-        017{"Africa Centrala"}
+-        018{"Africa Meridiunala"}
+-        019{"America dal Nord, America Centrala ed America dal Sid"}
+-        029{"Caribica"}
+-        030{"Asia da l'Ost"}
+-        034{"Asia dal Sid"}
+-        035{"Asia dal Sidost"}
+-        039{"Europa dal Sid"}
+-        053{"Australia e Nova Zelanda"}
+-        054{"Melanesia"}
+-        057{"Regiun Micronesica"}
+-        061{"Polinesia"}
+-        062{"Asia Centrala dal Sid"}
+-        142{"Asia"}
+-        143{"Asia Centrala"}
+-        145{"Asia dal Vest"}
+-        150{"Europa"}
+-        151{"Europa Orientala"}
+-        154{"Europa dal Nord"}
+-        155{"Europa dal Vest"}
+-        172{"Communitad dals Stadis Independents"}
+-        200{"Tschecoslovachia"}
 -        419{"America Latina e Caribica"}
+-        830{"Inslas dal Chanal da la Mongia"}
 +        419{"America Latina"}
-         830{"Inslas dal Chanal da la Mongia"}
          AD{"Andorra"}
          AE{"Emirats Arabs Unids"}
+         AF{"Afghanistan"}
 --- source/data/region/ro.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/ro.txt	2011-07-22 13:46:19.490581000 -0700
-@@ -42,7 +42,7 @@
-         154{"Europa Septentrională"}
-         155{"Europa Occidentală"}
-         172{"Comunitatea Statelor Independente"}
++++ source/data/region/ro.txt	2011-07-24 21:47:07.697405000 -0700
+@@ -11,39 +11,7 @@
+  */
+ ro{
+     Countries{
+-        001{"Lume"}
+-        002{"Africa"}
+-        003{"America de Nord"}
+-        005{"America de Sud"}
+-        009{"Oceania"}
+-        011{"Africa Occidentală"}
+-        013{"America Centrală"}
+-        014{"Africa Orientală"}
+-        015{"Africa Septentrională"}
+-        017{"Africa Centrală"}
+-        018{"Africa Meridională"}
+-        019{"Americi"}
+-        021{"America Septentrională"}
+-        029{"Caraibe"}
+-        030{"Asia Orientală"}
+-        034{"Asia Meridională"}
+-        035{"Asia de Sud-Est"}
+-        039{"Europa Meridională"}
+-        053{"Australia și Noua Zeelandă"}
+-        054{"Melanezia"}
+-        057{"Regiunea Micronezia"}
+-        061{"Polinezia"}
+-        062{"Asia Centrală de Sud"}
+-        142{"Asia"}
+-        143{"Asia Centrală"}
+-        145{"Asia Occidentală"}
+-        150{"Europa"}
+-        151{"Europa Orientală"}
+-        154{"Europa Septentrională"}
+-        155{"Europa Occidentală"}
+-        172{"Comunitatea Statelor Independente"}
 -        419{"America Latină și Caraibe"}
+-        830{"Insulele Anglo-Normande"}
 +        419{"America Latină"}
-         830{"Insulele Anglo-Normande"}
          AC{"Insula Ascension"}
          AD{"Andorra"}
+         AE{"Emiratele Arabe Unite"}
 --- source/data/region/ru.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/ru.txt	2011-07-22 13:46:19.503570000 -0700
-@@ -42,7 +42,7 @@
-         154{"Северная Европа"}
-         155{"Западная Европа"}
-         172{"СНГ"}
++++ source/data/region/ru.txt	2011-07-24 21:47:07.703407000 -0700
+@@ -11,39 +11,7 @@
+  */
+ ru{
+     Countries{
+-        001{"Мир"}
+-        002{"Африка"}
+-        003{"Северная Америка"}
+-        005{"Южная Америка"}
+-        009{"Океания"}
+-        011{"Западная Африка"}
+-        013{"Центральная Америка"}
+-        014{"Восточная Африка"}
+-        015{"Северная Африка"}
+-        017{"Центральная Африка"}
+-        018{"Южная Африка [018]"}
+-        019{"Центральная и Южная Америка"}
+-        021{"Северная Америка (021)"}
+-        029{"Карибы"}
+-        030{"Восточная Азия"}
+-        034{"Южная Азия"}
+-        035{"Юго-Восточная Азия"}
+-        039{"Южная Европа"}
+-        053{"Австралия и Новая Зеландия"}
+-        054{"Меланезия"}
+-        057{"Микронезия"}
+-        061{"Полинезия"}
+-        062{"Юг Средней Азии"}
+-        142{"Азия"}
+-        143{"Средняя Азия"}
+-        145{"Ближний и Средний Восток"}
+-        150{"Европа"}
+-        151{"Восточная Европа"}
+-        154{"Северная Европа"}
+-        155{"Западная Европа"}
+-        172{"СНГ"}
 -        419{"Латинская Америка и Карибские о-ва"}
+-        830{"Нормандские о-ва"}
 +        419{"Латинская Америка"}
-         830{"Нормандские о-ва"}
          AC{"Остров Вознесения"}
          AD{"Андорра"}
+         AE{"Объединенные Арабские Эмираты"}
 --- source/data/region/sk.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/sk.txt	2011-07-22 13:46:19.090643000 -0700
-@@ -43,7 +43,7 @@
-         155{"Západná Európa"}
-         172{"Spoločenstvo nezávislých štátov"}
-         200{"Československo"}
++++ source/data/region/sk.txt	2011-07-24 21:47:07.765404000 -0700
+@@ -11,40 +11,7 @@
+  */
+ sk{
+     Countries{
+-        001{"Svet"}
+-        002{"Afrika"}
+-        003{"Severná Amerika (003)"}
+-        005{"Južná Amerika"}
+-        009{"Oceánia"}
+-        011{"Západná Afrika"}
+-        013{"Stredná Amerika"}
+-        014{"Východná Afrika"}
+-        015{"Severná Afrika"}
+-        017{"Stredná Afrika"}
+-        018{"Južná Afrika [018]"}
+-        019{"Americký kontinent"}
+-        021{"Severná Amerika"}
+-        029{"Karibik"}
+-        030{"Východná Ázia"}
+-        034{"Južná Ázia"}
+-        035{"Juhovýchodná Ázia"}
+-        039{"Južná Európa"}
+-        053{"Austrália a Nový Zéland"}
+-        054{"Melanézia"}
+-        057{"Mikronésia"}
+-        061{"Polynézia"}
+-        062{"Stredná a južná Ázia"}
+-        142{"Ázia"}
+-        143{"Stredná Ázia"}
+-        145{"Západná Ázia"}
+-        150{"Európa"}
+-        151{"Východná Európa"}
+-        154{"Severná Európa"}
+-        155{"Západná Európa"}
+-        172{"Spoločenstvo nezávislých štátov"}
+-        200{"Československo"}
 -        419{"Latinská Amerika a Karibik"}
+-        830{"Kanál La Manche"}
 +        419{"Latinská Amerika"}
-         830{"Kanál La Manche"}
          AD{"Andorra"}
          AE{"Spojené arabské emiráty"}
+         AF{"Afganistan"}
 --- source/data/region/sl.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/sl.txt	2011-07-22 13:46:19.531602000 -0700
-@@ -42,7 +42,7 @@
-         154{"Severna Evropa"}
-         155{"Zahodna Evropa"}
-         172{"Skupnost neodvisnih držav"}
++++ source/data/region/sl.txt	2011-07-24 21:47:07.769405000 -0700
+@@ -11,39 +11,7 @@
+  */
+ sl{
+     Countries{
+-        001{"Svet"}
+-        002{"Afrika"}
+-        003{"Severna Amerika"}
+-        005{"Južna Amerika"}
+-        009{"Oceanija"}
+-        011{"Zahodna Afrika"}
+-        013{"Srednja Amerika"}
+-        014{"Vzhodna Afrika"}
+-        015{"Severna Afrika"}
+-        017{"Srednja Afrika"}
+-        018{"Južna Afrika"}
+-        019{"Amerike"}
+-        021{"severnoameriška celina"}
+-        029{"Karibi"}
+-        030{"Vzhodna Azija"}
+-        034{"Južna Azija"}
+-        035{"Jugovzhodna Azija"}
+-        039{"Južna Evropa"}
+-        053{"Avstralija in Nova Zelandija"}
+-        054{"Melanezija"}
+-        057{"mikronezijska regija"}
+-        061{"Polinezija"}
+-        062{"Južna osrednja Azija"}
+-        142{"Azija"}
+-        143{"Osrednja Azija"}
+-        145{"Zahodna Azija"}
+-        150{"Evropa"}
+-        151{"Vzhodna Evropa"}
+-        154{"Severna Evropa"}
+-        155{"Zahodna Evropa"}
+-        172{"Skupnost neodvisnih držav"}
 -        419{"Latinska Amerika in Karibi"}
+-        830{"Kanalski otoki"}
 +        419{"Latinska Amerika"}
-         830{"Kanalski otoki"}
          AC{"Otok Ascension"}
          AD{"Andora"}
+         AE{"Združeni arabski emirati"}
 --- source/data/region/sr_Latn.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/sr_Latn.txt	2011-07-22 13:46:19.411561000 -0700
-@@ -43,7 +43,7 @@
-         154{"Severna Evropa"}
-         155{"Zapadna Evropa"}
-         172{"Komonvelt nezavisnih država"}
++++ source/data/region/sr_Latn.txt	2011-07-24 21:47:07.836404000 -0700
+@@ -12,39 +12,7 @@
+ sr_Latn{
+     %%ParentIsRoot:int{1}
+     Countries{
+-        001{"Svet"}
+-        002{"Afrika"}
+-        003{"Severnoamerički kontinent"}
+-        005{"Južna Amerika"}
+-        009{"Okeanija"}
+-        011{"Zapadna Afrika"}
+-        013{"Centralna Amerika"}
+-        014{"Istočna Afrika"}
+-        015{"Severna Afrika"}
+-        017{"Centralna Afrika"}
+-        018{"Južna Afrika"}
+-        019{"Amerike"}
+-        021{"Severna Amerika"}
+-        029{"Karibi"}
+-        030{"Istočna Azija"}
+-        034{"Južna Azija"}
+-        035{"Jugoistočna Azija"}
+-        039{"Južna Evropa"}
+-        053{"Australija i Novi Zeland"}
+-        054{"Melanezija"}
+-        057{"Micronezija"}
+-        061{"Polinezija"}
+-        062{"Južno-centralna Azija"}
+-        142{"Azija"}
+-        143{"Centralna Azija"}
+-        145{"Zapadna Azija"}
+-        150{"Evropa"}
+-        151{"Istočna Evropa"}
+-        154{"Severna Evropa"}
+-        155{"Zapadna Evropa"}
+-        172{"Komonvelt nezavisnih država"}
 -        419{"Latinska Amerika i Karibi"}
+-        830{"Kanalska ostrva"}
 +        419{"Latinska Amerika"}
-         830{"Kanalska ostrva"}
          AD{"Andora"}
          AE{"Ujedinjeni Arapski Emirati"}
+         AF{"Avganistan"}
 --- source/data/region/sr.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/sr.txt	2011-07-22 13:46:19.549560000 -0700
-@@ -42,7 +42,7 @@
-         154{"Северна Европа"}
-         155{"Западна Европа"}
-         172{"Комонвелт независних држава"}
++++ source/data/region/sr.txt	2011-07-24 21:47:07.857407000 -0700
+@@ -11,39 +11,7 @@
+  */
+ sr{
+     Countries{
+-        001{"Свет"}
+-        002{"Африка"}
+-        003{"Северноамерички континент"}
+-        005{"Јужна Америка"}
+-        009{"Океанија"}
+-        011{"Западна Африка"}
+-        013{"Централна Америка"}
+-        014{"Источна Африка"}
+-        015{"Северна Африка"}
+-        017{"Централна Африка"}
+-        018{"Јужна Африка"}
+-        019{"Америке"}
+-        021{"Северна Америка"}
+-        029{"Кариби"}
+-        030{"Источна Азија"}
+-        034{"Јужна Азија"}
+-        035{"Југоисточна Азија"}
+-        039{"Јужна Европа"}
+-        053{"Аустралија и Нови Зеланд"}
+-        054{"Меланезија"}
+-        057{"Микронезијски регион"}
+-        061{"Полинезија"}
+-        062{"Јужно-централна Азија"}
+-        142{"Азија"}
+-        143{"Централна Азија"}
+-        145{"Западна Азија"}
+-        150{"Европа"}
+-        151{"Источна Европа"}
+-        154{"Северна Европа"}
+-        155{"Западна Европа"}
+-        172{"Комонвелт независних држава"}
 -        419{"Латинска Америка и Кариби"}
+-        830{"Каналска острва"}
 +        419{"Латинска Америка"}
-         830{"Каналска острва"}
          AC{"Острво Асенсион"}
          AD{"Андора"}
+         AE{"Уједињени Арапски Емирати"}
 --- source/data/region/sv.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/sv.txt	2011-07-22 13:46:19.575569000 -0700
-@@ -42,7 +42,7 @@
-         154{"Nordeuropa"}
-         155{"Västeuropa"}
-         172{"Oberoende staters samvälde"}
++++ source/data/region/sv.txt	2011-07-24 21:47:07.867407000 -0700
+@@ -11,39 +11,7 @@
+  */
+ sv{
+     Countries{
+-        001{"världen"}
+-        002{"Afrika"}
+-        003{"Nordamerika"}
+-        005{"Sydamerika"}
+-        009{"Oceanien"}
+-        011{"Västafrika"}
+-        013{"Centralamerika"}
+-        014{"Östafrika"}
+-        015{"Nordafrika"}
+-        017{"Centralafrika"}
+-        018{"södra Afrika"}
+-        019{"Nord- och Sydamerika"}
+-        021{"norra Amerika"}
+-        029{"Karibien"}
+-        030{"Östasien"}
+-        034{"södra Asien"}
+-        035{"Sydostasien"}
+-        039{"Sydeuropa"}
+-        053{"Australien och Nya Zeeland"}
+-        054{"Melanesien"}
+-        057{"Mikronesiska öarna"}
+-        061{"Polynesien"}
+-        062{"södra Centralasien"}
+-        142{"Asien"}
+-        143{"Centralasien"}
+-        145{"Västasien"}
+-        150{"Europa"}
+-        151{"Östeuropa"}
+-        154{"Nordeuropa"}
+-        155{"Västeuropa"}
+-        172{"Oberoende staters samvälde"}
 -        419{"Latinamerika och Karibien"}
+-        830{"Kanalöarna"}
 +        419{"Latinamerika"}
-         830{"Kanalöarna"}
          AC{"Ascension"}
          AD{"Andorra"}
+         AE{"Förenade Arabemiraten"}
 --- source/data/region/sw.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/region/sw.txt	2011-07-22 13:46:19.117647000 -0700
++++ source/data/region/sw.txt	2011-07-24 21:47:07.871404000 -0700
 @@ -11,6 +11,7 @@
   */
  sw{
@@ -1948,49 +3005,175 @@
          AE{"Falme za Kiarabu"}
          AF{"Afuganistani"}
 --- source/data/region/tr.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/tr.txt	2011-07-22 13:46:19.221670000 -0700
-@@ -42,7 +42,7 @@
-         154{"Kuzey Avrupa"}
-         155{"Batı Avrupa"}
-         172{"Bağımsız Devletler Topluluğu"}
++++ source/data/region/tr.txt	2011-07-24 21:47:07.953404000 -0700
+@@ -11,39 +11,7 @@
+  */
+ tr{
+     Countries{
+-        001{"Dünya"}
+-        002{"Afrika"}
+-        003{"Kuzey Amerika"}
+-        005{"Güney Amerika"}
+-        009{"Okyanusya"}
+-        011{"Batı Afrika"}
+-        013{"Orta Amerika"}
+-        014{"Doğu Afrika"}
+-        015{"Kuzey Afrika"}
+-        017{"Orta Afrika"}
+-        018{"Afrika'nın Güneyi"}
+-        019{"Amerika"}
+-        021{"Amerika'nın Kuzeyi"}
+-        029{"Karayipler"}
+-        030{"Doğu Asya"}
+-        034{"Güney Asya"}
+-        035{"Güney Doğu Asya"}
+-        039{"Güney Avrupa"}
+-        053{"Avustralya ve Yeni Zelanda"}
+-        054{"Melanezya"}
+-        057{"Mikronezya"}
+-        061{"Polinezya"}
+-        062{"Güney Orta Asya"}
+-        142{"Asya"}
+-        143{"Orta Asya"}
+-        145{"Batı Asya"}
+-        150{"Avrupa"}
+-        151{"Doğu Avrupa"}
+-        154{"Kuzey Avrupa"}
+-        155{"Batı Avrupa"}
+-        172{"Bağımsız Devletler Topluluğu"}
 -        419{"Latin Amerika ve Karayipler"}
+-        830{"Kanal Adaları"}
 +        419{"Latin Amerika"}
-         830{"Kanal Adaları"}
          AC{"Ascension Adası"}
          AD{"Andorra"}
+         AE{"Birleşik Arap Emirlikleri"}
 --- source/data/region/uk.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/uk.txt	2011-07-22 13:46:19.337600000 -0700
-@@ -42,7 +42,7 @@
-         154{"Північна Європа"}
-         155{"Західна Європа"}
-         172{"Співдружність Незалежних Держав"}
++++ source/data/region/uk.txt	2011-07-24 21:47:08.017369000 -0700
+@@ -11,39 +11,7 @@
+  */
+ uk{
+     Countries{
+-        001{"Світ"}
+-        002{"Африка"}
+-        003{"Північноамериканський континент"}
+-        005{"Південна Америка"}
+-        009{"Океанія"}
+-        011{"Західна Африка"}
+-        013{"Центральна Америка"}
+-        014{"Східна Африка"}
+-        015{"Північна Африка"}
+-        017{"Центральна Африка"}
+-        018{"Південна Африка"}
+-        019{"Америки"}
+-        021{"Північна Америка"}
+-        029{"Карибський басейн"}
+-        030{"Східна Азія"}
+-        034{"Південна Азія"}
+-        035{"Південно-Східна Азія"}
+-        039{"Південна Європа"}
+-        053{"Австралія та Нова Зеландія"}
+-        054{"Меланезія"}
+-        057{"Мікронезійський регіон"}
+-        061{"Полінезія"}
+-        062{"Південно-Центральна Азія"}
+-        142{"Азія"}
+-        143{"Центральна Азія"}
+-        145{"Західна Азія"}
+-        150{"Європа"}
+-        151{"Східна Європа"}
+-        154{"Північна Європа"}
+-        155{"Західна Європа"}
+-        172{"Співдружність Незалежних Держав"}
 -        419{"Латинська Америка і Карибський басейн"}
+-        830{"Нормандські острови"}
 +        419{"Латинська Америка"}
-         830{"Нормандські острови"}
          AC{"Острів Вознесіння"}
          AD{"Андорра"}
+         AE{"Обʼєднані Арабські Емірати"}
 --- source/data/region/vi.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/vi.txt	2011-07-22 13:46:19.844565000 -0700
-@@ -41,7 +41,7 @@
-         151{"Đông Âu"}
-         154{"Miền Bắc Châu Âu"}
-         155{"Tây Âu"}
++++ source/data/region/vi.txt	2011-07-24 21:47:08.181327000 -0700
+@@ -11,37 +11,7 @@
+  */
+ vi{
+     Countries{
+-        001{"Thế giới"}
+-        002{"Châu Phi"}
+-        003{"Bắc Mỹ"}
+-        005{"Nam Mỹ"}
+-        009{"Châu Đại Dương"}
+-        011{"Tây Phi"}
+-        013{"Trung Mỹ"}
+-        014{"Đông Phí"}
+-        015{"Bắc Phi"}
+-        017{"Trung Phi"}
+-        018{"Miền Nam Châu Phi"}
+-        019{"Châu Mỹ"}
+-        021{"Miền Bắc Châu Mỹ"}
+-        029{"Ca-ri-bê"}
+-        030{"Đông Á"}
+-        034{"Nam Á"}
+-        035{"Đông Nam Á"}
+-        039{"Nam Âu"}
+-        053{"Úc và New Zealand"}
+-        054{"Melanesia"}
+-        057{"Vùng Micronesian"}
+-        061{"Polynesia"}
+-        062{"Trung Nam Á"}
+-        142{"Châu Á"}
+-        143{"Trung Á"}
+-        145{"Tây Á"}
+-        150{"Âu Châu"}
+-        151{"Đông Âu"}
+-        154{"Miền Bắc Châu Âu"}
+-        155{"Tây Âu"}
 -        419{"Châu Mỹ La-tinh và Ca-ri-be"}
 +        419{"Châu Mỹ La-tinh"}
          AD{"Andorra"}
          AE{"Các Tiểu Vương quốc A-rập Thống nhất"}
          AF{"Áp-ga-ni-xtan"}
 --- source/data/region/zh.txt	2010-10-18 20:27:40.000000000 -0700
-+++ source/data/region/zh.txt	2011-07-22 13:46:19.856570000 -0700
-@@ -42,7 +42,7 @@
-         154{"北欧"}
-         155{"西欧"}
-         172{"独联体"}
++++ source/data/region/zh.txt	2011-07-24 21:47:08.414323000 -0700
+@@ -11,39 +11,7 @@
+  */
+ zh{
+     Countries{
+-        001{"世界"}
+-        002{"非洲"}
+-        003{"北美洲"}
+-        005{"南美洲"}
+-        009{"大洋洲"}
+-        011{"西非"}
+-        013{"中美洲"}
+-        014{"东非"}
+-        015{"北非"}
+-        017{"中非"}
+-        018{"南部非洲"}
+-        019{"美洲"}
+-        021{"美洲北部"}
+-        029{"加勒比海"}
+-        030{"东亚"}
+-        034{"南亚"}
+-        035{"东南亚"}
+-        039{"南欧"}
+-        053{"澳大利亚和新西兰"}
+-        054{"美拉尼西亚"}
+-        057{"密克罗尼西亚"}
+-        061{"玻利尼西亚"}
+-        062{"中南亚"}
+-        142{"亚洲"}
+-        143{"中亚"}
+-        145{"西亚"}
+-        150{"欧洲"}
+-        151{"东欧"}
+-        154{"北欧"}
+-        155{"西欧"}
+-        172{"独联体"}
 -        419{"拉丁美洲和加勒比海"}
+-        830{"海峡群岛"}
 +        419{"拉丁美洲"}
-         830{"海峡群岛"}
          AC{"阿森松岛"}
          AD{"安道尔"}
+         AE{"阿拉伯联合酋长国"}
 --- source/data/zone/de.txt	2010-10-28 12:45:36.000000000 -0700
 +++ source/data/zone/de.txt	2011-07-22 16:00:32.959778000 -0700
 @@ -308,28 +308,112 @@
@@ -2191,7 +3374,7 @@
              ld{"ニューファンドランド島夏時間"}
              ls{"ニューファンドランド島標準時"}
 --- source/data/zone/ko.txt	2010-07-28 17:18:28.000000000 -0700
-+++ source/data/zone/ko.txt	2011-07-22 16:59:40.198820000 -0700
++++ source/data/zone/ko.txt	2011-11-29 12:58:35.744696000 -0800
 @@ -1127,24 +1127,24 @@
              ls{"아마존 표준시"}
          }

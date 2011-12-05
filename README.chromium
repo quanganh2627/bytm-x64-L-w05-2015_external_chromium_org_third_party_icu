@@ -60,8 +60,13 @@ This directory contains the source code of ICU 4.6 for C/C++
    - patches/brkitr.patch
      * word.txt : Chinese/Japanese segmentation rules, Hebrew-script-specific
                   handling of U+0022, and splitting of FQDN into labels at '.'.
+		  For Hebrew, see http://unicode.org/cldr/track/ticket/3120
      * line.txt : Incorporated line_he and minor changes in CL, OP and ID
                   definitions.
+		  For Hebrew, see http://unicode.org/cldr/track/ticket/4004
+		  For others, see http://unicode.org/cldr/track/ticket/3974
+		                  http://unicode.org/cldr/track/ticket/4200
+		                  http://unicode.org/cldr/track/ticket/
      * brklocal.mk : build file changes to drop unnecessary brkitr rule
                      files (e.g. word_ja.txt, line_he.txt)
 
