@@ -283,7 +283,7 @@
             ['OS == "mac"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
-              }
+              },
             }],
             ['OS == "win"', {
               'msvs_settings': {
@@ -318,6 +318,28 @@
                     ]
                   },
                 }],
+              ],
+            }],
+            ['clang==1', {
+              'xcode_settings': {
+                'WARNING_CFLAGS': [
+                  # ICU uses its own deprecated functions.
+                  '-Wno-deprecated-declarations',
+                  # ICU prefers `a && b || c` over `(a && b) || c`.
+                  '-Wno-logical-op-parentheses',
+                  # ICU has some `unsigned < 0` checks.
+                  '-Wno-tautological-compare',
+                  # uspoof.h has a U_NAMESPACE_USE macro. That's a bug,
+                  # the header should use U_NAMESPACE_BEGIN instead.
+                  # http://bugs.icu-project.org/trac/ticket/9054
+                  '-Wno-header-hygiene',
+                ],
+              },
+              'cflags': [
+                '-Wno-deprecated-declarations',
+                '-Wno-logical-op-parentheses',
+                '-Wno-tautological-compare',
+                '-Wno-header-hygiene',
               ],
             }],
           ],
@@ -524,7 +546,7 @@
             ['OS == "mac"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
-              }
+              },
             }],
             ['OS == "win"', {
               'msvs_settings': {
@@ -559,6 +581,23 @@
                     ]
                   },
                 }],
+              ],
+            }],
+            ['clang==1', {
+              'xcode_settings': {
+                'WARNING_CFLAGS': [
+                  # ICU uses its own deprecated functions.
+                  '-Wno-deprecated-declarations',
+                  # ICU prefers `a && b || c` over `(a && b) || c`.
+                  '-Wno-logical-op-parentheses',
+                  # ICU has some `unsigned < 0` checks.
+                  '-Wno-tautological-compare',
+                ],
+              },
+              'cflags': [
+                '-Wno-deprecated-declarations',
+                '-Wno-logical-op-parentheses',
+                '-Wno-tautological-compare',
               ],
             }],
           ],
