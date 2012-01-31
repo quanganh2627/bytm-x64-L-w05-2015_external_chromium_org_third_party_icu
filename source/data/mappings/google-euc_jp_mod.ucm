@@ -19,7 +19,10 @@
 
 <icu:state>                   0-8d, 8e:2, 8f:3, 90-9f, a1-fe:1
 <icu:state>                   a1-fe
-<icu:state>                   a1-e4
+# 0xE3 and 0xE4 are dropped to avoid mapping 0x8E followed by 0xE3 and 0xE4
+# are mapped to ASCII range characters, U+005C and U+007E because that presents
+# a potential XSS attack risk.
+<icu:state>                   a1-e2
 <icu:state>                   a1-fe:1, a1:4, a3-a4:4, ef-f2:4, f4-fe:4
 <icu:state>                   a1-fe.u
 
@@ -117,7 +120,6 @@ CHARMAP
 <U005A> \x5A |0
 <U005B> \x5B |0
 <U005C> \x5C |0
-<U005C> \x8E\xE3 |3
 <U005D> \x5D |0
 <U005E> \x5E |0
 <U005F> \x5F |0
@@ -152,7 +154,6 @@ CHARMAP
 <U007C> \x7C |0
 <U007D> \x7D |0
 <U007E> \x7E |0
-<U007E> \x8E\xE4 |3
 <U007F> \x7F |0
 <U0080> \x80 |0
 <U0081> \x81 |0
