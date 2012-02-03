@@ -86,5 +86,5 @@ COLLATION_SOURCE = $(COLLATION_EMPTY_SOURCE) ar.txt bg.txt\
  sr.txt sr_Latn.txt sv.txt\
  th.txt tr.txt uk.txt vi.txt zh.txt\
  zh_Hant.txt\
- bn.txt gu.txt kn.txt ml.txt mr.txt ta.txt te.txt\
+ bn.txt gu.txt kn.txt ml.txt mr.txt ms.txt ta.txt te.txt\
  fa.txt

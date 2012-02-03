@@ -55,6 +55,7 @@ REGION_SOURCE =\
  lv.txt\
  ml.txt\
  mr.txt\
+ ms.txt\
  nb.txt\
  nl.txt\
  pl.txt\

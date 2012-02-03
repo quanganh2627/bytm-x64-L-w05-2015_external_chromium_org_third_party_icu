@@ -1,7 +1,5 @@
-Index: source/data/lang/af.txt
-===================================================================
---- source/data/lang/af.txt	(revision 68397)
-+++ source/data/lang/af.txt	(working copy)
+--- source/data/lang/af.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/af.txt	2011-02-22 15:14:44.464862000 -0800
 @@ -8,92 +8,11 @@
  // ***************************************************************************
  /**
@@ -99,10 +97,8 @@ Index: source/data/lang/af.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ak.txt
-===================================================================
---- source/data/lang/ak.txt	(revision 68397)
-+++ source/data/lang/ak.txt	(working copy)
+--- source/data/lang/ak.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ak.txt	2011-02-22 15:14:44.417900000 -0800
 @@ -8,53 +8,11 @@
  // ***************************************************************************
  /**
@@ -161,10 +157,8 @@ Index: source/data/lang/ak.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/az.txt
-===================================================================
---- source/data/lang/az.txt	(revision 68397)
-+++ source/data/lang/az.txt	(working copy)
+--- source/data/lang/az.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/az.txt	2011-02-22 15:14:44.461859000 -0800
 @@ -8,657 +8,11 @@
  // ***************************************************************************
  /**
@@ -827,10 +821,8 @@ Index: source/data/lang/az.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/bem.txt
-===================================================================
---- source/data/lang/bem.txt	(revision 68397)
-+++ source/data/lang/bem.txt	(working copy)
+--- source/data/lang/bem.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/bem.txt	2011-02-22 15:14:44.408908000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -890,10 +882,8 @@ Index: source/data/lang/bem.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/be.txt
-===================================================================
---- source/data/lang/be.txt	(revision 68397)
-+++ source/data/lang/be.txt	(working copy)
+--- source/data/lang/be.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/be.txt	2011-02-22 15:14:44.372928000 -0800
 @@ -8,193 +8,11 @@
  // ***************************************************************************
  /**
@@ -1054,7 +1044,7 @@ Index: source/data/lang/be.txt
 -        zh_Hans{"спрошчаная кітайская"}
 -        zh_Hant{"традыцыйная кітайская"}
 -        zu{"зулу"}
-     }
+-    }
 -    Scripts{
 -        Arab{"арабскае"}
 -        Armn{"армянскае"}
@@ -1088,14 +1078,12 @@ Index: source/data/lang/be.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/bs.txt
-===================================================================
---- source/data/lang/bs.txt	(revision 68397)
-+++ source/data/lang/bs.txt	(working copy)
+--- source/data/lang/bs.txt	2010-11-30 21:40:46.000000000 -0800
++++ source/data/lang/bs.txt	2011-02-22 15:14:44.478849000 -0800
 @@ -8,642 +8,11 @@
  // ***************************************************************************
  /**
@@ -1743,10 +1731,8 @@ Index: source/data/lang/bs.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/cy.txt
-===================================================================
---- source/data/lang/cy.txt	(revision 68397)
-+++ source/data/lang/cy.txt	(working copy)
+--- source/data/lang/cy.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/cy.txt	2011-02-22 15:14:44.452850000 -0800
 @@ -8,101 +8,11 @@
  // ***************************************************************************
  /**
@@ -1853,10 +1839,8 @@ Index: source/data/lang/cy.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/eo.txt
-===================================================================
---- source/data/lang/eo.txt	(revision 68397)
-+++ source/data/lang/eo.txt	(working copy)
+--- source/data/lang/eo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/eo.txt	2011-02-22 15:14:44.373937000 -0800
 @@ -8,153 +8,11 @@
  // ***************************************************************************
  /**
@@ -2015,10 +1999,8 @@ Index: source/data/lang/eo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/eu.txt
-===================================================================
---- source/data/lang/eu.txt	(revision 68397)
-+++ source/data/lang/eu.txt	(working copy)
+--- source/data/lang/eu.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/eu.txt	2011-02-22 15:14:44.476853000 -0800
 @@ -8,182 +8,11 @@
  // ***************************************************************************
  /**
@@ -2165,7 +2147,7 @@ Index: source/data/lang/eu.txt
 -        zh_Hans{"txinera (soildua)"}
 -        zh_Hant{"txinera (tradizionala)"}
 -        zu{"zuluera"}
-     }
+-    }
 -    Types{
 -        calendar{
 -            buddhist{"egutegi budista"}
@@ -2202,14 +2184,12 @@ Index: source/data/lang/eu.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/fo.txt
-===================================================================
---- source/data/lang/fo.txt	(revision 68397)
-+++ source/data/lang/fo.txt	(working copy)
+--- source/data/lang/fo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/fo.txt	2011-02-22 15:14:44.416887000 -0800
 @@ -8,10 +8,11 @@
  // ***************************************************************************
  /**
@@ -2225,10 +2205,8 @@ Index: source/data/lang/fo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ga.txt
-===================================================================
---- source/data/lang/ga.txt	(revision 68397)
-+++ source/data/lang/ga.txt	(working copy)
+--- source/data/lang/ga.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ga.txt	2011-02-22 15:14:44.387928000 -0800
 @@ -8,154 +8,11 @@
  // ***************************************************************************
  /**
@@ -2388,10 +2366,8 @@ Index: source/data/lang/ga.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/gl.txt
-===================================================================
---- source/data/lang/gl.txt	(revision 68397)
-+++ source/data/lang/gl.txt	(working copy)
+--- source/data/lang/gl.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/gl.txt	2011-02-22 15:14:44.460846000 -0800
 @@ -8,194 +8,11 @@
  // ***************************************************************************
  /**
@@ -2546,7 +2522,7 @@ Index: source/data/lang/gl.txt
 -        zh_Hant{"Chinés tradicional"}
 -        zu{"Zulú"}
 -        zxx{"Sen contido lingüístico"}
-     }
+-    }
 -    Scripts{
 -        Arab{"árabe"}
 -        Brai{"braille"}
@@ -2587,14 +2563,12 @@ Index: source/data/lang/gl.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ha.txt
-===================================================================
---- source/data/lang/ha.txt	(revision 68397)
-+++ source/data/lang/ha.txt	(working copy)
+--- source/data/lang/ha.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ha.txt	2011-02-22 15:14:44.438865000 -0800
 @@ -8,53 +8,11 @@
  // ***************************************************************************
  /**
@@ -2653,10 +2627,8 @@ Index: source/data/lang/ha.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/haw.txt
-===================================================================
---- source/data/lang/haw.txt	(revision 68397)
-+++ source/data/lang/haw.txt	(working copy)
+--- source/data/lang/haw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/haw.txt	2011-02-22 15:14:44.449867000 -0800
 @@ -8,46 +8,11 @@
  // ***************************************************************************
  /**
@@ -2708,10 +2680,8 @@ Index: source/data/lang/haw.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/hy.txt
-===================================================================
---- source/data/lang/hy.txt	(revision 68397)
-+++ source/data/lang/hy.txt	(working copy)
+--- source/data/lang/hy.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/hy.txt	2011-02-22 15:14:44.399917000 -0800
 @@ -8,10 +8,11 @@
  // ***************************************************************************
  /**
@@ -2727,10 +2697,8 @@ Index: source/data/lang/hy.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ig.txt
-===================================================================
---- source/data/lang/ig.txt	(revision 68397)
-+++ source/data/lang/ig.txt	(working copy)
+--- source/data/lang/ig.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ig.txt	2011-02-22 15:14:44.475846000 -0800
 @@ -8,53 +8,11 @@
  // ***************************************************************************
  /**
@@ -2789,10 +2757,8 @@ Index: source/data/lang/ig.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/is.txt
-===================================================================
---- source/data/lang/is.txt	(revision 68397)
-+++ source/data/lang/is.txt	(working copy)
+--- source/data/lang/is.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/is.txt	2011-02-22 15:14:44.437868000 -0800
 @@ -8,554 +8,11 @@
  // ***************************************************************************
  /**
@@ -3297,7 +3263,7 @@ Index: source/data/lang/is.txt
 -        zu{"súlú"}
 -        zun{"súní"}
 -        zxx{"ekkert tungutengt efni"}
-     }
+-    }
 -    Scripts{
 -        Arab{"arabísk"}
 -        Cans{"Cans"}
@@ -3348,14 +3314,12 @@ Index: source/data/lang/is.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ka.txt
-===================================================================
---- source/data/lang/ka.txt	(revision 68397)
-+++ source/data/lang/ka.txt	(working copy)
+--- source/data/lang/ka.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ka.txt	2011-02-22 15:14:44.390933000 -0800
 @@ -8,236 +8,11 @@
  // ***************************************************************************
  /**
@@ -3516,7 +3480,7 @@ Index: source/data/lang/ka.txt
 -        zh_Hans{"გამარტივებული ჩინური"}
 -        zh_Hant{"ტრადიციული ჩინური"}
 -        zu{"ზულუ"}
-     }
+-    }
 -    Scripts{
 -        Arab{"არაბული"}
 -        Armn{"სომხური"}
@@ -3593,14 +3557,12 @@ Index: source/data/lang/ka.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/kk.txt
-===================================================================
---- source/data/lang/kk.txt	(revision 68397)
-+++ source/data/lang/kk.txt	(working copy)
+--- source/data/lang/kk.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/kk.txt	2011-02-22 15:14:44.401905000 -0800
 @@ -8,10 +8,11 @@
  // ***************************************************************************
  /**
@@ -3616,10 +3578,8 @@ Index: source/data/lang/kk.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/km.txt
-===================================================================
---- source/data/lang/km.txt	(revision 68397)
-+++ source/data/lang/km.txt	(working copy)
+--- source/data/lang/km.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/km.txt	2011-02-22 15:14:44.458845000 -0800
 @@ -8,109 +8,11 @@
  // ***************************************************************************
  /**
@@ -3734,10 +3694,8 @@ Index: source/data/lang/km.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/lg.txt
-===================================================================
---- source/data/lang/lg.txt	(revision 68397)
-+++ source/data/lang/lg.txt	(working copy)
+--- source/data/lang/lg.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/lg.txt	2011-02-22 15:14:44.393926000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -3797,10 +3755,8 @@ Index: source/data/lang/lg.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/mfe.txt
-===================================================================
---- source/data/lang/mfe.txt	(revision 68397)
-+++ source/data/lang/mfe.txt	(working copy)
+--- source/data/lang/mfe.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/mfe.txt	2011-02-22 15:14:44.396903000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -3860,10 +3816,8 @@ Index: source/data/lang/mfe.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/mg.txt
-===================================================================
---- source/data/lang/mg.txt	(revision 68397)
-+++ source/data/lang/mg.txt	(working copy)
+--- source/data/lang/mg.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/mg.txt	2011-02-22 15:14:44.449849000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -3923,10 +3877,8 @@ Index: source/data/lang/mg.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/mk.txt
-===================================================================
---- source/data/lang/mk.txt	(revision 68397)
-+++ source/data/lang/mk.txt	(working copy)
+--- source/data/lang/mk.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/mk.txt	2011-02-22 15:14:44.446858000 -0800
 @@ -8,594 +8,11 @@
  // ***************************************************************************
  /**
@@ -4449,7 +4401,7 @@ Index: source/data/lang/mk.txt
 -        zun{"зуни"}
 -        zxx{"без лингвистичка содржина"}
 -        zza{"заза"}
-     }
+-    }
 -    Scripts{
 -        Arab{"арапско писмо"}
 -        Armn{"ерменско писмо"}
@@ -4522,14 +4474,12 @@ Index: source/data/lang/mk.txt
 -        language{"Јазик: {0}"}
 -        script{"Писмо: {0}"}
 -        territory{"Регион: {0}"}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/mo.txt
-===================================================================
---- source/data/lang/mo.txt	(revision 68397)
-+++ source/data/lang/mo.txt	(working copy)
+--- source/data/lang/mo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/mo.txt	2011-02-22 15:14:44.469847000 -0800
 @@ -6,7 +6,12 @@
  // * Source File:<path>/common/main/mo.xml
  // *
@@ -4547,80 +4497,8 @@ Index: source/data/lang/mo.txt
 +    }
 +}
 \ No newline at end of file
-Index: source/data/lang/ms.txt
-===================================================================
---- source/data/lang/ms.txt	(revision 68397)
-+++ source/data/lang/ms.txt	(working copy)
-@@ -8,61 +8,11 @@
- // ***************************************************************************
- /**
-  *  ICU <specials> source: <path>/xml/main/ms.xml
-+ *  Chrome Note: This locale data is abridged to contain categories
-+ *  actually used by Chrome.
-  */
- ms{
-     Languages{
--        af{"Afrikaans"}
--        am{"Amharic"}
--        ar{"Arab"}
--        as{"Assam"}
--        be{"Belarus"}
--        bn{"Benggala"}
--        bs{"Bosnia"}
--        ca{"Catalonia"}
--        cy{"Wales"}
--        eo{"Esperanto"}
--        eu{"Basque"}
--        fa{"Parsi"}
--        fy{"Frisian"}
--        gd{"Scots Gaelic"}
--        gl{"Galicia"}
--        gu{"Gujerat"}
--        hr{"Croat"}
--        hu{"Hungary"}
--        hy{"Armenia"}
--        id{"Indonesia"}
--        ka{"Georgia"}
--        km{"Khmer"}
--        kn{"Kannada"}
--        la{"Latin"}
--        ln{"Lingala"}
--        lo{"Laos"}
--        ml{"Malayalam"}
--        mn{"Mongolia"}
--        mr{"Marathi"}
-         ms{"Bahasa Melayu"}
--        mt{"Malta"}
--        ne{"Nepal"}
--        nn{"Nynorsk Norway"}
--        pa{"Punjabi"}
--        pt_PT{"Portugis Iberia"}
--        sa{"Sanskrit"}
--        sd{"Sindhi"}
--        sh{"SerboCroatia"}
--        si{"Sinhala"}
--        sk{"Slovak"}
--        sl{"Slovenia"}
--        so{"Somali"}
--        sq{"Albania"}
--        sr{"Serbia"}
--        su{"Sunda"}
--        sw{"Swahili"}
--        ta{"Tamil"}
--        te{"Telugu"}
--        th{"Thai"}
--        ti{"Tigrinya"}
--        ug{"Uighur"}
--        vi{"Vietnam"}
-     }
--    Version{"2.0.50.96"}
--}
-+}
-\ No newline at end of file
-Index: source/data/lang/mt.txt
-===================================================================
---- source/data/lang/mt.txt	(revision 68397)
-+++ source/data/lang/mt.txt	(working copy)
+--- source/data/lang/mt.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/mt.txt	2011-02-22 15:14:44.425877000 -0800
 @@ -8,529 +8,11 @@
  // ***************************************************************************
  /**
@@ -5111,7 +4989,7 @@ Index: source/data/lang/mt.txt
 -        znd{"Żande"}
 -        zu{"Żulu"}
 -        zun{"Żuni"}
-     }
+-    }
 -    Scripts{
 -        Arab{"Għarbi"}
 -        Grek{"Grieg"}
@@ -5151,14 +5029,12 @@ Index: source/data/lang/mt.txt
 -        language{"Lingwa: {0}"}
 -        script{"Skritt: {0}"}
 -        territory{"Reġjun: {0}"}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ne.txt
-===================================================================
---- source/data/lang/ne.txt	(revision 68397)
-+++ source/data/lang/ne.txt	(working copy)
+--- source/data/lang/ne.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/ne.txt	2011-02-22 15:14:44.443856000 -0800
 @@ -8,179 +8,11 @@
  // ***************************************************************************
  /**
@@ -5185,7 +5061,7 @@ Index: source/data/lang/ne.txt
 -        zh{"चिनियाँ"}
 -        zh_Hans{"सरलिकृत चिनियाँ"}
 -        zh_Hant{"परम्परागत चिनियाँ"}
-     }
+-    }
 -    Scripts{
 -        Arab{"अरब"}
 -        Armi{"आर्मी"}
@@ -5338,15 +5214,13 @@ Index: source/data/lang/ne.txt
 -    Variants{
 -        AREVELA{"पूर्वी आर्मेनियाली"}
 -        POSIX{"कम्प्युटर"}
--    }
+     }
 -    Version{"2.0.50.94"}
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/nn.txt
-===================================================================
---- source/data/lang/nn.txt	(revision 68397)
-+++ source/data/lang/nn.txt	(working copy)
+--- source/data/lang/nn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/nn.txt	2011-02-22 15:14:44.440869000 -0800
 @@ -8,720 +8,11 @@
  // ***************************************************************************
  /**
@@ -5872,7 +5746,7 @@ Index: source/data/lang/nn.txt
 -        zun{"zuni"}
 -        zxx{"utan språkleg innhald"}
 -        zza{"zaza"}
-     }
+-    }
 -    Scripts{
 -        Arab{"arabisk"}
 -        Armi{"armisk"}
@@ -6068,14 +5942,12 @@ Index: source/data/lang/nn.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/nyn.txt
-===================================================================
---- source/data/lang/nyn.txt	(revision 68397)
-+++ source/data/lang/nyn.txt	(working copy)
+--- source/data/lang/nyn.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/nyn.txt	2011-02-22 15:14:44.464844000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -6135,10 +6007,8 @@ Index: source/data/lang/nyn.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/om.txt
-===================================================================
---- source/data/lang/om.txt	(revision 68397)
-+++ source/data/lang/om.txt	(working copy)
+--- source/data/lang/om.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/om.txt	2011-02-22 15:14:44.384918000 -0800
 @@ -8,99 +8,11 @@
  // ***************************************************************************
  /**
@@ -6243,10 +6113,8 @@ Index: source/data/lang/om.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/or.txt
-===================================================================
---- source/data/lang/or.txt	(revision 68397)
-+++ source/data/lang/or.txt	(working copy)
+--- source/data/lang/or.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/or.txt	2011-07-25 02:16:27.313261000 -0700
 @@ -8,647 +8,11 @@
  // ***************************************************************************
  /**
@@ -6899,10 +6767,8 @@ Index: source/data/lang/or.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/pa.txt
-===================================================================
---- source/data/lang/pa.txt	(revision 68397)
-+++ source/data/lang/pa.txt	(working copy)
+--- source/data/lang/pa.txt	2010-09-13 12:12:47.000000000 -0700
++++ source/data/lang/pa.txt	2011-02-22 15:14:44.420883000 -0800
 @@ -8,44 +8,11 @@
  // ***************************************************************************
  /**
@@ -6952,10 +6818,8 @@ Index: source/data/lang/pa.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ps.txt
-===================================================================
---- source/data/lang/ps.txt	(revision 68397)
-+++ source/data/lang/ps.txt	(working copy)
+--- source/data/lang/ps.txt	2010-09-13 12:12:47.000000000 -0700
++++ source/data/lang/ps.txt	2011-02-22 15:14:44.479858000 -0800
 @@ -8,44 +8,11 @@
  // ***************************************************************************
  /**
@@ -7005,10 +6869,8 @@ Index: source/data/lang/ps.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/rm.txt
-===================================================================
---- source/data/lang/rm.txt	(revision 68397)
-+++ source/data/lang/rm.txt	(working copy)
+--- source/data/lang/rm.txt	2010-10-24 23:30:04.000000000 -0700
++++ source/data/lang/rm.txt	2011-02-22 15:14:44.428873000 -0800
 @@ -8,716 +8,11 @@
  // ***************************************************************************
  /**
@@ -7528,7 +7390,7 @@ Index: source/data/lang/rm.txt
 -        zun{"zuni"}
 -        zxx{"nagins cuntegns linguistics"}
 -        zza{"zaza"}
-     }
+-    }
 -    Scripts{
 -        Arab{"arab"}
 -        Armi{"arameic imperial"}
@@ -7726,14 +7588,12 @@ Index: source/data/lang/rm.txt
 -    localeDisplayPattern{
 -        pattern{"{0} ({1})"}
 -        separator{", "}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/rw.txt
-===================================================================
---- source/data/lang/rw.txt	(revision 68397)
-+++ source/data/lang/rw.txt	(working copy)
+--- source/data/lang/rw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/rw.txt	2011-02-22 15:14:44.382921000 -0800
 @@ -8,115 +8,11 @@
  // ***************************************************************************
  /**
@@ -7854,10 +7714,8 @@ Index: source/data/lang/rw.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/si.txt
-===================================================================
---- source/data/lang/si.txt	(revision 68397)
-+++ source/data/lang/si.txt	(working copy)
+--- source/data/lang/si.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/si.txt	2011-02-22 15:14:44.363942000 -0800
 @@ -8,40 +8,11 @@
  // ***************************************************************************
  /**
@@ -7903,10 +7761,8 @@ Index: source/data/lang/si.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/sn.txt
-===================================================================
---- source/data/lang/sn.txt	(revision 68397)
-+++ source/data/lang/sn.txt	(working copy)
+--- source/data/lang/sn.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/sn.txt	2011-02-22 15:14:44.364950000 -0800
 @@ -8,54 +8,11 @@
  // ***************************************************************************
  /**
@@ -7966,10 +7822,8 @@ Index: source/data/lang/sn.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/so.txt
-===================================================================
---- source/data/lang/so.txt	(revision 68397)
-+++ source/data/lang/so.txt	(working copy)
+--- source/data/lang/so.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/so.txt	2011-02-22 15:14:44.376925000 -0800
 @@ -8,58 +8,11 @@
  // ***************************************************************************
  /**
@@ -8033,10 +7887,8 @@ Index: source/data/lang/so.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/sq.txt
-===================================================================
---- source/data/lang/sq.txt	(revision 68397)
-+++ source/data/lang/sq.txt	(working copy)
+--- source/data/lang/sq.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/sq.txt	2011-02-22 15:14:44.407901000 -0800
 @@ -8,28 +8,11 @@
  // ***************************************************************************
  /**
@@ -8070,10 +7922,8 @@ Index: source/data/lang/sq.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ti.txt
-===================================================================
---- source/data/lang/ti.txt	(revision 68397)
-+++ source/data/lang/ti.txt	(working copy)
+--- source/data/lang/ti.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/lang/ti.txt	2011-02-22 15:14:44.473844000 -0800
 @@ -8,107 +8,11 @@
  // ***************************************************************************
  /**
@@ -8186,10 +8036,8 @@ Index: source/data/lang/ti.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/tl.txt
-===================================================================
---- source/data/lang/tl.txt	(revision 68397)
-+++ source/data/lang/tl.txt	(working copy)
+--- source/data/lang/tl.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/tl.txt	2011-02-22 15:14:44.434873000 -0800
 @@ -8,8 +8,10 @@
  // ***************************************************************************
  /**
@@ -8205,10 +8053,8 @@ Index: source/data/lang/tl.txt
 +    }
 +}
 \ No newline at end of file
-Index: source/data/lang/to.txt
-===================================================================
---- source/data/lang/to.txt	(revision 68397)
-+++ source/data/lang/to.txt	(working copy)
+--- source/data/lang/to.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/to.txt	2011-02-22 15:14:44.422883000 -0800
 @@ -8,247 +8,11 @@
  // ***************************************************************************
  /**
@@ -8393,7 +8239,7 @@ Index: source/data/lang/to.txt
 -        zh_Hant{"lea fakasiaina tukufakaholo"}
 -        zu{"lea fakasulu"}
 -        zxx{"ʻikai ha lea"}
-     }
+-    }
 -    Scripts{
 -        Arab{"tohinima fakaʻalepea"}
 -        Armn{"tohinima fakaʻamīnia"}
@@ -8457,14 +8303,12 @@ Index: source/data/lang/to.txt
 -        language{"Lea: {0}"}
 -        script{"Tohinima Fakaha: {0}"}
 -        territory{"Feituʻu: {0}"}
--    }
+     }
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/ur.txt
-===================================================================
---- source/data/lang/ur.txt	(revision 68397)
-+++ source/data/lang/ur.txt	(working copy)
+--- source/data/lang/ur.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/ur.txt	2011-02-22 15:14:44.411908000 -0800
 @@ -8,88 +8,11 @@
  // ***************************************************************************
  /**
@@ -8558,10 +8402,8 @@ Index: source/data/lang/ur.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/uz.txt
-===================================================================
---- source/data/lang/uz.txt	(revision 68397)
-+++ source/data/lang/uz.txt	(working copy)
+--- source/data/lang/uz.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/uz.txt	2011-02-22 15:14:44.467853000 -0800
 @@ -8,10 +8,11 @@
  // ***************************************************************************
  /**
@@ -8577,10 +8419,8 @@ Index: source/data/lang/uz.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/yo.txt
-===================================================================
---- source/data/lang/yo.txt	(revision 68397)
-+++ source/data/lang/yo.txt	(working copy)
+--- source/data/lang/yo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/yo.txt	2011-02-22 15:14:44.429890000 -0800
 @@ -8,108 +8,11 @@
  // ***************************************************************************
  /**
@@ -8694,10 +8534,8 @@ Index: source/data/lang/yo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/lang/zu.txt
-===================================================================
---- source/data/lang/zu.txt	(revision 68397)
-+++ source/data/lang/zu.txt	(working copy)
+--- source/data/lang/zu.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/lang/zu.txt	2011-02-22 15:14:44.470858000 -0800
 @@ -8,20 +8,11 @@
  // ***************************************************************************
  /**
@@ -8723,10 +8561,8 @@ Index: source/data/lang/zu.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/af.txt
-===================================================================
---- source/data/locales/af.txt	(revision 68397)
-+++ source/data/locales/af.txt	(working copy)
+--- source/data/locales/af.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/af.txt	2011-02-22 15:14:44.343958000 -0800
 @@ -8,244 +8,13 @@
  // ***************************************************************************
  /**
@@ -8976,10 +8812,8 @@ Index: source/data/locales/af.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ak.txt
-===================================================================
---- source/data/locales/ak.txt	(revision 68397)
-+++ source/data/locales/ak.txt	(working copy)
+--- source/data/locales/ak.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ak.txt	2011-02-22 15:14:44.272966000 -0800
 @@ -8,191 +8,14 @@
  // ***************************************************************************
  /**
@@ -9176,10 +9010,8 @@ Index: source/data/locales/ak.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/az.txt
-===================================================================
---- source/data/locales/az.txt	(revision 68397)
-+++ source/data/locales/az.txt	(working copy)
+--- source/data/locales/az.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/az.txt	2011-02-22 15:14:44.338931000 -0800
 @@ -8,214 +8,14 @@
  // ***************************************************************************
  /**
@@ -9399,10 +9231,8 @@ Index: source/data/locales/az.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/bem.txt
-===================================================================
---- source/data/locales/bem.txt	(revision 68397)
-+++ source/data/locales/bem.txt	(working copy)
+--- source/data/locales/bem.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/bem.txt	2011-02-22 15:14:44.263987000 -0800
 @@ -8,180 +8,14 @@
  // ***************************************************************************
  /**
@@ -9588,10 +9418,8 @@ Index: source/data/locales/bem.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/be.txt
-===================================================================
---- source/data/locales/be.txt	(revision 68397)
-+++ source/data/locales/be.txt	(working copy)
+--- source/data/locales/be.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/be.txt	2011-02-22 15:14:44.226004000 -0800
 @@ -8,333 +8,14 @@
  // ***************************************************************************
  /**
@@ -9930,10 +9758,8 @@ Index: source/data/locales/be.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/bs.txt
-===================================================================
---- source/data/locales/bs.txt	(revision 68397)
-+++ source/data/locales/bs.txt	(working copy)
+--- source/data/locales/bs.txt	2010-11-30 21:40:46.000000000 -0800
++++ source/data/locales/bs.txt	2011-02-22 15:14:44.358934000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -10139,10 +9965,8 @@ Index: source/data/locales/bs.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/cy.txt
-===================================================================
---- source/data/locales/cy.txt	(revision 68397)
-+++ source/data/locales/cy.txt	(working copy)
+--- source/data/locales/cy.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/cy.txt	2011-02-22 15:14:44.328932000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -10463,10 +10287,8 @@ Index: source/data/locales/cy.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/eo.txt
-===================================================================
---- source/data/locales/eo.txt	(revision 68397)
-+++ source/data/locales/eo.txt	(working copy)
+--- source/data/locales/eo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/eo.txt	2011-02-22 15:14:44.228965000 -0800
 @@ -8,104 +8,14 @@
  // ***************************************************************************
  /**
@@ -10576,10 +10398,8 @@ Index: source/data/locales/eo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/eu.txt
-===================================================================
---- source/data/locales/eu.txt	(revision 68397)
-+++ source/data/locales/eu.txt	(working copy)
+--- source/data/locales/eu.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/eu.txt	2011-02-22 15:14:44.355958000 -0800
 @@ -8,206 +8,14 @@
  // ***************************************************************************
  /**
@@ -10791,10 +10611,8 @@ Index: source/data/locales/eu.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/fo.txt
-===================================================================
---- source/data/locales/fo.txt	(revision 68397)
-+++ source/data/locales/fo.txt	(working copy)
+--- source/data/locales/fo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/fo.txt	2011-02-22 15:14:44.270949000 -0800
 @@ -8,119 +8,14 @@
  // ***************************************************************************
  /**
@@ -10919,10 +10737,8 @@ Index: source/data/locales/fo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ga.txt
-===================================================================
---- source/data/locales/ga.txt	(revision 68397)
-+++ source/data/locales/ga.txt	(working copy)
+--- source/data/locales/ga.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ga.txt	2011-02-22 15:14:44.241100000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -11062,10 +10878,8 @@ Index: source/data/locales/ga.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/gl.txt
-===================================================================
---- source/data/locales/gl.txt	(revision 68397)
-+++ source/data/locales/gl.txt	(working copy)
+--- source/data/locales/gl.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/gl.txt	2011-02-22 15:14:44.337929000 -0800
 @@ -8,267 +8,14 @@
  // ***************************************************************************
  /**
@@ -11338,10 +11152,8 @@ Index: source/data/locales/gl.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ha.txt
-===================================================================
---- source/data/locales/ha.txt	(revision 68397)
-+++ source/data/locales/ha.txt	(working copy)
+--- source/data/locales/ha.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ha.txt	2011-02-22 15:14:44.308941000 -0800
 @@ -8,223 +8,14 @@
  // ***************************************************************************
  /**
@@ -11570,10 +11382,8 @@ Index: source/data/locales/ha.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/haw.txt
-===================================================================
---- source/data/locales/haw.txt	(revision 68397)
-+++ source/data/locales/haw.txt	(working copy)
+--- source/data/locales/haw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/haw.txt	2011-02-22 15:14:44.325997000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -11683,10 +11493,8 @@ Index: source/data/locales/haw.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/hy.txt
-===================================================================
---- source/data/locales/hy.txt	(revision 68397)
-+++ source/data/locales/hy.txt	(working copy)
+--- source/data/locales/hy.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/hy.txt	2011-02-22 15:14:44.255013000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -11800,10 +11608,8 @@ Index: source/data/locales/hy.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ig.txt
-===================================================================
---- source/data/locales/ig.txt	(revision 68397)
-+++ source/data/locales/ig.txt	(working copy)
+--- source/data/locales/ig.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ig.txt	2011-02-22 15:14:44.354933000 -0800
 @@ -8,194 +8,16 @@
  // ***************************************************************************
  /**
@@ -12003,10 +11809,8 @@ Index: source/data/locales/ig.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/is.txt
-===================================================================
---- source/data/locales/is.txt	(revision 68397)
-+++ source/data/locales/is.txt	(working copy)
+--- source/data/locales/is.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/is.txt	2011-02-22 15:14:44.305986000 -0800
 @@ -8,373 +8,14 @@
  // ***************************************************************************
  /**
@@ -12385,10 +12189,8 @@ Index: source/data/locales/is.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ka.txt
-===================================================================
---- source/data/locales/ka.txt	(revision 68397)
-+++ source/data/locales/ka.txt	(working copy)
+--- source/data/locales/ka.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ka.txt	2011-02-22 15:14:44.246962000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -12471,10 +12273,8 @@ Index: source/data/locales/ka.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/kk.txt
-===================================================================
---- source/data/locales/kk.txt	(revision 68397)
-+++ source/data/locales/kk.txt	(working copy)
+--- source/data/locales/kk.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/kk.txt	2011-02-22 15:14:44.257937000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -12576,10 +12376,8 @@ Index: source/data/locales/kk.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/km.txt
-===================================================================
---- source/data/locales/km.txt	(revision 68397)
-+++ source/data/locales/km.txt	(working copy)
+--- source/data/locales/km.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/km.txt	2011-02-22 15:14:44.334998000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -12702,10 +12500,8 @@ Index: source/data/locales/km.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/lg.txt
-===================================================================
---- source/data/locales/lg.txt	(revision 68397)
-+++ source/data/locales/lg.txt	(working copy)
+--- source/data/locales/lg.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/lg.txt	2011-02-22 15:14:44.248978000 -0800
 @@ -8,214 +8,13 @@
  // ***************************************************************************
  /**
@@ -12925,10 +12721,8 @@ Index: source/data/locales/lg.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/mfe.txt
-===================================================================
---- source/data/locales/mfe.txt	(revision 68397)
-+++ source/data/locales/mfe.txt	(working copy)
+--- source/data/locales/mfe.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/mfe.txt	2011-02-22 15:14:44.250104000 -0800
 @@ -8,217 +8,13 @@
  // ***************************************************************************
  /**
@@ -13151,10 +12945,8 @@ Index: source/data/locales/mfe.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/mg.txt
-===================================================================
---- source/data/locales/mg.txt	(revision 68397)
-+++ source/data/locales/mg.txt	(working copy)
+--- source/data/locales/mg.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/mg.txt	2011-02-22 15:14:44.323955000 -0800
 @@ -8,218 +8,14 @@
  // ***************************************************************************
  /**
@@ -13378,10 +13170,8 @@ Index: source/data/locales/mg.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/mk.txt
-===================================================================
---- source/data/locales/mk.txt	(revision 68397)
-+++ source/data/locales/mk.txt	(working copy)
+--- source/data/locales/mk.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/mk.txt	2011-02-22 15:14:44.319931000 -0800
 @@ -8,360 +8,14 @@
  // ***************************************************************************
  /**
@@ -13747,10 +13537,8 @@ Index: source/data/locales/mk.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/mo.txt
-===================================================================
---- source/data/locales/mo.txt	(revision 68397)
-+++ source/data/locales/mo.txt	(working copy)
+--- source/data/locales/mo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/mo.txt	2011-02-22 15:14:44.348928000 -0800
 @@ -6,7 +6,11 @@
  // * Source File:<path>/common/main/mo.xml
  // *
@@ -13766,244 +13554,8 @@ Index: source/data/locales/mo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ms.txt
-===================================================================
---- source/data/locales/ms.txt	(revision 68397)
-+++ source/data/locales/ms.txt	(working copy)
-@@ -8,6 +8,8 @@
- // ***************************************************************************
- /**
-  *  ICU <specials> source: <path>/xml/main/ms.xml
-+ *  Chrome Note: This locale data is abridged to contain categories
-+ *  actually used by Chrome.
-  */
- ms{
-     ExemplarCharacters{
-@@ -17,218 +19,5 @@
-     LocaleScript{
-         "Latn",
-     }
--    NumberElements{
--        latn{
--            patterns{
--                currencyFormat{"¤#,##0.00;(¤#,##0.00)"}
--            }
--        }
--    }
-     Version{"2.0.50.96"}
--    calendar{
--        buddhist{
--            DateTimePatterns{
--                "h:mm:ss a zzzz",
--                "h:mm:ss a z",
--                "h:mm:ss a",
--                "h:mm a",
--                "EEEE, d MMMM y G",
--                "d MMMM y G",
--                "dd/MM/y G",
--                "d/MM/y G",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--            }
--            availableFormats{
--                Ed{"E, d"}
--                MEd{"E, d/M"}
--                MMMEd{"E, d MMM"}
--                MMMMd{"d MMMM"}
--                Md{"d/M"}
--                yM{"M/y G"}
--                yMEd{"EEE, d/M/y G"}
--                yMMM{"MMM y G"}
--                yMMMEd{"EEE, d MMM y G"}
--                yMMMd{"d MMM y G"}
--            }
--        }
--        gregorian{
--            DateTimePatterns{
--                "h:mm:ss a zzzz",
--                "h:mm:ss a z",
--                "h:mm:ss a",
--                "h:mm a",
--                "EEEE, d MMMM y",
--                "d MMMM y",
--                "dd/MM/yyyy",
--                "d/MM/yy",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--            }
--            availableFormats{
--                Ed{"E, d"}
--                MEd{"E, d-M"}
--                MMMEd{"EEE, d MMM"}
--                MMMd{"d MMM"}
--                Md{"d-M"}
--                yM{"M-y"}
--                yMEd{"EEE, d-M-yyyy"}
--                yMMM{"MMM y"}
--                yMMMEd{"EEE, d MMM y"}
--            }
--            dayNames{
--                format{
--                    abbreviated{
--                        "Ahd",
--                        "Isn",
--                        "Sel",
--                        "Rab",
--                        "Kha",
--                        "Jum",
--                        "Sab",
--                    }
--                    wide{
--                        "Ahad",
--                        "Isnin",
--                        "Selasa",
--                        "Rabu",
--                        "Khamis",
--                        "Jumaat",
--                        "Sabtu",
--                    }
--                }
--            }
--            intervalFormats{
--                h{
--                    a{"H – H"}
--                    h{"H – H"}
--                }
--            }
--            monthNames{
--                format{
--                    abbreviated{
--                        "Jan",
--                        "Feb",
--                        "Mac",
--                        "Apr",
--                        "Mei",
--                        "Jun",
--                        "Jul",
--                        "Ogos",
--                        "Sep",
--                        "Okt",
--                        "Nov",
--                        "Dis",
--                    }
--                    wide{
--                        "Januari",
--                        "Februari",
--                        "Mac",
--                        "April",
--                        "Mei",
--                        "Jun",
--                        "Julai",
--                        "Ogos",
--                        "September",
--                        "Oktober",
--                        "November",
--                        "Disember",
--                    }
--                }
--            }
--        }
--        islamic{
--            DateTimePatterns{
--                "h:mm:ss a zzzz",
--                "h:mm:ss a z",
--                "h:mm:ss a",
--                "h:mm a",
--                "EEEE, d MMMM y G",
--                "d MMMM y G",
--                "dd/MM/y G",
--                "d/MM/y G",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--            }
--            availableFormats{
--                Ed{"E, d"}
--                MEd{"E, d/M"}
--                MMMEd{"E, d MMM"}
--                MMMMd{"d MMMM"}
--                Md{"d/M"}
--                yyyyM{"M/y G"}
--                yyyyMEd{"EEE, d/M/y G"}
--                yyyyMMM{"MMM y G"}
--                yyyyMMMEd{"EEE, d MMM y G"}
--                yyyyMMMd{"d MMM y G"}
--            }
--        }
--        japanese{
--            DateTimePatterns{
--                "h:mm:ss a zzzz",
--                "h:mm:ss a z",
--                "h:mm:ss a",
--                "h:mm a",
--                "EEEE, d MMMM y G",
--                "d MMMM y G",
--                "dd/MM/y G",
--                "d/MM/y G",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--            }
--            availableFormats{
--                Ed{"E, d"}
--                MEd{"E, d/M"}
--                MMMEd{"E, d MMM"}
--                MMMMd{"d MMMM"}
--                Md{"d/M"}
--                yyyyM{"M/y G"}
--                yyyyMEd{"EEE, d/M/y G"}
--                yyyyMMM{"MMM y G"}
--                yyyyMMMEd{"EEE, d MMM y G"}
--                yyyyMMMd{"d MMM y G"}
--            }
--        }
--        roc{
--            DateTimePatterns{
--                "h:mm:ss a zzzz",
--                "h:mm:ss a z",
--                "h:mm:ss a",
--                "h:mm a",
--                "EEEE, d MMMM y G",
--                "d MMMM y G",
--                "dd/MM/y G",
--                "d/MM/y G",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--                "{1} {0}",
--            }
--            availableFormats{
--                Ed{"E, d"}
--                MEd{"E, d/M"}
--                MMMEd{"EEE, d MMM"}
--                MMMMd{"d MMMM"}
--                Md{"d/M"}
--                yyyyM{"M/y G"}
--                yyyyMEd{"EEE, d/M/y G"}
--                yyyyMMM{"MMM y G"}
--                yyyyMMMEd{"EEE, d MMM y G"}
--                yyyyMMMd{"d MMM y G"}
--            }
--        }
--    }
--}
-+}
-\ No newline at end of file
-Index: source/data/locales/mt.txt
-===================================================================
---- source/data/locales/mt.txt	(revision 68397)
-+++ source/data/locales/mt.txt	(working copy)
+--- source/data/locales/mt.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/mt.txt	2011-02-22 15:14:44.279942000 -0800
 @@ -8,194 +8,14 @@
  // ***************************************************************************
  /**
@@ -14203,10 +13755,8 @@ Index: source/data/locales/mt.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ne.txt
-===================================================================
---- source/data/locales/ne.txt	(revision 68397)
-+++ source/data/locales/ne.txt	(working copy)
+--- source/data/locales/ne.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/ne.txt	2011-02-22 15:14:44.312078000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -14360,10 +13910,8 @@ Index: source/data/locales/ne.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/nn.txt
-===================================================================
---- source/data/locales/nn.txt	(revision 68397)
-+++ source/data/locales/nn.txt	(working copy)
+--- source/data/locales/nn.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/nn.txt	2011-02-22 15:14:44.310975000 -0800
 @@ -8,349 +8,14 @@
  // ***************************************************************************
  /**
@@ -14718,10 +14266,8 @@ Index: source/data/locales/nn.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/nyn.txt
-===================================================================
---- source/data/locales/nyn.txt	(revision 68397)
-+++ source/data/locales/nyn.txt	(working copy)
+--- source/data/locales/nyn.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/nyn.txt	2011-02-22 15:14:44.342930000 -0800
 @@ -8,214 +8,13 @@
  // ***************************************************************************
  /**
@@ -14941,10 +14487,8 @@ Index: source/data/locales/nyn.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/om.txt
-===================================================================
---- source/data/locales/om.txt	(revision 68397)
-+++ source/data/locales/om.txt	(working copy)
+--- source/data/locales/om.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/om.txt	2011-02-22 15:14:44.239983000 -0800
 @@ -8,136 +8,13 @@
  // ***************************************************************************
  /**
@@ -15086,10 +14630,8 @@ Index: source/data/locales/om.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/or.txt
-===================================================================
---- source/data/locales/or.txt	(revision 68397)
-+++ source/data/locales/or.txt	(working copy)
+--- source/data/locales/or.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/or.txt	2011-07-25 02:16:27.375258000 -0700
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -15225,10 +14767,8 @@ Index: source/data/locales/or.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/pa.txt
-===================================================================
---- source/data/locales/pa.txt	(revision 68397)
-+++ source/data/locales/pa.txt	(working copy)
+--- source/data/locales/pa.txt	2010-09-13 12:12:47.000000000 -0700
++++ source/data/locales/pa.txt	2011-02-22 15:14:44.274070000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -15403,10 +14943,8 @@ Index: source/data/locales/pa.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ps.txt
-===================================================================
---- source/data/locales/ps.txt	(revision 68397)
-+++ source/data/locales/ps.txt	(working copy)
+--- source/data/locales/ps.txt	2010-09-13 12:12:47.000000000 -0700
++++ source/data/locales/ps.txt	2011-02-22 15:14:44.360931000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -15537,10 +15075,8 @@ Index: source/data/locales/ps.txt
 +    Version{"2.0.50.30"}
 +}
 \ No newline at end of file
-Index: source/data/locales/rm.txt
-===================================================================
---- source/data/locales/rm.txt	(revision 68397)
-+++ source/data/locales/rm.txt	(working copy)
+--- source/data/locales/rm.txt	2010-10-24 23:30:04.000000000 -0700
++++ source/data/locales/rm.txt	2011-02-22 15:14:44.281963000 -0800
 @@ -8,395 +8,14 @@
  // ***************************************************************************
  /**
@@ -15941,10 +15477,8 @@ Index: source/data/locales/rm.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/rw.txt
-===================================================================
---- source/data/locales/rw.txt	(revision 68397)
-+++ source/data/locales/rw.txt	(working copy)
+--- source/data/locales/rw.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/rw.txt	2011-02-22 15:14:44.237951000 -0800
 @@ -8,115 +8,13 @@
  // ***************************************************************************
  /**
@@ -16065,10 +15599,8 @@ Index: source/data/locales/rw.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/si.txt
-===================================================================
---- source/data/locales/si.txt	(revision 68397)
-+++ source/data/locales/si.txt	(working copy)
+--- source/data/locales/si.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/si.txt	2011-02-22 15:14:44.216968000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -16242,10 +15774,8 @@ Index: source/data/locales/si.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/sn.txt
-===================================================================
---- source/data/locales/sn.txt	(revision 68397)
-+++ source/data/locales/sn.txt	(working copy)
+--- source/data/locales/sn.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/sn.txt	2011-02-22 15:14:44.219927000 -0800
 @@ -8,215 +8,14 @@
  // ***************************************************************************
  /**
@@ -16466,10 +15996,8 @@ Index: source/data/locales/sn.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/so.txt
-===================================================================
---- source/data/locales/so.txt	(revision 68397)
-+++ source/data/locales/so.txt	(working copy)
+--- source/data/locales/so.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/so.txt	2011-02-22 15:14:44.230082000 -0800
 @@ -8,205 +8,13 @@
  // ***************************************************************************
  /**
@@ -16680,10 +16208,8 @@ Index: source/data/locales/so.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/sq.txt
-===================================================================
---- source/data/locales/sq.txt	(revision 68397)
-+++ source/data/locales/sq.txt	(working copy)
+--- source/data/locales/sq.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/sq.txt	2011-02-22 15:14:44.261972000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -16897,10 +16423,8 @@ Index: source/data/locales/sq.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ti.txt
-===================================================================
---- source/data/locales/ti.txt	(revision 68397)
-+++ source/data/locales/ti.txt	(working copy)
+--- source/data/locales/ti.txt	2010-10-18 20:27:40.000000000 -0700
++++ source/data/locales/ti.txt	2011-02-22 15:14:44.352931000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -17040,10 +16564,8 @@ Index: source/data/locales/ti.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/tl.txt
-===================================================================
---- source/data/locales/tl.txt	(revision 68397)
-+++ source/data/locales/tl.txt	(working copy)
+--- source/data/locales/tl.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/tl.txt	2011-02-22 15:14:44.303035000 -0800
 @@ -8,8 +8,9 @@
  // ***************************************************************************
  /**
@@ -17057,10 +16579,8 @@ Index: source/data/locales/tl.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/to.txt
-===================================================================
---- source/data/locales/to.txt	(revision 68397)
-+++ source/data/locales/to.txt	(working copy)
+--- source/data/locales/to.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/to.txt	2011-02-22 15:14:44.277022000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -17414,10 +16934,8 @@ Index: source/data/locales/to.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/ur.txt
-===================================================================
---- source/data/locales/ur.txt	(revision 68397)
-+++ source/data/locales/ur.txt	(working copy)
+--- source/data/locales/ur.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/ur.txt	2011-02-22 15:14:44.265079000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -17556,10 +17074,8 @@ Index: source/data/locales/ur.txt
 +    Version{"2.0.47.65"}
 +}
 \ No newline at end of file
-Index: source/data/locales/uz.txt
-===================================================================
---- source/data/locales/uz.txt	(revision 68397)
-+++ source/data/locales/uz.txt	(working copy)
+--- source/data/locales/uz.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/uz.txt	2011-02-22 15:14:44.346929000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -17576,10 +17092,8 @@ Index: source/data/locales/uz.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/yo.txt
-===================================================================
---- source/data/locales/yo.txt	(revision 68397)
-+++ source/data/locales/yo.txt	(working copy)
+--- source/data/locales/yo.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/yo.txt	2011-02-22 15:14:44.283044000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
@@ -17784,10 +17298,8 @@ Index: source/data/locales/yo.txt
 -}
 +}
 \ No newline at end of file
-Index: source/data/locales/zu.txt
-===================================================================
---- source/data/locales/zu.txt	(revision 68397)
-+++ source/data/locales/zu.txt	(working copy)
+--- source/data/locales/zu.txt	2010-07-28 17:18:28.000000000 -0700
++++ source/data/locales/zu.txt	2011-02-22 15:14:44.349946000 -0800
 @@ -8,6 +8,8 @@
  // ***************************************************************************
  /**
