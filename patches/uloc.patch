@@ -2,6 +2,15 @@ Index: source/common/uloc.c
 ===================================================================
 --- source/common/uloc.c	(revision 113138)
 +++ source/common/uloc.c	(working copy)
+@@ -713,7 +713,7 @@
+                 pos++;
+             } else {
+                 i = (int32_t)uprv_strlen(equalSign);
+-                while(equalSign[i-1] == ' ') {
++                while(i && equalSign[i-1] == ' ') {
+                     i--;
+                 }
+                 keywordList[numKeywords].valueLen = i;
 @@ -1797,7 +1797,7 @@
                  int32_t variantLen = _deleteVariant(variant, uprv_min(variantSize, (nameCapacity-len)), variantToCompare, n);
                  len -= variantLen;

@@ -713,7 +713,7 @@ _getKeywords(const char *localeID,
                 pos++;
             } else {
                 i = (int32_t)uprv_strlen(equalSign);
-                while(equalSign[i-1] == ' ') {
+                while(i && equalSign[i-1] == ' ') {
                     i--;
                 }
                 keywordList[numKeywords].valueLen = i;
