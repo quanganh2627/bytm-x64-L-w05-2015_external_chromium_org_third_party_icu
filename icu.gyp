@@ -333,6 +333,12 @@
                   # the header should use U_NAMESPACE_BEGIN instead.
                   # http://bugs.icu-project.org/trac/ticket/9054
                   '-Wno-header-hygiene',
+                  # uresdata.c has switch(RES_GET_TYPE(x)) code. The
+                  # RES_GET_TYPE macro returns an UResType enum, but some switch
+                  # statement contains case values that aren't part of that
+                  # enum (e.g. URES_TABLE32 which is in UResInternalType). This
+                  # is on purpose.
+                  '-Wno-switch',
                 ],
               },
               'cflags': [
@@ -340,6 +346,7 @@
                 '-Wno-logical-op-parentheses',
                 '-Wno-tautological-compare',
                 '-Wno-header-hygiene',
+                '-Wno-switch',
               ],
             }],
           ],
