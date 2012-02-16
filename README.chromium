@@ -203,12 +203,14 @@ This directory contains the source code of ICU 4.6 for C/C++
 18. Make it compile with -Werror on gcc 4.6
    - patches/gcc46.patch (ToT upstream does not have this code any more).
 
-19. Fix two out of bounds memory access error in common/uloc.c
+19. Fix three out of bounds memory access error in common/uloc.c
+    and common/uresbund.c 
    - patches/uloc.patch
    - upstream bug: 
      1. http://bugs.icu-project.org/trac/ticket/8984 (_canonicalize)
-     2. http://bugs.icu-project.org/trac/ticket/xxxx (_getKeywords)
+     2. http://bugs.icu-project.org/trac/ticket/9114 (_getKeywords)
+     3. http://bugs.icu-project.org/trac/ticket/yyyy (uresbund)
 
 20. Fix a null pointer error in ubrk_setText in ubrk.cpp.
     - patches/ubrk.patch
-    - upstream bug : http://bugs.icu-project.org/trac/ticket/xxxx
+    - upstream bug : http://bugs.icu-project.org/trac/ticket/9115
