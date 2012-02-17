@@ -333,10 +333,6 @@
                   # the header should use U_NAMESPACE_BEGIN instead.
                   # http://bugs.icu-project.org/trac/ticket/9054
                   '-Wno-header-hygiene',
-                  # ICU does some tricky array allocation that trips over
-                  # -Warray-bounds. It seems to be harmless, see
-                  # http://crbug.com/84851.
-                  '-Wno-array-bounds',
                   # Looks like a real issue, see http://crbug.com/114660
                   '-Wno-return-type-c-linkage',
                 ],
@@ -346,7 +342,6 @@
                 '-Wno-logical-op-parentheses',
                 '-Wno-tautological-compare',
                 '-Wno-header-hygiene',
-                '-Wno-array-bounds',
                 '-Wno-return-type-c-linkage',
               ],
             }],
