@@ -216,3 +216,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 20. Fix a null pointer error in ubrk_setText in ubrk.cpp.
     - patches/ubrk.patch
     - upstream bug : http://bugs.icu-project.org/trac/ticket/9115
+
+21. Fix a clang warning in rbbi.cpp by merging in an upstream change.
+    - patches/changeset_30255.patch
+    - upstream change : http://bugs.icu-project.org/trac/changeset/30255
