@@ -70,6 +70,10 @@ This directory contains the source code of ICU 4.6 for C/C++
      * brklocal.mk : build file changes to drop unnecessary brkitr rule
                      files (e.g. word_ja.txt, line_he.txt)
 
+   - android/brkitr.patch :
+       Reverts some changes about Chinese/Japanese segmentation rules in
+       patches/brkitr.patch to reduce binary size for Android.
+
    If you want to run ICU tests, you have to copy source/data/brkitr/cjdict.txt
    to source/test/testdata/cjdict-truncated.txt to pass TestTrieWithValue test.
 
@@ -158,7 +162,10 @@ This directory contains the source code of ICU 4.6 for C/C++
       files everytime ICU is upgraded to a new version.
 
     - {mac,linux}/icudt46l_dat.S : Built on Mac and Linux with all the
-      patches above applied and checked in.
+      patches above (except android/brkitr.patch) applied and checked in.
+
+    - android/icudt46l_dat.S : Built on Linux with all the patches above and
+      android/brkitr.patch applied and checked in.
 
 11. The header files were moved as shown below:
 
