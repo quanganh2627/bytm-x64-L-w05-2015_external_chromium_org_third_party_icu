@@ -70,7 +70,7 @@ This directory contains the source code of ICU 4.6 for C/C++
      * brklocal.mk : build file changes to drop unnecessary brkitr rule
                      files (e.g. word_ja.txt, line_he.txt)
 
-   - android/brkitr.patch :
+   - android/brkitr.patch (to be applied for Android build only) :
        Reverts some changes about Chinese/Japanese segmentation rules in
        patches/brkitr.patch to reduce binary size for Android.
 
@@ -105,6 +105,10 @@ This directory contains the source code of ICU 4.6 for C/C++
     display names we don't use (everything other than 419).
      $ sed -i  '/[0-35-9][0-9][0-9]{/ d' *.txt
 
+  - android/patch_locale.sh (to be run for Android build only):
+      Makes changes to source/data/{curr,region,lang} to exclude these data
+      except the language and script names of zh_Hans and zh_Hant.
+
 7. Removal of unihan collation tables from data/coll/{zh,ja,ko}.txt
 
   - patches/unihan.patch:
@@ -112,7 +116,7 @@ This directory contains the source code of ICU 4.6 for C/C++
     about 1MB in the uncompressed ICU data file in ICU 4.2.1.
 
 8. Timezone data update
-  - Grab the latest version of the following timezone data files and 
+  - Grab the latest version of the following timezone data files and
     put them in source/data/misc.
 
      metaZones.txt
@@ -165,7 +169,8 @@ This directory contains the source code of ICU 4.6 for C/C++
       patches above (except android/brkitr.patch) applied and checked in.
 
     - android/icudt46l_dat.S : Built on Linux with all the patches above and
-      android/brkitr.patch applied and checked in.
+      android/brkitr.patch applied and android/patch_locale.sh executed, and
+      checked in.
 
 11. The header files were moved as shown below:
 

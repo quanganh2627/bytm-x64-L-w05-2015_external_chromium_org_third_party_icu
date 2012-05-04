@@ -1,4 +1,4 @@
-# Copyright (c) 2011 The Chromium Authors. All rights reserved.
+# Copyright (c) 2012 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
@@ -67,11 +67,16 @@
             [ 'OS == "win" or OS == "mac" or OS == "android"', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
+            [ 'OS == "android"', {
+              # Android builds ImageDiff for host, which has a dependency on
+              # newwtf so needs to be able to build this target for host as
+              # well.
+              'toolsets': ['host', 'target'],
+            }, { # 'OS != "android"',
+              'sources!': ['android/icudt46l_dat.S'],
+            }],
             [ 'OS != "mac"', {
               'sources!': ['mac/icudt46l_dat.S'],
-            }],
-            [ 'OS != "android"', {
-              'sources!': ['android/icudt46l_dat.S'],
             }],
             [ 'OS != "win" and icu_use_data_file_flag', {
               # Remove any assembly data file.
@@ -284,6 +289,12 @@
                 '-frtti',
               ],
             }],
+            ['OS == "android"', {
+              # Android builds ImageDiff for host, which has a dependency on
+              # newwtf so needs to be able to build this target for host as
+              # well.
+              'toolsets': ['host', 'target'],
+            }],
             ['OS == "mac"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
@@ -295,11 +306,6 @@
                   'RuntimeTypeInfo': 'true',
                 },
               }
-            }],
-            ['OS == "android"', {
-              'dependencies': [
-                'gabi++',
-              ],
             }],
             ['clang==1', {
               'xcode_settings': {
@@ -527,6 +533,12 @@
                 '-frtti',
               ],
             }],
+            ['OS == "android"', {
+              # Android builds ImageDiff for host, which has a dependency on
+              # newwtf so needs to be able to build this target for host as
+              # well.
+              'toolsets': ['host', 'target'],
+            }],
             ['OS == "mac"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
@@ -538,11 +550,6 @@
                   'RuntimeTypeInfo': 'true',
                 },
               }
-            }],
-            ['OS == "android"', {
-              'dependencies': [
-                'gabi++',
-              ],
             }],
             ['clang==1', {
               'xcode_settings': {
@@ -570,44 +577,6 @@
             }],
           ],
         },
-      ],
-      'conditions': [
-        ['OS=="android"', {
-          'targets': [
-            {
-              'target_name': 'gabi++',
-              'type': 'none',
-              'direct_dependent_settings': {
-                'include_dirs': [
-                  '<(android_ndk_root)/sources/cxx-stl/gabi++/include',
-                ],
-              },
-              'conditions': [
-                ['target_arch=="arm" and armv7==1', {
-                  'link_settings': {
-                    'libraries': [
-                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi-v7a/libgabi++_static.a',
-                    ]
-                  },
-                }],
-                ['target_arch=="arm" and armv7==0', {
-                  'link_settings': {
-                    'libraries': [
-                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/armeabi/libgabi++_static.a',
-                    ]
-                  },
-                }],
-                ['target_arch=="ia32"', {
-                  'link_settings': {
-                    'libraries': [
-                      '<(android_ndk_root)/sources/cxx-stl/gabi++/libs/x86/libgabi++_static.a',
-                    ]
-                  },
-                }],
-              ],
-            },
-          ],
-        }],
       ],
     }, { # use_system_icu != 0
       'targets': [
