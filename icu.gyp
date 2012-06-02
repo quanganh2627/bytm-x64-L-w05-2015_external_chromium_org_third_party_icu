@@ -67,12 +67,7 @@
             [ 'OS == "win" or OS == "mac" or OS == "android"', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
-            [ 'OS == "android"', {
-              # Android builds ImageDiff for host, which has a dependency on
-              # newwtf so needs to be able to build this target for host as
-              # well.
-              'toolsets': ['host', 'target'],
-            }, { # 'OS != "android"',
+            [ 'OS != "android"', {
               'sources!': ['android/icudt46l_dat.S'],
             }],
             [ 'OS != "mac"', {
@@ -288,12 +283,6 @@
               'cflags_cc': [
                 '-frtti',
               ],
-            }],
-            ['OS == "android"', {
-              # Android builds ImageDiff for host, which has a dependency on
-              # newwtf so needs to be able to build this target for host as
-              # well.
-              'toolsets': ['host', 'target'],
             }],
             ['OS == "mac"', {
               'xcode_settings': {
@@ -532,12 +521,6 @@
               'cflags_cc': [
                 '-frtti',
               ],
-            }],
-            ['OS == "android"', {
-              # Android builds ImageDiff for host, which has a dependency on
-              # newwtf so needs to be able to build this target for host as
-              # well.
-              'toolsets': ['host', 'target'],
             }],
             ['OS == "mac"', {
               'xcode_settings': {
