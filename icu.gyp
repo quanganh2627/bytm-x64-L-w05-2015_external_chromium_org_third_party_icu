@@ -64,13 +64,13 @@
                 },
               ],
             }],
-            [ 'OS == "win" or OS == "mac" or OS == "android"', {
+            [ 'OS == "win" or OS == "mac" or OS == "ios" or OS == "android"', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
             [ 'OS != "android"', {
               'sources!': ['android/icudt46l_dat.S'],
             }],
-            [ 'OS != "mac"', {
+            [ 'OS != "mac" and OS != "ios"', {
               'sources!': ['mac/icudt46l_dat.S'],
             }],
             [ 'OS != "win" and icu_use_data_file_flag', {
@@ -81,7 +81,7 @@
               # Make sure any binary depending on this gets the data file.
               'link_settings': {
                 'target_conditions': [
-                  ['OS == "mac" and _mac_bundle', {
+                  ['(OS == "mac" and _mac_bundle) or OS=="ios"', {
                     'mac_bundle_resources': [
                       'source/data/in/icudt46l.dat',
                     ],
@@ -274,7 +274,7 @@
             ],
           },
           'conditions': [
-            [ 'os_posix == 1 and OS != "mac"', {
+            [ 'os_posix == 1 and OS != "mac" and OS != "ios"', {
               # Since ICU wants to internally use its own deprecated APIs, don't
               # complain about it.
               'cflags': [
@@ -284,7 +284,7 @@
                 '-frtti',
               ],
             }],
-            ['OS == "mac"', {
+            ['OS == "mac" or OS == "ios"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
               },
@@ -511,7 +511,7 @@
                 'source/stubdata/stubdata.c',
               ],
             }],
-            [ 'os_posix == 1 and OS != "mac"', {
+            [ 'os_posix == 1 and OS != "mac" and OS != "ios"', {
               'cflags': [
                 # Since ICU wants to internally use its own deprecated APIs,
                 # don't complain about it.
@@ -522,7 +522,7 @@
                 '-frtti',
               ],
             }],
-            ['OS == "mac"', {
+            ['OS == "mac" or OS == "ios"', {
               'xcode_settings': {
                 'GCC_ENABLE_CPP_RTTI': 'YES',       # -frtti
               },
