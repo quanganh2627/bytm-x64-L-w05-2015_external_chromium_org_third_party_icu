@@ -571,14 +571,31 @@
               'USE_SYSTEM_ICU',
             ],
           },
-          'link_settings': {
-            'ldflags': [
-              '<!@(icu-config --ldflags)',
-            ],
-            'libraries': [
-              '<!@(icu-config --ldflags-libsonly)',
-            ],
-          },
+          'conditions': [
+            ['OS=="android"', {
+              'direct_dependent_settings': {
+                'include_dirs': [
+                  '<(android_src)/external/icu4c/common',
+                  '<(android_src)/external/icu4c/i18n',
+                ],
+              },
+              'link_settings': {
+                'libraries': [
+                  '-licui18n',
+                  '-licuuc',
+                ],
+              },
+            },{ # OS!="android"
+              'link_settings': {
+                'ldflags': [
+                  '<!@(icu-config --ldflags)',
+                ],
+                'libraries': [
+                  '<!@(icu-config --ldflags-libsonly)',
+                ],
+              },
+            }],
+          ],
         },
         {
           'target_name': 'icudata',
