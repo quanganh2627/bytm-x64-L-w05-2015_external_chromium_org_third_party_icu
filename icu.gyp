@@ -321,6 +321,18 @@
                 '-Wno-return-type-c-linkage',
               ],
             }],
+            ['OS == "android" and use_system_stlport == 1', {
+              # ICU requires RTTI, which is not present in the system's stlport,
+              # so we have to include gabi++.
+              'include_dirs': [
+                '<(android_src)/abi/cpp/include',
+              ],
+              'link_settings': {
+                'libraries': [
+                  '-lgabi++',
+                ],
+              },
+            }],
           ],
         },
         {
@@ -532,7 +544,19 @@
                 'VCCLCompilerTool': {
                   'RuntimeTypeInfo': 'true',
                 },
-              }
+              },
+            }],
+            ['OS == "android" and use_system_stlport == 1', {
+              # ICU requires RTTI, which is not present in the system's stlport,
+              # so we have to include gabi++.
+              'include_dirs': [
+                '<(android_src)/abi/cpp/include',
+              ],
+              'link_settings': {
+                'libraries': [
+                  '-lgabi++',
+                ],
+              },
             }],
             ['clang==1', {
               'xcode_settings': {
