@@ -232,3 +232,8 @@ This directory contains the source code of ICU 4.6 for C/C++
 21. Fix a clang warning in rbbi.cpp by merging in an upstream change.
     - patches/changeset_30255.patch
     - upstream change : http://bugs.icu-project.org/trac/changeset/30255
+
+22. Fix time zone handling and compilation on iOS.
+    - patches/ios_timezone.patch
+    - upstream bugs : http://bugs.icu-project.org/trac/ticket/9051
+    -                 http://bugs.icu-project.org/trac/ticket/8661
