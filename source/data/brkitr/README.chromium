@@ -1,5 +1,8 @@
 Name: Chinese and Japanese Word List
 URL: http://src.chromium.org/viewvc/chrome/trunk/deps/third_party/icu42/source/data/brkitr/
+License: BSD and custom licenses
+Security Critical: no
+Version: unknown
 
 
 The list of words in cjdict.txt are obtained by combining three word
