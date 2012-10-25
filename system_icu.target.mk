@@ -2,7 +2,7 @@
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_CLASS := NONE
+LOCAL_MODULE_CLASS := GYP
 LOCAL_MODULE := third_party_icu_system_icu_gyp
 LOCAL_MODULE_STEM := system_icu
 LOCAL_MODULE_SUFFIX := .stamp

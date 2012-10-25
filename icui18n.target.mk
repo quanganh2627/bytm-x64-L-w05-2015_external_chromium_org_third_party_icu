@@ -2,7 +2,7 @@
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE_CLASS := NONE
+LOCAL_MODULE_CLASS := GYP
 LOCAL_MODULE := third_party_icu_icui18n_gyp
 LOCAL_MODULE_STEM := icui18n
 LOCAL_MODULE_SUFFIX := .stamp
@@ -12,7 +12,7 @@ gyp_shared_intermediate_dir := $(call intermediates-dir-for,GYP,shared)
 
 # Make sure our deps are built first.
 GYP_TARGET_DEPENDENCIES := \
-	$(call intermediates-dir-for,NONE,third_party_icu_system_icu_gyp)/system_icu.stamp
+	$(call intermediates-dir-for,GYP,third_party_icu_system_icu_gyp)/system_icu.stamp
 
 GYP_GENERATED_OUTPUTS :=
 
