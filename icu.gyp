@@ -42,7 +42,7 @@
       'targets': [
         {
           'target_name': 'icudata',
-          'type': '<(library)',
+          'type': 'static_library',
           'sources': [
              # These are hand-generated, but will do for now.  The linux
              # version is an identical copy of the (mac) icudt46l_dat.S file,
