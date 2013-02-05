@@ -43,6 +43,9 @@
         {
           'target_name': 'icudata',
           'type': 'static_library',
+          'defines': [
+            'U_HIDE_DATA_SYMBOL',
+          ],
           'sources': [
              # These are hand-generated, but will do for now.  The linux
              # version is an identical copy of the (mac) icudt46l_dat.S file,
@@ -95,11 +98,6 @@
                   }],
                 ],  # target_conditions
               },  # link_settings
-            }],
-            [ 'library != "shared_library"', {
-              'defines': [
-                'U_HIDE_DATA_SYMBOL',
-              ],
             }],
           ],
         },
