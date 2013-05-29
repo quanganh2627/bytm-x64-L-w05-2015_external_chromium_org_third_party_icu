@@ -16,8 +16,8 @@ GYP_TARGET_DEPENDENCIES := \
 
 ### Rules for action "generate_icui18n_shim_headers":
 $(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: gyp_local_path := $(LOCAL_PATH)
-$(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: gyp_intermediate_dir := $(GYP_ABS_ANDROID_TOP_DIR)/$(gyp_intermediate_dir)
-$(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: gyp_shared_intermediate_dir := $(GYP_ABS_ANDROID_TOP_DIR)/$(gyp_shared_intermediate_dir)
+$(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: gyp_intermediate_dir := $(abspath $(gyp_intermediate_dir))
+$(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/shim_headers/icui18n/target/third_party/icu/public/i18n/unicode/basictz.h: $(LOCAL_PATH)/tools/generate_shim_headers/generate_shim_headers.py $(GYP_TARGET_DEPENDENCIES)
 	@echo "Gyp action: Generating icui18n shim headers. ($@)"

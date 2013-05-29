@@ -16,8 +16,8 @@ GYP_TARGET_DEPENDENCIES := \
 
 ### Rules for action "generate_icuuc_shim_headers":
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: gyp_local_path := $(LOCAL_PATH)
-$(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: gyp_intermediate_dir := $(GYP_ABS_ANDROID_TOP_DIR)/$(gyp_intermediate_dir)
-$(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: gyp_shared_intermediate_dir := $(GYP_ABS_ANDROID_TOP_DIR)/$(gyp_shared_intermediate_dir)
+$(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: gyp_intermediate_dir := $(abspath $(gyp_intermediate_dir))
+$(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/public/common/unicode/brkiter.h: $(LOCAL_PATH)/tools/generate_shim_headers/generate_shim_headers.py $(GYP_TARGET_DEPENDENCIES)
 	@echo "Gyp action: Generating icuuc shim headers. ($@)"
