@@ -282,7 +282,7 @@
 #if 1
 #define U_TZSET         tzset
 #endif
-#ifdef !defined(__UCLIBC__)
+#if !defined(__UCLIBC__)
 #define U_TIMEZONE      __timezone
 #endif
 #if 1
