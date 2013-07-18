@@ -29,11 +29,7 @@
             ],
           }],
         ],
-        # TODO(mark): Looks like this is causing the "public" include
-        # directories to show up twice in some targets in this file.  Fix.
         'include_dirs': [
-          'public/common',
-          'public/i18n',
           'source/common',
           'source/i18n',
         ],
@@ -261,14 +257,8 @@
             'icuuc',
           ],
           'direct_dependent_settings': {
-            # Use prepend (+) because the WebKit build needs to pick up these
-            # ICU headers instead of the ones in ../WebKit/JavaScriptCore/wtf,
-            # also in WebKit's include path.
-            # TODO(mark): The triple + is a bug.  It should be a double +.  It
-            # seems that a + is being chopped off when the "target" section is
-            # merged into "target_defaults".
-            'include_dirs+++': [
-              'public/i18n',
+            'include_dirs': [
+              'source/i18n',
             ],
           },
           'conditions': [
@@ -506,14 +496,8 @@
             'icudata',
           ],
           'direct_dependent_settings': {
-            # Use prepend (+) because the WebKit build needs to pick up these
-            # ICU headers instead of the ones in ../WebKit/JavaScriptCore/wtf,
-            # also in WebKit's include path.
-            # TODO(mark): The triple + is a bug.  It should be a double +.  It
-            # seems that a + is being chopped off when the "target" section is
-            # merged into "target_defaults".
-            'include_dirs+++': [
-              'public/common',
+            'include_dirs': [
+              'source/common',
             ],
             'conditions': [
               [ 'component=="static_library"', {
@@ -634,12 +618,12 @@
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
           'variables': {
-            'headers_root_path': 'public/i18n',
+            'headers_root_path': 'source/i18n',
             'header_filenames': [
               # This list can easily be updated using the command below:
-              # find third_party/icu/public/i18n -iname '*.h' \
+              # find third_party/icu/source/i18n/unicode -iname '*.h' \
               # -printf "'%p',\n" | \
-              # sed -e 's|third_party/icu/public/i18n/||' | sort -u
+              # sed -e 's|third_party/icu/source/i18n/||' | sort -u
               'unicode/basictz.h',
               'unicode/bmsearch.h',
               'unicode/bms.h',
@@ -720,12 +704,12 @@
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
           'variables': {
-            'headers_root_path': 'public/common',
+            'headers_root_path': 'source/common',
             'header_filenames': [
               # This list can easily be updated using the command below:
-              # find third_party/icu/public/common -iname '*.h' \
+              # find third_party/icu/source/common/unicode -iname '*.h' \
               # -printf "'%p',\n" | \
-              # sed -e 's|third_party/icu/public/common/||' | sort -u
+              # sed -e 's|third_party/icu/source/common/||' | sort -u
               'unicode/brkiter.h',
               'unicode/bytestream.h',
               'unicode/caniter.h',
