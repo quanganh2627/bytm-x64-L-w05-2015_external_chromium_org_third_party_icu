@@ -6,6 +6,7 @@
   'variables': {
     'use_system_icu%': 0,
     'icu_use_data_file_flag%': 0,
+    'want_separate_host_toolset%': 0,
   },
   'target_defaults': {
     'direct_dependent_settings': {
@@ -15,26 +16,24 @@
         'U_USING_ICU_NAMESPACE=0',
       ],
     },
+    'defines': [
+      'U_USING_ICU_NAMESPACE=0',
+    ],
+    'conditions': [
+      ['component=="static_library"', {
+        'defines': [
+          'U_STATIC_IMPLEMENTATION',
+        ],
+      }],
+    ],
+    'include_dirs': [
+      'source/common',
+      'source/i18n',
+    ],
+    'msvs_disabled_warnings': [4005, 4068, 4355, 4996, 4267],
   },
   'conditions': [
-    ['use_system_icu==0', {
-      'target_defaults': {
-        'defines': [
-          'U_USING_ICU_NAMESPACE=0',
-        ],
-        'conditions': [
-          ['component=="static_library"', {
-            'defines': [
-              'U_STATIC_IMPLEMENTATION',
-            ],
-          }],
-        ],
-        'include_dirs': [
-          'source/common',
-          'source/i18n',
-        ],
-        'msvs_disabled_warnings': [4005, 4068, 4355, 4996, 4267],
-      },
+    ['use_system_icu==0 or want_separate_host_toolset==1', {
       'targets': [
         {
           'target_name': 'icudata',
@@ -52,6 +51,11 @@
              'mac/icudt46l_dat.S',
           ],
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'OS == "win"', {
               'type': 'none',
               'copies': [
@@ -262,6 +266,11 @@
             ],
           },
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'os_posix == 1 and OS != "mac" and OS != "ios"', {
               # Since ICU wants to internally use its own deprecated APIs, don't
               # complain about it.
@@ -508,6 +517,11 @@
             ],
           },
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'OS == "win"', {
               'sources': [
                 'source/stubdata/stubdata.c',
@@ -575,12 +589,18 @@
           ],
         },
       ],
-    }, { # use_system_icu != 0
+    }],
+    ['use_system_icu==1', {
       'targets': [
         {
           'target_name': 'system_icu',
           'type': 'none',
           'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             ['OS=="android"', {
               'direct_dependent_settings': {
                 'include_dirs': [
@@ -611,6 +631,13 @@
           'type': 'none',
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
+          ],
         },
         {
           'target_name': 'icui18n',
@@ -696,6 +723,13 @@
           },
           'includes': [
             '../../build/shim_headers.gypi',
+          ],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
           ],
         },
         {
@@ -800,6 +834,13 @@
           },
           'includes': [
             '../../build/shim_headers.gypi',
+          ],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
           ],
         },
       ],
