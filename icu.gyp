@@ -25,6 +25,21 @@
           'U_STATIC_IMPLEMENTATION',
         ],
       }],
+      ['(OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
+         or OS=="netbsd" or OS=="mac" or OS=="android") and \
+        (target_arch=="arm" or target_arch=="ia32" or \
+         target_arch=="mipsel")', {
+        'target_conditions': [
+          ['_toolset=="host"', {
+            'cflags': [ '-m32' ],
+            'ldflags': [ '-m32' ],
+            'asflags': [ '-32' ],
+            'xcode_settings': {
+              'ARCHS': [ 'i386' ],
+            },
+          }],
+        ],
+      }],
     ],
     'include_dirs': [
       'source/common',
