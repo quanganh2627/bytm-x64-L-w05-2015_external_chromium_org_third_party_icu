@@ -6,6 +6,7 @@
   'variables': {
     'use_system_icu%': 0,
     'icu_use_data_file_flag%': 0,
+    'want_separate_host_toolset%': 0,
   },
   'target_defaults': {
     'direct_dependent_settings': {
@@ -15,30 +16,39 @@
         'U_USING_ICU_NAMESPACE=0',
       ],
     },
-  },
-  'conditions': [
-    ['use_system_icu==0', {
-      'target_defaults': {
+    'defines': [
+      'U_USING_ICU_NAMESPACE=0',
+    ],
+    'conditions': [
+      ['component=="static_library"', {
         'defines': [
-          'U_USING_ICU_NAMESPACE=0',
+          'U_STATIC_IMPLEMENTATION',
         ],
-        'conditions': [
-          ['component=="static_library"', {
-            'defines': [
-              'U_STATIC_IMPLEMENTATION',
-            ],
+      }],
+      ['(OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
+         or OS=="netbsd" or OS=="mac" or OS=="android") and \
+        (target_arch=="arm" or target_arch=="ia32" or \
+         target_arch=="mipsel")', {
+        'target_conditions': [
+          ['_toolset=="host"', {
+            'cflags': [ '-m32' ],
+            'ldflags': [ '-m32' ],
+            'asflags': [ '-32' ],
+            'xcode_settings': {
+              'ARCHS': [ 'i386' ],
+            },
           }],
         ],
-        # TODO(mark): Looks like this is causing the "public" include
-        # directories to show up twice in some targets in this file.  Fix.
-        'include_dirs': [
-          'public/common',
-          'public/i18n',
-          'source/common',
-          'source/i18n',
-        ],
-        'msvs_disabled_warnings': [4005, 4068, 4355, 4996, 4267],
-      },
+      }],
+    ],
+    'include_dirs': [
+      'source/common',
+      'source/i18n',
+    ],
+    'msvs_disabled_warnings': [4005, 4068, 4355, 4996, 4267],
+  },
+  'conditions': [
+    ['use_system_icu==0 or want_separate_host_toolset==1', {
       'targets': [
         {
           'target_name': 'icudata',
@@ -56,6 +66,11 @@
              'mac/icudt46l_dat.S',
           ],
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'OS == "win"', {
               'type': 'none',
               'copies': [
@@ -261,17 +276,16 @@
             'icuuc',
           ],
           'direct_dependent_settings': {
-            # Use prepend (+) because the WebKit build needs to pick up these
-            # ICU headers instead of the ones in ../WebKit/JavaScriptCore/wtf,
-            # also in WebKit's include path.
-            # TODO(mark): The triple + is a bug.  It should be a double +.  It
-            # seems that a + is being chopped off when the "target" section is
-            # merged into "target_defaults".
-            'include_dirs+++': [
-              'public/i18n',
+            'include_dirs': [
+              'source/i18n',
             ],
           },
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'os_posix == 1 and OS != "mac" and OS != "ios"', {
               # Since ICU wants to internally use its own deprecated APIs, don't
               # complain about it.
@@ -506,14 +520,8 @@
             'icudata',
           ],
           'direct_dependent_settings': {
-            # Use prepend (+) because the WebKit build needs to pick up these
-            # ICU headers instead of the ones in ../WebKit/JavaScriptCore/wtf,
-            # also in WebKit's include path.
-            # TODO(mark): The triple + is a bug.  It should be a double +.  It
-            # seems that a + is being chopped off when the "target" section is
-            # merged into "target_defaults".
-            'include_dirs+++': [
-              'public/common',
+            'include_dirs': [
+              'source/common',
             ],
             'conditions': [
               [ 'component=="static_library"', {
@@ -524,6 +532,11 @@
             ],
           },
           'conditions': [
+            [ 'use_system_icu==1', {
+              'toolsets': ['host'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             [ 'OS == "win"', {
               'sources': [
                 'source/stubdata/stubdata.c',
@@ -591,12 +604,18 @@
           ],
         },
       ],
-    }, { # use_system_icu != 0
+    }],
+    ['use_system_icu==1', {
       'targets': [
         {
           'target_name': 'system_icu',
           'type': 'none',
           'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
             ['OS=="android"', {
               'direct_dependent_settings': {
                 'include_dirs': [
@@ -627,6 +646,13 @@
           'type': 'none',
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
+          ],
         },
         {
           'target_name': 'icui18n',
@@ -634,12 +660,12 @@
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
           'variables': {
-            'headers_root_path': 'public/i18n',
+            'headers_root_path': 'source/i18n',
             'header_filenames': [
               # This list can easily be updated using the command below:
-              # find third_party/icu/public/i18n -iname '*.h' \
+              # find third_party/icu/source/i18n/unicode -iname '*.h' \
               # -printf "'%p',\n" | \
-              # sed -e 's|third_party/icu/public/i18n/||' | sort -u
+              # sed -e 's|third_party/icu/source/i18n/||' | sort -u
               'unicode/basictz.h',
               'unicode/bmsearch.h',
               'unicode/bms.h',
@@ -713,6 +739,13 @@
           'includes': [
             '../../build/shim_headers.gypi',
           ],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
+          ],
         },
         {
           'target_name': 'icuuc',
@@ -720,12 +753,12 @@
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
           'variables': {
-            'headers_root_path': 'public/common',
+            'headers_root_path': 'source/common',
             'header_filenames': [
               # This list can easily be updated using the command below:
-              # find third_party/icu/public/common -iname '*.h' \
+              # find third_party/icu/source/common/unicode -iname '*.h' \
               # -printf "'%p',\n" | \
-              # sed -e 's|third_party/icu/public/common/||' | sort -u
+              # sed -e 's|third_party/icu/source/common/||' | sort -u
               'unicode/brkiter.h',
               'unicode/bytestream.h',
               'unicode/caniter.h',
@@ -816,6 +849,13 @@
           },
           'includes': [
             '../../build/shim_headers.gypi',
+          ],
+          'conditions': [
+            ['want_separate_host_toolset==1', {
+              'toolsets': ['target'],
+            }, {
+              'toolsets': ['host', 'target'],
+            }],
           ],
         },
       ],
