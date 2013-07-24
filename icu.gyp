@@ -6,7 +6,7 @@
   'variables': {
     'use_system_icu%': 0,
     'icu_use_data_file_flag%': 0,
-    'want_separate_host_toolset%': 0,
+    'want_separate_host_toolset%': 1,
   },
   'target_defaults': {
     'direct_dependent_settings': {
@@ -342,16 +342,20 @@
                 ],
             }],
             ['OS == "android" and use_system_stlport == 1', {
-              # ICU requires RTTI, which is not present in the system's stlport,
-              # so we have to include gabi++.
-              'include_dirs': [
-                '<(android_src)/abi/cpp/include',
+              'target_conditions': [
+                ['_toolset == "target"', {
+                  # ICU requires RTTI, which is not present in the system's
+                  # stlport, so we have to include gabi++.
+                  'include_dirs': [
+                    '<(android_src)/abi/cpp/include',
+                  ],
+                  'link_settings': {
+                    'libraries': [
+                      '-lgabi++',
+                    ],
+                  },
+                }],
               ],
-              'link_settings': {
-                'libraries': [
-                  '-lgabi++',
-                ],
-              },
             }],
           ],
         },
@@ -566,16 +570,20 @@
               },
             }],
             ['OS == "android" and use_system_stlport == 1', {
-              # ICU requires RTTI, which is not present in the system's stlport,
-              # so we have to include gabi++.
-              'include_dirs': [
-                '<(android_src)/abi/cpp/include',
+              'target_conditions': [
+                ['_toolset == "target"', {
+                  # ICU requires RTTI, which is not present in the system's
+                  # stlport, so we have to include gabi++.
+                  'include_dirs': [
+                    '<(android_src)/abi/cpp/include',
+                  ],
+                  'link_settings': {
+                    'libraries': [
+                      '-lgabi++',
+                    ],
+                  },
+                }],
               ],
-              'link_settings': {
-                'libraries': [
-                  '-lgabi++',
-                ],
-              },
             }],
             ['clang==1', {
               'xcode_settings': {
