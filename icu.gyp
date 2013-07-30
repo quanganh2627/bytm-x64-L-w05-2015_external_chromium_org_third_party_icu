@@ -82,15 +82,6 @@
                 },
               ],
             }],
-            [ 'OS == "win" or OS == "mac" or OS == "ios" or OS == "android"', {
-              'sources!': ['linux/icudt46l_dat.S'],
-            }],
-            [ 'OS != "android"', {
-              'sources!': ['android/icudt46l_dat.S'],
-            }],
-            [ 'OS != "mac" and OS != "ios"', {
-              'sources!': ['mac/icudt46l_dat.S'],
-            }],
             [ 'OS != "win" and icu_use_data_file_flag', {
               # Remove any assembly data file.
               'sources/': [['exclude', 'icudt46l_dat']],
@@ -113,6 +104,19 @@
                   }],
                 ],  # target_conditions
               },  # link_settings
+            }],
+          ],
+          'target_conditions': [
+            [ 'OS == "win" or OS == "mac" or OS == "ios" or '
+              '(OS == "android" and (_toolset == "target" or host_os != "linux"))', {
+              'sources!': ['linux/icudt46l_dat.S'],
+            }],
+            [ 'OS != "android" or _toolset == "host"', {
+              'sources!': ['android/icudt46l_dat.S'],
+            }],
+            [ 'OS != "mac" and OS != "ios" and '
+              '(OS != "android" or _toolset != "host" or host_os != "mac")', {
+              'sources!': ['mac/icudt46l_dat.S'],
             }],
           ],
         },
