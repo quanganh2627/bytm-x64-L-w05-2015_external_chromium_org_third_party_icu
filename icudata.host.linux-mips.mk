@@ -23,7 +23,7 @@ LOCAL_GENERATED_SOURCES :=
 GYP_COPIED_SOURCE_ORIGIN_DIRS :=
 
 LOCAL_SRC_FILES := \
-	third_party/icu/android/icudt46l_dat.S
+	third_party/icu/linux/icudt46l_dat.S
 
 
 # Flags passed to both C and C++ files.
