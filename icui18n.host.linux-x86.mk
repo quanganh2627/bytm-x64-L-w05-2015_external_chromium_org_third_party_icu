@@ -198,6 +198,7 @@ MY_CFLAGS_Debug := \
 MY_DEFS_Debug := \
 	'-DU_USING_ICU_NAMESPACE=0' \
 	'-DANGLE_DX11' \
+	'-DWebKit=blink' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DNO_TCMALLOC' \
 	'-DDISABLE_NACL' \
@@ -259,6 +260,7 @@ MY_CFLAGS_Release := \
 MY_DEFS_Release := \
 	'-DU_USING_ICU_NAMESPACE=0' \
 	'-DANGLE_DX11' \
+	'-DWebKit=blink' \
 	'-D_FILE_OFFSET_BITS=64' \
 	'-DNO_TCMALLOC' \
 	'-DDISABLE_NACL' \
