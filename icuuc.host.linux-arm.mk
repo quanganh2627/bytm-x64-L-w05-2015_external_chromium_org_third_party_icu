@@ -190,7 +190,6 @@ MY_CFLAGS_Debug := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
-	-g \
 	-Wno-deprecated-declarations \
 	-Wno-unused-function \
 	-Wno-format \
@@ -250,7 +249,6 @@ MY_CFLAGS_Release := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
-	-g \
 	-Wno-deprecated-declarations \
 	-Wno-unused-function \
 	-Wno-format \
