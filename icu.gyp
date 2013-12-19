@@ -71,7 +71,7 @@
             }, {
               'toolsets': ['host', 'target'],
             }],
-            [ 'OS == "win"', {
+            [ 'OS == "win" and icu_use_data_file_flag==0', {
               'type': 'none',
               'copies': [
                 {
@@ -82,30 +82,31 @@
                 },
               ],
             }],
-            [ 'OS != "win" and icu_use_data_file_flag', {
+            [ 'icu_use_data_file_flag', {
               # Remove any assembly data file.
               'sources/': [['exclude', 'icudt46l_dat']],
               # Compile in the stub data symbol.
               'sources': ['source/stubdata/stubdata.c'],
+             
               # Make sure any binary depending on this gets the data file.
-              'link_settings': {
-                'target_conditions': [
-                  ['(OS == "mac" and _mac_bundle) or OS=="ios"', {
-                    'mac_bundle_resources': [
-                      'source/data/in/icudt46l.dat',
+              'conditions': [
+                ['OS != "ios"', {
+                  'copies': [{
+                    'destination': '<(PRODUCT_DIR)',
+                    'files': [
+                      'source/data/in/icudtl.dat',
                     ],
-                  }, {
-                    'copies': [{
-                      'destination': '<(PRODUCT_DIR)',
-                      'files': [
-                        'source/data/in/icudt46l.dat',
-                      ],
-                    }],
                   }],
-                ],  # target_conditions
-              },  # link_settings
-            }],
-          ],
+                } , { # else: OS=="ios"
+                  'link_settings': {
+                    'mac_bundle_resources': [
+                      'source/data/in/icudtl.dat',
+                    ],
+                  },
+                }], # OS!=ios
+              ], # conditions
+            }], # icu_use_data_file_flag 
+          ], # conditions
           'target_conditions': [
             [ 'OS == "win" or OS == "mac" or OS == "ios" or '
               '(OS == "android" and (_toolset == "target" or host_os != "linux"))', {
