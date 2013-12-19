@@ -90,21 +90,23 @@
              
               # Make sure any binary depending on this gets the data file.
               'conditions': [
-                ['OS=="ios"', {
-                  'mac_bundle_resources': [
-                    'source/data/in/icudtl.dat',
-                  ],
-                }, {
+                ['OS != "ios"', {
                   'copies': [{
                     'destination': '<(PRODUCT_DIR)',
                     'files': [
                       'source/data/in/icudtl.dat',
                     ],
                   }],
-                }],
-              ],  # target_conditions
-            }],
-          ],
+                } , { # else: OS=="ios"
+                  'link_settings': {
+                    'mac_bundle_resources': [
+                      'source/data/in/icudtl.dat',
+                    ],
+                  },
+                }], # OS!=ios
+              ], # conditions
+            }], # icu_use_data_file_flag 
+          ], # conditions
           'target_conditions': [
             [ 'OS == "win" or OS == "mac" or OS == "ios" or '
               '(OS == "android" and (_toolset == "target" or host_os != "linux"))', {
