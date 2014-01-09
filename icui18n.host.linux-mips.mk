@@ -186,6 +186,7 @@ MY_CFLAGS_Debug := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
+	-funwind-tables \
 	-Wno-deprecated-declarations \
 	-fno-builtin-sin \
 	-Wno-format \
@@ -249,6 +250,7 @@ MY_CFLAGS_Release := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
+	-funwind-tables \
 	-Wno-deprecated-declarations \
 	-fno-builtin-sin \
 	-Wno-format \

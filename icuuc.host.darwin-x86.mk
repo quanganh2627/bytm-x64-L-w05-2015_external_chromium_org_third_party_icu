@@ -190,6 +190,7 @@ MY_CFLAGS_Debug := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
+	-funwind-tables \
 	-Wno-deprecated-declarations \
 	-Wno-unused-function \
 	-Wno-format \
@@ -252,6 +253,7 @@ MY_CFLAGS_Release := \
 	-fvisibility=hidden \
 	-pipe \
 	-fPIC \
+	-funwind-tables \
 	-Wno-deprecated-declarations \
 	-Wno-unused-function \
 	-Wno-format \
@@ -260,9 +262,7 @@ MY_CFLAGS_Release := \
 	-fno-ident \
 	-fdata-sections \
 	-ffunction-sections \
-	-fomit-frame-pointer \
-	-fno-unwind-tables \
-	-fno-asynchronous-unwind-tables
+	-fomit-frame-pointer
 
 MY_DEFS_Release := \
 	'-DU_USING_ICU_NAMESPACE=0' \
