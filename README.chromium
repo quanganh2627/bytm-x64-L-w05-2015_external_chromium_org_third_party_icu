@@ -299,3 +299,6 @@ This directory contains the source code of ICU 4.6 for C/C++
 26. Add BreakIterator::getRuleStatus
     - patches/breakiterator.patch
     - Copy and paste BreakIterator::getRuleStatus API from ICU 52
+
+27. Change export of U_ICUDATA_ENTRY_POINT from U_IMPORT to U_EXPORT.
+    - patches/declspec.patch
