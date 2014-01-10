@@ -69,10 +69,14 @@
              'mac/icudt46l_dat.S',
           ],
           'conditions': [
-            [ 'use_system_icu==1', {
+            [ 'use_system_icu==1 and want_separate_host_toolset==1', {
               'toolsets': ['host'],
-            }, {
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==1', {
               'toolsets': ['host', 'target'],
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==0', {
+              'toolsets': ['target'],
             }],
             [ 'OS == "win" and icu_use_data_file_flag==0', {
               'type': 'none',
@@ -122,7 +126,7 @@
               '(OS != "android" or _toolset != "host" or host_os != "mac")', {
               'sources!': ['mac/icudt46l_dat.S'],
             }],
-          ],
+          ], # target_conditions
         },
         {
           'target_name': 'icui18n',
@@ -142,10 +146,14 @@
             ],
           },
           'conditions': [
-            [ 'use_system_icu==1', {
+            [ 'use_system_icu==1 and want_separate_host_toolset==1', {
               'toolsets': ['host'],
-            }, {
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==1', {
               'toolsets': ['host', 'target'],
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==0', {
+              'toolsets': ['target'],
             }],
             [ 'os_posix == 1 and OS != "mac" and OS != "ios"', {
               # Since ICU wants to internally use its own deprecated APIs, don't
@@ -218,7 +226,7 @@
                 }],
               ],
             }],
-          ],
+          ], # conditions
         },
         {
           'target_name': 'icuuc',
@@ -245,10 +253,14 @@
             ],
           },
           'conditions': [
-            [ 'use_system_icu==1', {
+            [ 'use_system_icu==1 and want_separate_host_toolset==1', {
               'toolsets': ['host'],
-            }, {
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==1', {
               'toolsets': ['host', 'target'],
+            }],
+            [ 'use_system_icu==0 and want_separate_host_toolset==0', {
+              'toolsets': ['target'],
             }],
             [ 'OS == "win"', {
               'sources': [
@@ -318,9 +330,9 @@
                 '-Wno-switch',
               ],
             }],
-          ],
+          ], # conditions
         },
-      ],
+      ], # targets
     }],
     ['use_system_icu==1', {
       'targets': [
@@ -328,11 +340,6 @@
           'target_name': 'system_icu',
           'type': 'none',
           'conditions': [
-            ['want_separate_host_toolset==1', {
-              'toolsets': ['target'],
-            }, {
-              'toolsets': ['host', 'target'],
-            }],
             ['OS=="android"', {
               'direct_dependent_settings': {
                 'include_dirs': [
@@ -363,13 +370,7 @@
           'type': 'none',
           'dependencies': ['system_icu'],
           'export_dependent_settings': ['system_icu'],
-          'conditions': [
-            ['want_separate_host_toolset==1', {
-              'toolsets': ['target'],
-            }, {
-              'toolsets': ['host', 'target'],
-            }],
-          ],
+          'toolsets': ['target'],
         },
         {
           'target_name': 'icui18n',
@@ -456,13 +457,7 @@
           'includes': [
             '../../build/shim_headers.gypi',
           ],
-          'conditions': [
-            ['want_separate_host_toolset==1', {
-              'toolsets': ['target'],
-            }, {
-              'toolsets': ['host', 'target'],
-            }],
-          ],
+          'toolsets': ['target'],
         },
         {
           'target_name': 'icuuc',
@@ -567,15 +562,9 @@
           'includes': [
             '../../build/shim_headers.gypi',
           ],
-          'conditions': [
-            ['want_separate_host_toolset==1', {
-              'toolsets': ['target'],
-            }, {
-              'toolsets': ['host', 'target'],
-            }],
-          ],
+          'toolsets': ['target'],
         },
-      ],
+      ], # targets
     }],
-  ],
+  ], # conditions
 }
