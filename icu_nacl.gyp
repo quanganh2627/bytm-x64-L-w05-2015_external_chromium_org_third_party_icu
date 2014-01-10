@@ -36,10 +36,10 @@
   },
   'targets': [
     {
-      'target_name': 'icudata_untrusted',
+      'target_name': 'icudata_nacl',
       'type': 'none',
       'variables': {
-        'nlib_target': 'libicudata_untrusted.a',
+        'nlib_target': 'libicudata_nacl.a',
         'build_glibc': 0,
         'build_newlib': 0,
         'build_pnacl_newlib': 1,
@@ -52,10 +52,10 @@
       ],
     },
     {
-      'target_name': 'icui18n_untrusted',
+      'target_name': 'icui18n_nacl',
       'type': 'none',
       'variables': {
-        'nlib_target': 'libicui18n_untrusted.a',
+        'nlib_target': 'libicui18n_nacl.a',
         'build_glibc': 0,
         'build_newlib': 0,
         'build_pnacl_newlib': 1,
@@ -68,7 +68,7 @@
       ],
       'dependencies': [
         '../../native_client/tools.gyp:prep_toolchain',
-        'icuuc_untrusted',
+        'icuuc_nacl',
       ],
       'direct_dependent_settings': {
         'include_dirs': [
@@ -77,10 +77,10 @@
       },
     },
     {
-      'target_name': 'icuuc_untrusted',
+      'target_name': 'icuuc_nacl',
       'type': 'none',
       'variables': {
-        'nlib_target': 'libicuuc_untrusted.a',
+        'nlib_target': 'libicuuc_nacl.a',
         'build_glibc': 0,
         'build_newlib': 0,
         'build_pnacl_newlib': 1,
@@ -93,7 +93,7 @@
       ],
       'dependencies': [
         '../../native_client/tools.gyp:prep_toolchain',
-        'icudata_untrusted',
+        'icudata_nacl',
       ],
       'direct_dependent_settings': {
         'include_dirs': [
