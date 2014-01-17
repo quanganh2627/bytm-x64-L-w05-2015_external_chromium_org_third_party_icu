@@ -193,8 +193,7 @@ MY_CFLAGS_Debug := \
 	-g \
 	-fomit-frame-pointer \
 	-fdata-sections \
-	-ffunction-sections \
-	-funwind-tables
+	-ffunction-sections
 
 MY_DEFS_Debug := \
 	'-DU_USING_ICU_NAMESPACE=0' \
@@ -257,7 +256,8 @@ MY_CFLAGS_Release := \
 	-fdata-sections \
 	-ffunction-sections \
 	-fomit-frame-pointer \
-	-funwind-tables
+	-fno-unwind-tables \
+	-fno-asynchronous-unwind-tables
 
 MY_DEFS_Release := \
 	'-DU_USING_ICU_NAMESPACE=0' \
