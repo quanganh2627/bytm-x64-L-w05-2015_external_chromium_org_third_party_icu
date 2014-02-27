@@ -89,7 +89,7 @@
                 },
               ],
             }],
-            [ 'icu_use_data_file_flag', {
+            [ 'icu_use_data_file_flag==1', {
               # Remove any assembly data file.
               'sources/': [['exclude', 'icudt46l_dat']],
               # Compile in the stub data symbol.
@@ -100,8 +100,16 @@
                 ['OS != "ios"', {
                   'copies': [{
                     'destination': '<(PRODUCT_DIR)',
-                    'files': [
-                      'source/data/in/icudtl.dat',
+                    'conditions': [
+                      ['OS == "android"', {
+                        'files': [
+                          'android/icudtl.dat',
+                        ],
+                      } , { # else: OS != android
+                        'files': [
+                          'source/data/in/icudtl.dat',
+                        ],
+                      }],
                     ],
                   }],
                 } , { # else: OS=="ios"
