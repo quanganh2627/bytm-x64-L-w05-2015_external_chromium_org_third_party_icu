@@ -1,0 +1,35 @@
+diff --git a/source/common/unicode/pandroid.h b/source/common/unicode/pqnx.h
+--- a/source/common/unicode/pandroid.h
++++ b/source/common/unicode/pqnx.h
+@@ -45,8 +45,8 @@
+ #ifndef CYGWINMSVC
+ 
+ /** Define the platform we're on. */
+-#ifndef U_LINUX
+-#define U_LINUX
++#ifndef U_QNX
++#define U_QNX
+ #endif
+ 
+ /**
+@@ -331,7 +331,7 @@
+ #   ifdef __cplusplus
+ #       define U_INLINE inline
+ #   else
+-#       define U_INLINE inline
++#       define U_INLINE __inline__
+ #   endif
+ #endif
+ 
+diff --git a/source/common/unicode/ptypes.h b/source/common/unicode/ptypes.h
+--- a/source/common/unicode/ptypes.h
++++ b/source/common/unicode/ptypes.h
+@@ -34,6 +34,8 @@
+ #   include "unicode/pfreebsd.h"
+ #elif defined(__OpenBSD__)
+ #   include "unicode/popenbsd.h"
++#elif defined(__QNXNTO__)
++#   include "unicode/pqnx.h"
+ #else
+ #   include "unicode/platform.h"
+ #endif

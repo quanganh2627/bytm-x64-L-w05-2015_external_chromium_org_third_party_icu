@@ -29,7 +29,7 @@
         ],
       }],
       ['(OS=="linux" or OS=="freebsd" or OS=="openbsd" or OS=="solaris" \
-         or OS=="netbsd" or OS=="mac" or OS=="android") and \
+         or OS=="netbsd" or OS=="mac" or OS=="android" or OS=="qnx") and \
         (target_arch=="arm" or target_arch=="ia32" or \
          target_arch=="mipsel")', {
         'target_conditions': [
@@ -124,14 +124,16 @@
           ], # conditions
           'target_conditions': [
             [ 'OS == "win" or OS == "mac" or OS == "ios" or '
-              '(OS == "android" and (_toolset == "target" or host_os != "linux"))', {
+              '(OS == "android" and (_toolset != "host" or host_os != "linux")) or '
+              '(OS == "qnx" and (_toolset == "host" and host_os != "linux"))', {
               'sources!': ['linux/icudt46l_dat.S'],
             }],
             [ 'OS != "android" or _toolset == "host"', {
               'sources!': ['android/icudt46l_dat.S'],
             }],
             [ 'OS != "mac" and OS != "ios" and '
-              '(OS != "android" or _toolset != "host" or host_os != "mac")', {
+              '((OS != "android" and OS != "qnx") or '
+	      '_toolset != "host" or host_os != "mac")', {
               'sources!': ['mac/icudt46l_dat.S'],
             }],
           ], # target_conditions
@@ -361,7 +363,16 @@
                   '-licuuc',
                 ],
               },
-            },{ # OS!="android"
+            }],
+            ['OS=="qnx"', {
+              'link_settings': {
+                'libraries': [
+                  '-licui18n',
+                  '-licuuc',
+                ],
+              },
+            }],
+            ['OS!="android" and OS!="qnx"', {
               'link_settings': {
                 'ldflags': [
                   '<!@(icu-config --ldflags)',

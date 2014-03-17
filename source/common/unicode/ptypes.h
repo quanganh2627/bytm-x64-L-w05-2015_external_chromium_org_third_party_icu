@@ -34,6 +34,8 @@
 #   include "unicode/pfreebsd.h"
 #elif defined(__OpenBSD__)
 #   include "unicode/popenbsd.h"
+#elif defined(__QNXNTO__)
+#   include "unicode/pqnx.h"
 #else
 #   include "unicode/platform.h"
 #endif

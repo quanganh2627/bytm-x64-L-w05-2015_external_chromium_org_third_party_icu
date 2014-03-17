@@ -284,7 +284,7 @@ This directory contains the source code of ICU 4.6 for C/C++
 22. Fix time zone handling and compilation on iOS.
     - patches/ios_timezone.patch
     - upstream bugs : http://bugs.icu-project.org/trac/ticket/9051
-    -                 http://bugs.icu-project.org/trac/ticket/8661
+                      http://bugs.icu-project.org/trac/ticket/8661
 
 23. Fix a buffer overflow in utext
     - patches/utext.patch
@@ -303,3 +303,14 @@ This directory contains the source code of ICU 4.6 for C/C++
 
 27. Change export of U_ICUDATA_ENTRY_POINT from U_IMPORT to U_EXPORT.
     - patches/declspec.patch
+
+28. Add support for QNX Neutrino.
+    -  patches/platform.qnx.patch:
+       Add source/common/unicode/pqnx.h.
+    -  patches/si_value.undef.patch:
+       Work around an all-lowercase macro defined in <signal.h>.
+       Upstream took a different approach:
+       http://bugs.icu-project.org/trac/ticket/9935
+    -  patches/xopen_source.patch:
+       Set _XOPEN_SOURCE to 600 as in the upstream changeset:
+       http://bugs.icu-project.org/trac/changeset/30418
