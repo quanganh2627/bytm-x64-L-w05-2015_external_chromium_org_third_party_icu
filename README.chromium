@@ -115,6 +115,9 @@ This directory contains the source code of ICU 4.6 for C/C++
   - android/patch_locale.sh (to be run for Android build only):
       Makes changes to source/data/{curr,region,lang} to exclude these data
       except the language and script names of zh_Hans and zh_Hant.
+ 
+  - Add tg.txt to source/data/locale to add the minimal locale data necessary for 
+    the spellchecker. In the same directory, add tg.txt to reslocal.mk
 
 7. Removal of unihan collation tables from data/coll/{zh,ja,ko}.txt
 
@@ -131,15 +134,13 @@ This directory contains the source code of ICU 4.6 for C/C++
      windowsZones.txt
      zoneinfo64.txt
 
-   As of Dec 2013, the latest version is 2013h and the above files
+   As of Mar 2014, the latest version is 2014a and the above files
    are available at
-   http://source.icu-project.org/repos/icu/data/trunk/tzdata/icunew/2013h/44/
+   http://source.icu-project.org/repos/icu/data/trunk/tzdata/icunew/2014a/44/
 
 9. Transliterator customization
 
-   - Add the following files taken from ICU 52 to source/data/trnslit
-
-     {tr,el,az}_{Upper,Lower,Title}.txt
+   - Add el_Upper.txt taken from ICU 52 to source/data/trnslit
 
    - Also add css3transform.txt to the same directory
    - Put the following line in trnslocal.mk
