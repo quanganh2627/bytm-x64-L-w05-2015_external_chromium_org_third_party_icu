@@ -133,7 +133,7 @@
             }],
             [ 'OS != "mac" and OS != "ios" and '
               '((OS != "android" and OS != "qnx") or '
-	      '_toolset != "host" or host_os != "mac")', {
+              '_toolset != "host" or host_os != "mac")', {
               'sources!': ['mac/icudt46l_dat.S'],
             }],
           ], # target_conditions
