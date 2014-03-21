@@ -13,16 +13,7 @@ gyp_shared_intermediate_dir := $(call intermediates-dir-for,GYP,shared)
 # Make sure our deps are built first.
 GYP_TARGET_DEPENDENCIES :=
 
-### Generated for copy rule.
-$(gyp_shared_intermediate_dir)/icudtl.dat: $(LOCAL_PATH)/third_party/icu/android/icudtl.dat $(GYP_TARGET_DEPENDENCIES) | $(ACP)
-	@echo Copying: $@
-	$(hide) mkdir -p $(dir $@)
-	$(hide) $(ACP) -rpf $< $@
-
-third_party_icu_icu_gyp_icudata_host_copies = $(gyp_shared_intermediate_dir)/icudtl.dat
-
-GYP_GENERATED_OUTPUTS := \
-	$(third_party_icu_icu_gyp_icudata_host_copies)
+GYP_GENERATED_OUTPUTS :=
 
 # Make sure our deps and generated files are built first.
 LOCAL_ADDITIONAL_DEPENDENCIES := $(GYP_TARGET_DEPENDENCIES) $(GYP_GENERATED_OUTPUTS)
@@ -32,7 +23,7 @@ LOCAL_GENERATED_SOURCES :=
 GYP_COPIED_SOURCE_ORIGIN_DIRS :=
 
 LOCAL_SRC_FILES := \
-	third_party/icu/source/stubdata/stubdata.c
+	third_party/icu/linux/icudt46l_dat.S
 
 
 # Flags passed to both C and C++ files.
