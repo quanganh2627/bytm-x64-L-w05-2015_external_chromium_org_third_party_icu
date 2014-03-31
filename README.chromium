@@ -119,8 +119,9 @@ This directory contains the source code of ICU 4.6 for C/C++
       Makes changes to source/data/{curr,region,lang} to exclude these data
       except the language and script names of zh_Hans and zh_Hant.
  
-  - Add tg.txt to source/data/locale to add the minimal locale data necessary for 
-    the spellchecker. In the same directory, add tg.txt to reslocal.mk
+  - Add tg.txt to source/data/locale source/data/lang to add the minimal locale
+    data necessary for the spellchecker. In both directories, add tg.txt to
+    reslocal.mk
 
 7. Removal of unihan collation tables from data/coll/{zh,ja,ko}.txt
 
