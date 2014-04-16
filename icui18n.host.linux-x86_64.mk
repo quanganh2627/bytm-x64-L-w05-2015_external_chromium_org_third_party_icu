@@ -190,6 +190,7 @@ MY_CFLAGS_Debug := \
 	-Wno-deprecated-declarations \
 	-fno-builtin-sin \
 	-Wno-format \
+	-m64 \
 	-Os \
 	-g \
 	-fomit-frame-pointer \
@@ -255,6 +256,7 @@ MY_CFLAGS_Release := \
 	-Wno-deprecated-declarations \
 	-fno-builtin-sin \
 	-Wno-format \
+	-m64 \
 	-Os \
 	-fno-ident \
 	-fdata-sections \
@@ -316,14 +318,16 @@ LOCAL_LDFLAGS_Debug := \
 	-Wl,-z,now \
 	-Wl,-z,relro \
 	-pthread \
-	-fPIC
+	-fPIC \
+	-m64
 
 
 LOCAL_LDFLAGS_Release := \
 	-Wl,-z,now \
 	-Wl,-z,relro \
 	-pthread \
-	-fPIC
+	-fPIC \
+	-m64
 
 
 LOCAL_LDFLAGS := $(LOCAL_LDFLAGS_$(GYP_CONFIGURATION))
