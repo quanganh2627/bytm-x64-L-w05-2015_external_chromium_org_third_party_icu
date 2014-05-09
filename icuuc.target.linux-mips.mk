@@ -17,6 +17,7 @@ GYP_TARGET_DEPENDENCIES := \
 
 ### Rules for action "generate_icuuc_shim_headers":
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/source/common/unicode/brkiter.h: gyp_local_path := $(LOCAL_PATH)
+$(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/source/common/unicode/brkiter.h: gyp_var_prefix := $(GYP_VAR_PREFIX)
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/source/common/unicode/brkiter.h: gyp_intermediate_dir := $(abspath $(gyp_intermediate_dir))
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/source/common/unicode/brkiter.h: gyp_shared_intermediate_dir := $(abspath $(gyp_shared_intermediate_dir))
 $(gyp_shared_intermediate_dir)/shim_headers/icuuc/target/third_party/icu/source/common/unicode/brkiter.h: export PATH := $(subst $(ANDROID_BUILD_PATHS),,$(PATH))
