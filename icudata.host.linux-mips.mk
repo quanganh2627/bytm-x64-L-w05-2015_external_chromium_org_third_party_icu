@@ -86,7 +86,8 @@ MY_DEFS_Debug := \
 # Include paths placed before CFLAGS/CPPFLAGS
 LOCAL_C_INCLUDES_Debug := \
 	$(LOCAL_PATH)/third_party/icu/source/common \
-	$(LOCAL_PATH)/third_party/icu/source/i18n
+	$(LOCAL_PATH)/third_party/icu/source/i18n \
+	$(gyp_shared_intermediate_dir)
 
 
 # Flags passed to only C++ (and not C) files.
@@ -156,7 +157,8 @@ MY_DEFS_Release := \
 # Include paths placed before CFLAGS/CPPFLAGS
 LOCAL_C_INCLUDES_Release := \
 	$(LOCAL_PATH)/third_party/icu/source/common \
-	$(LOCAL_PATH)/third_party/icu/source/i18n
+	$(LOCAL_PATH)/third_party/icu/source/i18n \
+	$(gyp_shared_intermediate_dir)
 
 
 # Flags passed to only C++ (and not C) files.
